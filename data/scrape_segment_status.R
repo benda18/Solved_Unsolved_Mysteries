@@ -24,6 +24,63 @@ url1 <- "https://unsolvedmysteries.fandom.com/wiki/Bruno_and_Bobo"
 url1 <- "https://unsolvedmysteries.fandom.com/wiki/Micki_Jo_West"
 url1 <- "https://unsolvedmysteries.fandom.com/wiki/David_Davis"
 
+
+segoc2 <- function(segname, season = NA, episode = NA){
+  # get season outcome from url
+  # ex url: "https://unsolvedmysteries.fandom.com/wiki/Heirs_of_George_Marsh"
+  require(glue)
+  require(rvest)
+  require(dplyr)
+  # if there are any spaces in segname, replace with underscore to match naming
+  # convetion of website
+  segname <- gsub(" ", "_", segname)
+  
+  url1 <- glue("https://unsolvedmysteries.fandom.com/wiki/{segname}")
+  
+  htext <- rvest::read_html(url1) %>%
+    html_text() %>%
+    strsplit(., "\t{0,}\n{1,}\t{0,}") %>%
+    unlist() %>%
+    .[. != ""] %>%
+    trimws()
+  
+  which(grepl("Episode", htext))
+  grep("episode", htext, ignore.case = T, value = T)
+  htext
+  
+  
+  seg.title <- htext[1] %>% strsplit(., "\\|") %>% unlist() %>% first %>% trimws()
+  seg.results <- grep("Results {0,}:", htext, value = T) %>%
+    gsub("^.*Results: {0,}", "", .) %>%
+    strsplit(x = ., 
+             split = "\\W") %>% 
+    unlist() %>%
+    .[. != ""] %>%
+    first() %>%
+    tolower()
+  
+  # seg.meta <- htext %>% grep("Real Name.*\\d{4,4}", ., value = T) %>%
+  #   .[nchar(.) == min(nchar(.))]
+  
+  seg.categories <- htext %>% 
+    grep("wgCategories", ., value = T) %>% 
+    gsub("\"", "", .) %>%
+    strsplit(x = ., split = "],") %>%
+    unlist() %>%
+    grep("wgCategories", ., value = T) %>%
+    gsub("wgCategories:\\S{1,1}", "", .) %>%
+    strsplit(., ",") %>% unlist()
+  
+  out.df <- data.frame(seg_name = seg.title, 
+                       seg.outcome = seg.results, 
+                       s_num = season, 
+                       ep_num = episode, 
+                       tag = seg.categories)
+  return(out.df)
+}
+
+s2 <- segoc2
+
 segoc <- function(url1, season = NA, episode = NA){
   # get season outcome from url
   # ex url: "https://unsolvedmysteries.fandom.com/wiki/Heirs_of_George_Marsh"
@@ -302,6 +359,91 @@ s1ep28 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Todd_McAfee",1,
                 segoc("https://unsolvedmysteries.fandom.com/wiki/Victorio_Peak_Treasure",1,29-1),
                 segoc("https://unsolvedmysteries.fandom.com/wiki/The_Families_of_the_S.S._Muskogee_Crew",1,29-1)) %>% 
   left_join(., cw.outcome_solved)
+
+
+
+# try a more advanced approach for finding urls for season 2----
+x <- "Episode 29
+
+Aired: September 20, 1989
+
+    Update: Wanted: Charles Mule
+    Lost Loves: Lt. Karen Stephens
+    Legend: Roswell Crash
+    Lost: Tara Calico and Michael Henley" 
+ep_metadata <- function(x){
+  require(readr)
+  require(dplyr)
+  require(lubridate)
+  out <- x %>%
+    read_lines() %>%
+    trimws() %>%
+    .[. != ""]
+  
+  grep("aired:.*\\d{4,4}$", out, value = T, ignore.case = T)
+  
+  data.frame(variable = c("num_ep", "date_aired"), 
+             value    = c(grep("Episode \\d{1,3}$", out, value = T, ignore.case = T), 
+                          grep("aired:.*\\d{4,4}$", out, value = T, ignore.case = T)))
+  
+}
+
+
+  
+
+segoc2(segname = "Charles Mule", 2,29)
+segoc2("Lt. Karen Stephens", 2, 29)
+segoc2("Roswell Crash", 2,29)
+segoc2("Tara Calico", 2,29)
+segoc2("Michael Henley", 2,29)
+
+s2("Jack Brown", 2,30)
+s2("Blinking Crucifix",2,30)
+s2("Sheldon Weinberg",2,30)
+s2("Robert Dennie")
+s2("Melvin Edward Mays")
+s2("Leslie Isben Rogge")
+
+s2("Kay Hall", 2,31)
+s2("Lt. Karen Stephens")
+s2("New York Coin Scam")
+s2("Mabel Woods")
+s2("The Crew of the Sara Joe")
+s2("Avery James Norris")
+
+s2("Greg Webb", 2, 32)
+s2("Billie and Joey Rogers")
+s2("John Mooney")
+s2("Gary and Terry Mango")
+s2("Gene Kiley")
+
+s2("Dale Kerstetter", 2, 33)
+s2("The Brother of Sylvia Wemhoff")
+s2("Marfa Lights")
+s2("Jay Cook and Tanya Van Cuylenborg")
+s2("Bonnie Wilder")
+s2("Julie Weflen")
+s2("Stefanie Stroh")
+s2("Kyle Clinkscales")
+s2("Carlos Alvarez")
+s2("Jose Alvarez and Juan Cristo")
+s2("Diana Braungardt")
+s2("David Tyll and Brian Ognjan")
+s2("John Simmons")
+s2("Lily Mae Huff")
+s2("David Thies")
+s2("Susan Cappel")
+
+s2("Chevy Chase Bandit", 2, 34)
+s2("Louis Carlucci")
+s2("Rudolf Hess")
+s2("Patricia Meehan")
+s2("Tina Jefferson")
+s2("Gary and Terry Mango")
+s2("Billie and Joey Rogers")
+
+s2("Doyle Wheeler", 2, 35)
+s2("Salvatore Caruana")
 
 
 
