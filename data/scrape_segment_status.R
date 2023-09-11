@@ -392,107 +392,120 @@ ep_metadata <- function(x){
 
   
 
-segoc2(segname = "Charles Mule", 2,29)
-segoc2("Lt. Karen Stephens", 2, 29)
-segoc2("Roswell Crash", 2,29)
-segoc2("Tara Calico", 2,29)
-segoc2("Michael Henley", 2,29)
+s2e29 <- rbind(segoc2(segname = "Charles Mule", 2,29),
+               segoc2("Lt. Karen Stephens", 2, 29),
+               segoc2("Roswell Crash", 2,29),
+               segoc2("Tara Calico", 2,29),
+               segoc2("Michael Henley", 2,29))
 
-s2("Jack Brown", 2,30)
-s2("Blinking Crucifix",2,30)
-s2("Sheldon Weinberg",2,30)
-s2("Robert Dennie")
-s2("Melvin Edward Mays")
-s2("Leslie Isben Rogge")
+s2e30 <- rbind(s2("Jack Brown", 2,30),
+               s2("Blinking Crucifix",2,30),
+               s2("Sheldon Weinberg",2,30),
+               s2("Robert Dennie"),
+               s2("Melvin Edward Mays"),
+               s2("Leslie Isben Rogge")) %>%
+  mutate(., s_num = 2, ep_num = 30)
 
-s2("Kay Hall", 2,31)
-s2("Lt. Karen Stephens")
-s2("New York Coin Scam")
-s2("Mabel Woods")
-s2("The Crew of the Sara Joe")
-s2("Avery James Norris")
-
-s2("Greg Webb", 2, 32)
-s2("Billie and Joey Rogers")
-s2("John Mooney")
-s2("Gary and Terry Mango")
-s2("Gene Kiley")
-
-s2("Dale Kerstetter", 2, 33)
-s2("The Brother of Sylvia Wemhoff")
-s2("Marfa Lights")
-s2("Jay Cook and Tanya Van Cuylenborg")
-s2("Bonnie Wilder")
-s2("Julie Weflen")
-s2("Stefanie Stroh")
-s2("Kyle Clinkscales")
-s2("Carlos Alvarez")
-s2("Jose Alvarez and Juan Cristo")
-s2("Diana Braungardt")
-s2("David Tyll and Brian Ognjan")
-s2("John Simmons")
-s2("Lily Mae Huff")
-s2("David Thies")
-s2("Susan Cappel")
-
-s2("Chevy Chase Bandit", 2, 34)
-s2("Louis Carlucci")
-s2("Rudolf Hess")
-s2("Patricia Meehan")
-s2("Tina Jefferson")
-s2("Gary and Terry Mango")
-s2("Billie and Joey Rogers")
+s2e31 <- rbind(s2("Kay Hall", 2,31),
+               s2("Lt. Karen Stephens"),
+               s2("New York Coin Scam"),
+               s2("Mabel Woods"),
+               s2("The Crew of the Sara Joe"),
+               s2("Avery Norris")) %>%
+  mutate(., s_num = 2, ep_num = 31)
 
 
-lapply(c("Doyle Wheeler","Salvatore Caruana",
+s2e32 <- rbind(s2("Greg Webb", 2, 32),
+               s2("Billie and Joey Rogers"),
+               s2("John Mooney"),
+               s2("Gary and Terry Magno")#,
+               #s2("Gene Kiley")
+               ) %>%
+  mutate(., s_num = 2, ep_num = 32)
+
+s2e33 <- rbind(s2("Dale Kerstetter", 2, 33),
+               s2("The Brother of Sylvia Wemhoff"),
+               s2("Marfa Lights"),
+               s2("Jay Cook and Tanya Van Cuylenborg"),
+               s2("Bonnie Wilder"),
+               s2("Julie Weflen"),
+               s2("Stefanie Stroh"),
+               s2("Kyle Clinkscales"),
+               s2("Carlos Alvarez"),
+               s2("Jose Alvarez and Juan Cristo"),
+               s2("Diana Braungardt"),
+               s2("David Tyll and Brian Ognjan"),
+               s2("John Simmons"),
+               s2("Lily Mae Huff"),
+               s2("David Thies"),
+               s2("Susan Cappel"))%>%
+  mutate(., s_num = 2, ep_num = 33)
+
+s2e34 <- rbind(s2("Chevy Chase Bandit", 2, 34),
+               s2("Louis Carlucci"),
+               s2("Rudolf Hess"),
+               s2("Patricia Meehan"),
+               s2("Tina Jefferson"),
+               s2("Gary and Terry Magno"),
+               s2("Billie and Joey Rogers"))%>%
+  mutate(., s_num = 2, ep_num = 34)
+
+
+s2e35 <- lapply(c("Doyle Wheeler","Salvatore Caruana",
          "Douglas Alan Costa", "Lewis Michael Geiger", 
          "Lavada Floyd", "Richard Green", "Richard Joseph Alvarado", 
          "William McGeehee", "Alvaro Zapata", 
          "Charles Wickman", "Rachael Runyan", "Gene Flannes"), 
        s2, 
-       2, 35)
+       2, 35) %>%
+  rbindlist()
 
 
 
-lapply(c("Rhonda Hinson", "William Eugene Hilliard", 
+s2e36 <- lapply(c("Rhonda Hinson", "William Eugene Hilliard", 
          "Ann Corricelli and Lena Marie Wilson", 
          "Heirs of Howard Drummond", "Don Hamilton"), 
        s2, 
-       2, 36)
+       2, 36) %>%
+  rbindlist()
 
-lapply(c("Sonny Liston", "Billie and Joey Rogers", 
+s2e37 <- lapply(c("Sonny Liston", "Billie and Joey Rogers", 
          "Bill and Cynthia Zelinski", 
          "Elizabeth Campbell", "Crash and Dash Robberies"), 
        s2, 
-       2, 37)
+       2, 37) %>%
+  rbindlist()
 
-lapply(c("Maria Armstrong", "Robert Dennie", "The Friend of Stephan Ross", 
+s2e38 <- lapply(c("Maria Armstrong", "Robert Dennie", "The Friend of Stephan Ross", 
          "Ralph Sigler", "Charles Wilson Chester", 
          "Tandem Bandits", "Medusa Bandit", "Garbage Bag Bandit", 
          "Shorts Robber"), 
        s2, 
-       2, 38)
+       2, 38) %>%
+  rbindlist()
 
-lapply(c("John Hawkins", "Woody Kelly", "David Fisher", "Laura Burbank", 
+s2e39 <- lapply(c("John Hawkins", "Woody Kelly", "David Fisher", "Laura Burbank", 
          "Carla Wright", "Michella Welch", "Jenny Bastian", 
          "The Siblings of LeeAnn Robinson", "Leslie Isben Rogge"), 
        s2, 
-       2, 39)
+       2, 39) %>%
+  rbindlist()
 
-
-lapply(c("Ed Barbara", "Avery Norris", "Rae Ann Mossor", "The Children of Georgia Tann", 
+s2e40 <- lapply(c("Ed Barbara", "Avery Norris", "Rae Ann Mossor", "The Children of Georgia Tann", 
          "Donald Eugene Webb"), 
        s2, 
-       2, 40)
+       2, 40) %>%
+  rbindlist()
 
-lapply(c("Sharon Elliott",
+s2e41 <- lapply(c("The Hatbox Baby",
          "John Branion",
          "Donna Branion",
-         "The Daughter of Joseph Schambier"), 
+         "Alberta Elaine"), 
        s2, 
-       2, 41)
+       2, 41) %>%
+  rbindlist()
 
-lapply(c("Cynthia Anderson",
+s2e42 <- lapply(c("Cynthia Anderson",
          "Ann Corricelli and Lena Marie Wilson",
          "West End Baptist Church",
          "Melvine Aprile",
@@ -501,25 +514,28 @@ lapply(c("Cynthia Anderson",
          "Wardell Ford",
         "Larry Chism"), 
        s2, 
-       2, 42)
+       2, 42) %>%
+  rbindlist()
 
-lapply(c("George Conniff",
+s2e43 <- lapply(c("George Conniff",
          "Liz Carmichael",
          "Jack Brown" ,
          "Blinking Crucifix" ,
          "William Eugene Hillard" ), 
        s2, 
-       2, 43)
+       2, 43) %>%
+  rbindlist()
 
-lapply(c("Brayman Road Attacker",
+s2e44 <- lapply(c("Brayman Road Attacker",
          "Ray Hickingbotham",
          "Ann Sigmin and Garey Goff",
          "Kevin Hughes",
          "Robert Miller"), 
        s2, 
-       2, 44)
+       2, 44) %>%
+  rbindlist()
 
-lapply(c("Mark Groezinger",
+s2e45 <- lapply(c("Mark Groezinger",
          "Roswell Crash",
          "Tara Calico", 
          "Michael Henley",
@@ -528,10 +544,11 @@ lapply(c("Mark Groezinger",
          "David Borer",
          "Malakia Logan"), 
        s2, 
-       2, 45)
+       2, 45) %>%
+  rbindlist()
 
 
-lapply(c("United Kingdom Crop Circles",
+s2e46 <- lapply(c("United Kingdom Crop Circles",
              "Kenneth Dungee",
              "Bill and Cynthia Zelinski",
             "Keith Reinhard",
@@ -539,17 +556,19 @@ lapply(c("United Kingdom Crop Circles",
              "William Slagle",
              "Rafael Rodriguez"), 
        s2, 
-       2, 46)
+       2, 46) %>%
+  rbindlist()
 
-lapply(c("Charles Morgan",
+s2e47 <- lapply(c("Charles Morgan",
              "Ogopogo",
              "The Siblings of LeeAnn Robinson",
              "Marvin and Sandra Maple",
              "Kristi and Bobby Baskin"), 
        s2, 
-       2, 47)
+       2, 47) %>%
+  rbindlist()
 
-lapply(c("Robert Weeks",
+s2e48 <- lapply(c("Robert Weeks",
              "Steven Cox",
              "John Mooney",
              "Victorio Peak Treasure",
@@ -561,22 +580,130 @@ lapply(c("Robert Weeks",
              "The Family of Pat Mealbach",
              "Jenny Pratt"), 
        s2, 
-       2, 48)
+       2, 48) %>%
+  rbindlist()
 
-lapply(c("Georgia Rudolph",
+s2e49 <- lapply(c("Georgia Rudolph",
              "Steve Sandlin",
              "John \"Thumper\" Brown"), 
        s2, 
-       2, 49)
+       2, 49) %>%
+  rbindlist()
 
-lapply(c(    "Joe Owens",
+s2e50 <- lapply(c("Joe Owens",
              "The Nanny of Jackie Cooper",
              "Alejandro Espinosa",
              "Dale Hyde",
              "Marvin and Sandra Maple",
              "Kristi and Bobby Baskin"), 
        s2, 
-       2, 50)
+       2, 50) %>%
+  rbindlist()
+
+s2e51 <- lapply(c("Linda Sharp",
+         "David Fisher",
+         "Laura Burbank",
+         "Gertrude Pruett",
+         "Dan Short",
+         "William L. Toomey"), 
+       s2, 
+       2, 51) %>%
+  rbindlist()
+
+s2e52 <- lapply(c("Laurence Harding Jr.",
+         "Pedro Uribe",
+         "Hugo Balbin",
+         "Luis and Ivan Arango",
+         "Miguel Villegas",
+         "Elmer Locker Jr.",
+         'John and Cecilia Kealing',
+         "Sweetheart Swindler",
+         "Gainesville Killers",
+         "Fumbles"), 
+       s2, 
+       2, 52) %>%
+  rbindlist()
+
+s2e53 <- lapply(c("John \"Thumper\" Brown",
+             "Kristina Smith",
+             "Kay Hall",
+             "New York Coin Scam",
+             "Mabel Woods"), 
+       s2, 
+       2, 53) %>%
+  rbindlist()
+
+s2e54 <- lapply(c("Teresita Basa",
+             "Linda Sharp",
+             "Dewey Demetro" ,
+             "Leo Johnson Jr.",
+             "Jean Anne Freeman",
+             "Las Cruces Bowling Alley Massacre"), 
+       s2, 
+       2, 54) %>%
+  rbindlist()
+
+s2e55 <- lapply(c("Mark S. Newman and Gerald I. Levy",
+         "Donald M. and Louis G. Keith", 
+         "Lavona and Lavelda Rowe-Richardson",
+         "Elmer Locker Jr.",
+         "John and Cecilia Kealing",
+         "Jesus Penalver",
+         "Julio Marco Cruz",
+         "Pedro Nyego",
+         "Blas Canedo",
+         "Pablo Rodriguez",
+         "Boston Rapist",
+         "Bannack Treasure"), 
+       s2, 
+       2, 55) %>%
+  rbindlist()
+
+s2e56 <- lapply(c("Robert Kennedy",
+             "Jackie Harrington", 
+             "Elizabeth Campbell",
+             "Avery Norris"), 
+       s2, 
+       2, 56) %>%
+  rbindlist()
+
+s2e57 <- lapply(c("Ralph Probst",
+             "Christina Smith",
+             "Dale Hyde",
+             "Fumbles",
+             "Crash and Dash Robberies"), 
+       s2, 
+       2, 57) %>%
+  rbindlist()
+
+s2e58 <- lapply(c("Marlena Childress",
+             "Sonny Liston",
+             "Gertrude Pruett",
+             "Jean Anne Freeman"), 
+       s2, 
+       2, 58) %>%
+  rbindlist()
+
+s2e59 <- lapply(c("Gretchen Burford",
+         "United Kingdom Crop Circles",
+         "Robert Miller"), 
+       s2, 
+       2, 59) %>%
+  rbindlist()
+
+season2 <- NULL
+s2.vars <- ls(pattern = "^s2e\\d{1,2}$")
+for(i in s2.vars){
+  season2 <- rbind(season2, 
+                   get(i))
+}
+
+season2 <- season2 %>%
+  left_join(., 
+            cw.outcome_solved) %>%
+  as_tibble()
+
+
 
 # Season Summaries----
 library(readr)
@@ -588,87 +715,92 @@ for(i in s1.vars){
                    get(i))
 }
 
+rbind(season1, season2)
+
+
 season1 <- season1 %>%
   as_tibble()
 
-season1$tag[is.na(season1$tag_type)] %>% 
-  unique() %>%
-  sort()
+rbind(season1,season2)
 
-season1$tag_type <- NA
+# season1$tag[is.na(season1$tag_type)] %>% 
+#   unique() %>%
+#   sort()
+
+#season1$tag_type <- NA
 
 
-season1$tag_type[season1$tag %in% 
-                   c("Officer-Involved Cases", "Police-Involved Cases",
-                     "Military-Related Cases", "Conspiracy Cases")] <- "authority"
-
-season1$tag_type[season1$tag %in% 
-                   c("Suspicious Deaths","Disappearances","Missing Spouse Cases","Wrongly-Accused Cases" )] <- "victim"
-season1$tag_type[season1$tag %in% 
-                   c("Serial Killer","Escape","Wanted" )] <- "criminal"
-
-season1$tag_type[season1$tag %in% 
-                   c("Adoption Cases", "Lost Loves" ,"Amnesia",
-                     "Lost Identity Cases","Inheritance")] <- "reconnections"
-
-season1$tag_type[season1$tag %in% 
-                   c("ESP Cases","Unusual Phenomenon Cases","Cryptozoology" ,
-                     "Ghosts","Mysterious Creatures","UFOs" )] <- "other_worldly"
-season1$tag_type[season1$tag %in% 
-                   c("Miracles","Church-Related Cases")] <- "spiritual"
-
-season1$tag_type[season1$tag %in% 
-                   c("Legends"       ,       "Treasure")] <- "tall_tales"
-
-season1$tag_type[season1$tag %in% 
-                   c("Abduction","Armed Robbery","Bigamy","Forgery","Harassment",
-                     "Robbery","Theft","Vehicular Manslaughter","Arson",
-                     "Fraud","Burglary","Counterfeiting", "Extortion" ,
-                     "Manslaughter","Rape" ,"Attempted Murder","Child Molestation",
-                     "Embezzlement","Murder","Animal Cruelty Cases")] <- "crime"
-
-season1$tag_type[season1$tag %in% 
-                   c("Mafia-Related Cases" ,"Fire-Related Cases",
-                     "Blood Print-Related Cases",
-                     "Cult-Related Cases","Party-Related Cases","School-Related Cases",
-                     "Medical-Related Cases","Music-Related Cases",
-                     "Drug-Related Cases","Gang-Related Cases" ,
-                     "Radio-Related Cases","ATM-Related Cases",
-                     "Restaurant-Related Cases" )] <- "cat_crime"
-
-season1$tag_type[season1$tag %in% 
-                   c("Bicycle-Related Cases", 
-                     "Horse-Related Cases", 
-                     "Ford-Related Cases", 
-                     "Toyota-Related Cases",
-                     "Dodge-Related Cases",
-                     "Motorcycle-Related Cases", 
-                     "Train-Related Cases", 
-                     "Van-Related Cases" )] <- "vehicle"
-
-season1$tag_type[season1$tag %in% 
-                   c("Netflix", "Court TV Cases", 
-                     "Lifetime Cases", "Unsolved History Cases", 
-                     "AMW Cases")] <- "viewing_platform"
-
-season1$tag_type[season1$tag %in% 
-                   c("Unresolved", "Captured", "Solved", 
-                     "Unsolved", "Viewer Solves")] <- "outcome"
-season1$tag_type[season1$tag %in% c(state.name, "England", "Washington D.C.", 
-                                    "Pacific Ocean", "Atlantic Ocean", 
-                                    "Yukon Territory", "Mars", "France", "Austria", 
-                                    "Germany", "Hungary", "Ontario")] <- "geographic_location"
-
-season1$tag_type[season1$tag %in% c("River-Related Cases", 
-                                    "Sea-Related Cases", 
-                                    "Air-Related Cases", 
-                                    "Lake-Related Cases", 
-                                    "Railroad-Related Cases", 
-                                    "Road-Related Cases", 
-                                    "Woodland-Related Cases")] <- "terrain_type"
-
-season1$tag_type[is.na(season1$tag_type) & 
-                   grepl("\\d{4,4}|Unknown Year", season1$tag)] <- "year"
+# season1$tag_type[season1$tag %in% 
+#                    c("Officer-Involved Cases", "Police-Involved Cases",
+#                      "Military-Related Cases", "Conspiracy Cases")] <- "authority"
+# 
+# season1$tag_type[season1$tag %in% 
+#                    c("Suspicious Deaths","Disappearances","Missing Spouse Cases","Wrongly-Accused Cases" )] <- "victim"
+# season1$tag_type[season1$tag %in% 
+#                    c("Serial Killer","Escape","Wanted" )] <- "criminal"
+# 
+# season1$tag_type[season1$tag %in% 
+#                    c("Adoption Cases", "Lost Loves" ,"Amnesia",
+#                      "Lost Identity Cases","Inheritance")] <- "reconnections"
+# 
+# season1$tag_type[season1$tag %in% 
+#                    c("ESP Cases","Unusual Phenomenon Cases","Cryptozoology" ,
+#                      "Ghosts","Mysterious Creatures","UFOs" )] <- "other_worldly"
+# season1$tag_type[season1$tag %in% 
+#                    c("Miracles","Church-Related Cases")] <- "spiritual"
+# 
+# season1$tag_type[season1$tag %in% 
+#                    c("Legends"       ,       "Treasure")] <- "tall_tales"
+# 
+# season1$tag_type[season1$tag %in% 
+#                    c("Abduction","Armed Robbery","Bigamy","Forgery","Harassment",
+#                      "Robbery","Theft","Vehicular Manslaughter","Arson",
+#                      "Fraud","Burglary","Counterfeiting", "Extortion" ,
+#                      "Manslaughter","Rape" ,"Attempted Murder","Child Molestation",
+#                      "Embezzlement","Murder","Animal Cruelty Cases")] <- "crime"
+# 
+# season1$tag_type[season1$tag %in% 
+#                    c("Mafia-Related Cases" ,"Fire-Related Cases",
+#                      "Blood Print-Related Cases",
+#                      "Cult-Related Cases","Party-Related Cases","School-Related Cases",
+#                      "Medical-Related Cases","Music-Related Cases",
+#                      "Drug-Related Cases","Gang-Related Cases" ,
+#                      "Radio-Related Cases","ATM-Related Cases",
+#                      "Restaurant-Related Cases" )] <- "cat_crime"
+# 
+# season1$tag_type[season1$tag %in% 
+#                    c("Bicycle-Related Cases", 
+#                      "Horse-Related Cases", 
+#                      "Ford-Related Cases", 
+#                      "Toyota-Related Cases",
+#                      "Dodge-Related Cases",
+#                      "Motorcycle-Related Cases", 
+#                      "Train-Related Cases", 
+#                      "Van-Related Cases" )] <- "vehicle"
+# 
+# season1$tag_type[season1$tag %in% 
+#                    c("Netflix", "Court TV Cases", 
+#                      "Lifetime Cases", "Unsolved History Cases", 
+#                      "AMW Cases")] <- "viewing_platform"
+# 
+# season1$tag_type[season1$tag %in% 
+#                    c("Unresolved", "Captured", "Solved", 
+#                      "Unsolved", "Viewer Solves")] <- "outcome"
+# season1$tag_type[season1$tag %in% c(state.name, "England", "Washington D.C.", 
+#                                     "Pacific Ocean", "Atlantic Ocean", 
+#                                     "Yukon Territory", "Mars", "France", "Austria", 
+#                                     "Germany", "Hungary", "Ontario")] <- "geographic_location"
+# 
+# season1$tag_type[season1$tag %in% c("River-Related Cases", 
+#                                     "Sea-Related Cases", 
+#                                     "Air-Related Cases", 
+#                                     "Lake-Related Cases", 
+#                                     "Railroad-Related Cases", 
+#                                     "Road-Related Cases", 
+#                                     "Woodland-Related Cases")] <- "terrain_type"
+# 
+# season1$tag_type[is.na(season1$tag_type) & 
+#                    grepl("\\d{4,4}|Unknown Year", season1$tag)] <- "year"
 
 
 # tidy
