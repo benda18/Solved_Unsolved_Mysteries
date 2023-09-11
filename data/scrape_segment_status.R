@@ -8,7 +8,7 @@ library(rvest)
 setwd("~/R/play/Solved_Unsolved_Mysteries/data")
 rm(list=ls());cat('\f');gc()
 
-url1 <- "https://unsolvedmysteries.fandom.com/wiki/Gail_DeLano"
+url1 <- "https://unsolvedmysteries.fandom.com/wiki/The_Queen_Mary"
 
 segoc <- function(url1, season = NA, episode = NA){
   # get season outcome from url
@@ -23,7 +23,7 @@ segoc <- function(url1, season = NA, episode = NA){
     trimws()
   
   seg.title <- htext[1] %>% strsplit(., "\\|") %>% unlist() %>% first %>% trimws()
-  seg.results <- grep("Results:", htext, value = T) %>%
+  seg.results <- grep("Results: ", htext, value = T) %>%
     gsub("^.*Results: ", "", .) %>%
     strsplit(x = ., 
              split = "\\W") %>% 
@@ -65,5 +65,32 @@ s1ep2 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/D.B._Cooper", 1,
                segoc("https://unsolvedmysteries.fandom.com/wiki/Dennis_Walker", 1,2)) %>% 
   left_join(., cw.outcome_solved)
 
+s1ep3 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/The_Queen_Mary", 1,3), 
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Tallman_House", 1,3), 
+               segoc("https://unsolvedmysteries.fandom.com/wiki/The_General_Wayne_Inn", 1,3), 
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Tatum_House", 1,3))  %>% 
+  left_join(., cw.outcome_solved)
 
+s1ep4 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Son_of_Sam", 1,4),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Heirs_of_Walter_Green", 1,4),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Harold_and_Thelma_Swain", 1,4),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Chevy_Chase_Bandit", 1,4),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/John_William_Farr", 1,4),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Shotgun_Bandit", 1,4),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Shopping_Bag_Bandit", 1,4)) %>% 
+  left_join(., cw.outcome_solved)
 
+s1ep5 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Bob_Dozier_and_John_Russell",1,5),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Kristen_Tomlin_and_Suzanne_Russell",1,5),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Rolex_Robbers",1,5),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/The_Father_of_Janet_O%27Regan",1,5),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Son_of_Sam",1,5),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Annie_Hearin",1,5)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep6 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Christi_Nichols", 1,6),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Gail_DeLano", 1,6),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Mark_Adams", 1,6),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Steven_Cox", 1,6),
+               segoc("https://unsolvedmysteries.fandom.com/wiki/Barbara_Jean_Horn", 1,6)) %>% 
+  left_join(., cw.outcome_solved)
