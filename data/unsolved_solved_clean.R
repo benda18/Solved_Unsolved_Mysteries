@@ -4,6 +4,8 @@ library(lubridate)
 library(readr)
 library(ggplot2)
 
+setwd("~/R/play/Solved_Unsolved_Mysteries/data")
+
 rm(list=ls());cat('\f');gc()
 
 # Functions----
