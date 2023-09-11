@@ -721,99 +721,29 @@ rbind(season1, season2)
 season1 <- season1 %>%
   as_tibble()
 
-rbind(season1,season2)
-
-# season1$tag[is.na(season1$tag_type)] %>% 
-#   unique() %>%
-#   sort()
-
-#season1$tag_type <- NA
 
 
-# season1$tag_type[season1$tag %in% 
-#                    c("Officer-Involved Cases", "Police-Involved Cases",
-#                      "Military-Related Cases", "Conspiracy Cases")] <- "authority"
-# 
-# season1$tag_type[season1$tag %in% 
-#                    c("Suspicious Deaths","Disappearances","Missing Spouse Cases","Wrongly-Accused Cases" )] <- "victim"
-# season1$tag_type[season1$tag %in% 
-#                    c("Serial Killer","Escape","Wanted" )] <- "criminal"
-# 
-# season1$tag_type[season1$tag %in% 
-#                    c("Adoption Cases", "Lost Loves" ,"Amnesia",
-#                      "Lost Identity Cases","Inheritance")] <- "reconnections"
-# 
-# season1$tag_type[season1$tag %in% 
-#                    c("ESP Cases","Unusual Phenomenon Cases","Cryptozoology" ,
-#                      "Ghosts","Mysterious Creatures","UFOs" )] <- "other_worldly"
-# season1$tag_type[season1$tag %in% 
-#                    c("Miracles","Church-Related Cases")] <- "spiritual"
-# 
-# season1$tag_type[season1$tag %in% 
-#                    c("Legends"       ,       "Treasure")] <- "tall_tales"
-# 
-# season1$tag_type[season1$tag %in% 
-#                    c("Abduction","Armed Robbery","Bigamy","Forgery","Harassment",
-#                      "Robbery","Theft","Vehicular Manslaughter","Arson",
-#                      "Fraud","Burglary","Counterfeiting", "Extortion" ,
-#                      "Manslaughter","Rape" ,"Attempted Murder","Child Molestation",
-#                      "Embezzlement","Murder","Animal Cruelty Cases")] <- "crime"
-# 
-# season1$tag_type[season1$tag %in% 
-#                    c("Mafia-Related Cases" ,"Fire-Related Cases",
-#                      "Blood Print-Related Cases",
-#                      "Cult-Related Cases","Party-Related Cases","School-Related Cases",
-#                      "Medical-Related Cases","Music-Related Cases",
-#                      "Drug-Related Cases","Gang-Related Cases" ,
-#                      "Radio-Related Cases","ATM-Related Cases",
-#                      "Restaurant-Related Cases" )] <- "cat_crime"
-# 
-# season1$tag_type[season1$tag %in% 
-#                    c("Bicycle-Related Cases", 
-#                      "Horse-Related Cases", 
-#                      "Ford-Related Cases", 
-#                      "Toyota-Related Cases",
-#                      "Dodge-Related Cases",
-#                      "Motorcycle-Related Cases", 
-#                      "Train-Related Cases", 
-#                      "Van-Related Cases" )] <- "vehicle"
-# 
-# season1$tag_type[season1$tag %in% 
-#                    c("Netflix", "Court TV Cases", 
-#                      "Lifetime Cases", "Unsolved History Cases", 
-#                      "AMW Cases")] <- "viewing_platform"
-# 
-# season1$tag_type[season1$tag %in% 
-#                    c("Unresolved", "Captured", "Solved", 
-#                      "Unsolved", "Viewer Solves")] <- "outcome"
-# season1$tag_type[season1$tag %in% c(state.name, "England", "Washington D.C.", 
-#                                     "Pacific Ocean", "Atlantic Ocean", 
-#                                     "Yukon Territory", "Mars", "France", "Austria", 
-#                                     "Germany", "Hungary", "Ontario")] <- "geographic_location"
-# 
-# season1$tag_type[season1$tag %in% c("River-Related Cases", 
-#                                     "Sea-Related Cases", 
-#                                     "Air-Related Cases", 
-#                                     "Lake-Related Cases", 
-#                                     "Railroad-Related Cases", 
-#                                     "Road-Related Cases", 
-#                                     "Woodland-Related Cases")] <- "terrain_type"
-# 
-# season1$tag_type[is.na(season1$tag_type) & 
-#                    grepl("\\d{4,4}|Unknown Year", season1$tag)] <- "year"
 
-
-# tidy
-
-# season1$s_num2 <-  unlist(lapply(season1$s_num, lzero, 2))
-# season1$ep_num2 <- unlist(lapply(season1$ep_num, lzero, 3))
 season1$uid_ep  <- paste("S", 
                          unlist(lapply(season1$s_num, lzero, 2)), 
                          "E", 
                          unlist(lapply(season1$ep_num, lzero, 3)), 
                          sep = "")
+
 # sha512 seg_name to get uid for seg
 season1$uid_seg <- sha512(x = season1$seg_name) %>%
+  as.character() %>%
+  substr(., 0, 12)
+
+
+season2$uid_ep  <- paste("S", 
+                         unlist(lapply(season2$s_num, lzero, 2)), 
+                         "E", 
+                         unlist(lapply(season2$ep_num, lzero, 3)), 
+                         sep = "")
+
+# sha512 seg_name to get uid for seg
+season2$uid_seg <- sha512(x = season2$seg_name) %>%
   as.character() %>%
   substr(., 0, 12)
 
