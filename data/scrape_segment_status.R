@@ -77,6 +77,7 @@ segoc2 <- function(segname, season = NA, episode = NA){
                        ep_num = episode, 
                        tag = seg.categories)
   return(out.df)
+  Sys.sleep(1)
 }
 
 s2 <- segoc2
@@ -442,10 +443,140 @@ s2("Tina Jefferson")
 s2("Gary and Terry Mango")
 s2("Billie and Joey Rogers")
 
-s2("Doyle Wheeler", 2, 35)
-s2("Salvatore Caruana")
+
+lapply(c("Doyle Wheeler","Salvatore Caruana",
+         "Douglas Alan Costa", "Lewis Michael Geiger", 
+         "Lavada Floyd", "Richard Green", "Richard Joseph Alvarado", 
+         "William McGeehee", "Alvaro Zapata", 
+         "Charles Wickman", "Rachael Runyan", "Gene Flannes"), 
+       s2, 
+       2, 35)
 
 
+
+lapply(c("Rhonda Hinson", "William Eugene Hilliard", 
+         "Ann Corricelli and Lena Marie Wilson", 
+         "Heirs of Howard Drummond", "Don Hamilton"), 
+       s2, 
+       2, 36)
+
+lapply(c("Sonny Liston", "Billie and Joey Rogers", 
+         "Bill and Cynthia Zelinski", 
+         "Elizabeth Campbell", "Crash and Dash Robberies"), 
+       s2, 
+       2, 37)
+
+lapply(c("Maria Armstrong", "Robert Dennie", "The Friend of Stephan Ross", 
+         "Ralph Sigler", "Charles Wilson Chester", 
+         "Tandem Bandits", "Medusa Bandit", "Garbage Bag Bandit", 
+         "Shorts Robber"), 
+       s2, 
+       2, 38)
+
+lapply(c("John Hawkins", "Woody Kelly", "David Fisher", "Laura Burbank", 
+         "Carla Wright", "Michella Welch", "Jenny Bastian", 
+         "The Siblings of LeeAnn Robinson", "Leslie Isben Rogge"), 
+       s2, 
+       2, 39)
+
+
+lapply(c("Ed Barbara", "Avery Norris", "Rae Ann Mossor", "The Children of Georgia Tann", 
+         "Donald Eugene Webb"), 
+       s2, 
+       2, 40)
+
+lapply(c("Sharon Elliott",
+         "John Branion",
+         "Donna Branion",
+         "The Daughter of Joseph Schambier"), 
+       s2, 
+       2, 41)
+
+lapply(c("Cynthia Anderson",
+         "Ann Corricelli and Lena Marie Wilson",
+         "West End Baptist Church",
+         "Melvine Aprile",
+         "Tony and Sheri Aprile",
+        "The Signal Mountain Murders",
+         "Wardell Ford",
+        "Larry Chism"), 
+       s2, 
+       2, 42)
+
+lapply(c("George Conniff",
+         "Liz Carmichael",
+         "Jack Brown" ,
+         "Blinking Crucifix" ,
+         "William Eugene Hillard" ), 
+       s2, 
+       2, 43)
+
+lapply(c("Brayman Road Attacker",
+         "Ray Hickingbotham",
+         "Ann Sigmin and Garey Goff",
+         "Kevin Hughes",
+         "Robert Miller"), 
+       s2, 
+       2, 44)
+
+lapply(c("Mark Groezinger",
+         "Roswell Crash",
+         "Tara Calico", 
+         "Michael Henley",
+         "Leticia Hernandez",
+         "Jessica Gutierrez",
+         "David Borer",
+         "Malakia Logan"), 
+       s2, 
+       2, 45)
+
+
+lapply(c("United Kingdom Crop Circles",
+             "Kenneth Dungee",
+             "Bill and Cynthia Zelinski",
+            "Keith Reinhard",
+             "Tom Young",
+             "William Slagle",
+             "Rafael Rodriguez"), 
+       s2, 
+       2, 46)
+
+lapply(c("Charles Morgan",
+             "Ogopogo",
+             "The Siblings of LeeAnn Robinson",
+             "Marvin and Sandra Maple",
+             "Kristi and Bobby Baskin"), 
+       s2, 
+       2, 47)
+
+lapply(c("Robert Weeks",
+             "Steven Cox",
+             "John Mooney",
+             "Victorio Peak Treasure",
+             "John Burns",
+             "David Davis",
+             "Shannon Davis",
+             "Billie and Joey Rogers",
+             "Lt. Karen Stephens",
+             "The Family of Pat Mealbach",
+             "Jenny Pratt"), 
+       s2, 
+       2, 48)
+
+lapply(c("Georgia Rudolph",
+             "Steve Sandlin",
+             "John \"Thumper\" Brown"), 
+       s2, 
+       2, 49)
+
+lapply(c(    "Joe Owens",
+             "The Nanny of Jackie Cooper",
+             "Alejandro Espinosa",
+             "Dale Hyde",
+             "Marvin and Sandra Maple",
+             "Kristi and Bobby Baskin"), 
+       s2, 
+       2, 50)
 
 # Season Summaries----
 library(readr)
