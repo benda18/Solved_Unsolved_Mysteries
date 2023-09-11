@@ -10,6 +10,7 @@ rm(list=ls());cat('\f');gc()
 
 url1 <- "https://unsolvedmysteries.fandom.com/wiki/Bruno_and_Bobo"
 url1 <- "https://unsolvedmysteries.fandom.com/wiki/Micki_Jo_West"
+url1 <- "https://unsolvedmysteries.fandom.com/wiki/David_Davis"
 
 segoc <- function(url1, season = NA, episode = NA){
   # get season outcome from url
@@ -24,8 +25,8 @@ segoc <- function(url1, season = NA, episode = NA){
     trimws()
   
   seg.title <- htext[1] %>% strsplit(., "\\|") %>% unlist() %>% first %>% trimws()
-  seg.results <- grep("Results: ", htext, value = T) %>%
-    gsub("^.*Results: ", "", .) %>%
+  seg.results <- grep("Results {0,}:", htext, value = T) %>%
+    gsub("^.*Results: {0,}", "", .) %>%
     strsplit(x = ., 
              split = "\\W") %>% 
     unlist() %>%
@@ -162,3 +163,134 @@ s1ep12 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Jeremy_Bright",
                 segoc("https://unsolvedmysteries.fandom.com/wiki/Amber_Swartz", 1, 12),
                 segoc("https://unsolvedmysteries.fandom.com/wiki/The_Crew_of_the_Liebling", 1, 12)) %>% 
   left_join(., cw.outcome_solved)
+
+s1ep13 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Micki_Jo_West",1,13),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/David_Davis",1,13),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Shannon_Davis",1,13),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/The_Brother_of_Sylvia_Wemhoff",1,13),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Margaret_Murphy",1,13),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Marlene_Santana",1,13),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Carlina_White",1,13),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Christopher_Abeyta",1,13),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/The_Bald_Mountain_Shooters",1,13),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Robert_Leads",1,13)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep14 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Face_on_Mars",1,14),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Arthur_Frankford",1,14),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Kathy_Hobbs",1,14),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Philip_Pelletier",1,14),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Jackie_Harrington",1,14),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Angelo_Desideri",1,14)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep15 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Frank_Morris_and_the_Anglin_Brothers",1,15),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Jean_Marie_Gagnon",1,15),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Thomas_Nauss_Jr.",1,15),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Carl_Alfred_Eder",1,15),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Lena_Regina_Smith",1,15),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Joseph_Mancini",1,15)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep16 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Mickey_and_Trudy_Thompson",1,16),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/The_Bald_Mountain_Shooters",1,16),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Crazy_Glue_Bandit",1,16),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Bigfoot",1,16),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Heirs_of_George_J._Stein",1,16),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Joyce_McLain",1,16),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Jean_Marie_Gagnon",1,16)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep17 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Burrowing_Burglars",1,17),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Kristle_Merzlock",1,17),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Thomas_Sawyer",1,17),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Robert_Leads",1,17),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Walter_Wenke",1,17),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Ronald_Denslow",1,17),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Permon_Gilbert",1,17)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep18 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Donald_Smith",1,18),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Larry_Munroe",1,18),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Brushy_Bill_Roberts",1,18),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Jean_Marie_Gagnon",1,18),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Charles_Mule",1,18)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep19 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Lisa_Marie_Kimmell",1,19),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Louis_Carlucci",1,19),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Lost_Dutchman_Mine",1,19),
+                #segoc("https://unsolvedmysteries.fandom.com/wiki/Thomas_Hotard_and_Audrey_Moate",1,19),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Thomas_Hotard_and_Audrey_Moate",1,19)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep20 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/John_Mooney",1,20),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Liz_Carmichael",1,20),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Annie_Hearin",1,20),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Terri_McClure",1,20),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Charles_Wickman",1,20)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep21 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Dexter_Stefonek",1,21),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Jorge_Cortez",1,21),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Heirs_of_Dan_Willains",1,21),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Fumbles",1,21),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Michael_and_Sharon_Mohon",1,21),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Larry_Dennis_Miller",1,21),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Curtis_Watson",1,21),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Joseph_Hutchinson",1,21)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep22 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Gus_Hoffman",1,22),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Matthew_Chase",1,22),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Ron_Rushton",1,22),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Patsy_Wright",1,22),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/The_Families_of_the_S.S._Muskogee_Crew",1,22)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep23 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Julie_Cross",1,24-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Angelo_Desideri",1,24-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Bicycle_Bandit",1,24-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Kathy_Power",1,24-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Charles_Nungesser_and_Francois_Coli",1,24-1)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep24 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Victorio_Peak_Treasure",1,25-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Kari_Lynn_Nixon",1,25-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/David_Rhodes",1,25-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Keelan_and_David_J._Rhodes",1,25-1)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep25 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Sheldon_Weinberg",1,26-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Gulf_Breeze_UFO",1,26-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Joe_Shepherd",1,26-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Marlene_Santana",1,26-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Carlina_White",1,26-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Christopher_Abeyta",1,26-1)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep26 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Barbara_Jean_Horn",1,27-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Liz_Carmichael",1,27-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/The_Brother_of_Sylvia_Wemhoff",1,27-1)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep27 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Mike_Riemer",1,28-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Diane_Robertson",1,28-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Stephen_Harkins_and_Ruth_Cooper",1,28-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/David_Rhodes",1,28-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Keelan_and_David_J._Rhodes",1,28-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Michael_and_Sharon_Mohon",1,28-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Patsy_Wright",1,28-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Jackie_Harrington",1,28-1)) %>% 
+  left_join(., cw.outcome_solved)
+
+s1ep28 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Todd_McAfee",1,29-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Ronald_Denslow",1,29-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Joseph_Hutchinson",1,29-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/Victorio_Peak_Treasure",1,29-1),
+                segoc("https://unsolvedmysteries.fandom.com/wiki/The_Families_of_the_S.S._Muskogee_Crew",1,29-1)) %>% 
+  left_join(., cw.outcome_solved)
+
+
+
+# Season Summaries----
