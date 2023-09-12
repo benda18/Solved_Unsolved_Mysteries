@@ -747,6 +747,10 @@ season2$uid_seg <- sha512(x = season2$seg_name) %>%
   as.character() %>%
   substr(., 0, 12)
 
+# write_data----
+
+readr::write_csv(season1, "season1.csv")
+readr::write_csv(season2, "season2.csv")
 
 season1 %>%
   group_by(seg_name, outcome = master.outcome) %>%
