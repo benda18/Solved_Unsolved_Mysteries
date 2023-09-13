@@ -1186,11 +1186,74 @@ ltr.ns <- read_lines("Nashville-Cincinnati Serial Killer
     Sweetheart Swindler") %>% 
   trimws
 
+ltr.tz <- read_lines("Jorge Taracena
+    Heather_Tallchief_and_Roberto_Solis
+    Tampa Bay Robber
+    Bo Tanner
+    Clay Taylor
+    Televangelist Bomber
+    Tyrom Theis
+    Dan Tondevold
+    David Thompson
+    Wallace Thrasher
+    Floyd Travers
+    Robert Trenholm
+    Allie Ingrid Trigg
+    Heather Unbehaun
+    Pedro Uribe
+    Randall Utterback
+    Jose Vadica
+    Rick Vallee
+    Valley Bank Robbery
+    Merle Marie Vanderheiden
+    Ngoc Van Tran
+    David Viera
+    Ricardo Villanueva Cordova
+    Miguel Villegas
+    John Vogel
+    Charles Vosseler
+    Clayton Waagner
+    Wadada
+    Craig Walker
+    Dennis Walker
+    Karen Walters
+    Dub Wackerhagen
+    Warner_Jane_Doe
+    Arthur Washington Jr.
+    Robert Watson
+    Gordon Weaver
+    Greg Webb
+    Donald Eugene Webb
+    Danny Weeks
+    Robert Weeks
+    Sheldon Weinberg
+    Walter Wenke
+    Kristine Westin and Kevin Woo
+    James White
+    Josephine White
+    Charles Wickman
+    Michael Wilburn
+    Bonnie Wilder
+    David Brian Williams
+    Tammy Williams
+    Andre Wilson
+    Gary Wilson
+    Melvin Wilson
+    Steve Wilson
+    Sam Wodke
+    William John Wood
+    Randy Yager
+    Raymond Young
+    Jon Yount
+    Ramzi Ahmed Yousef
+    Susan Zaharias
+    Edward Zakrzewski
+    Alvaro Zapata
+    Zip Gun Bomber") %>% trimws()
 
 season_A <- NULL
-for(i in c(ltr.a, ltr.b, ltr.c, 
-           ltr.dg, 
-           ltr.hm, ltr.ns)){
+for(i in c(ltr.a, ltr.b, ltr.c, ltr.dg, ltr.hm, ltr.ns, 
+           ltr.tz)){
   temp <- s2(i) %>% 
     left_join(., cw.outcome_solved)
   
@@ -1200,6 +1263,7 @@ for(i in c(ltr.a, ltr.b, ltr.c,
 }
 print(i)
 
+#season_A <- rbind(season_A, season_b)
 
 # write_data----
 
@@ -1207,7 +1271,7 @@ readr::write_csv(season1, "season1.csv")
 readr::write_csv(season2, "season2.csv")
 readr::write_csv(season_A, "composite.data.csv")
 
-season_A <- read_csv("composite.data.csv")
+
 
 
 
