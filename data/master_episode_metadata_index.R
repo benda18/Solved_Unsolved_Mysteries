@@ -111,8 +111,8 @@ get_episode_metadata(3,1)
 #   unlist %>%
 #   .[!grepl("\\=|<|>", .)]
 
-the.seasons <- 2:14
-the.episodes <- 1:40
+the.seasons <- 7#2:14
+the.episodes <- 1:5#:40
 
 
 master.meta <- NULL
@@ -133,5 +133,3 @@ master.meta
 
 write_csv(master.meta, "master.meta.csv")
 
-master.meta
- 
