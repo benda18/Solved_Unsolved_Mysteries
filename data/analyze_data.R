@@ -102,6 +102,26 @@ join_cases_episodes <- cases.df %>%
                         unlist(lapply(ep_num, lzero, 3)), 
                         sep = "")) 
 
+season1 <- read_csv("season1.csv")
+season2 <- read_csv("season2.csv")
+
+
+
+join_cases_episodes %>%
+  group_by(seg_name) %>%
+  summarise() %>%
+  ungroup() %>%
+  full_join(., 
+            summarise(group_by(rbind(season1,season2),
+                               seg_name, s_num, ep_num)), 
+          by = c("seg_name")) %>%
+  .[complete.cases(.),]
+
+join_cases_episodes[,c("seg_name", "s_num", "ep_num")] %>%
+  .[!duplicated(.),] %>%
+  .[complete.cases(.),]
+
+
 write_csv(join_cases_episodes, 
           file = "join_cases_episodes.csv")
 
