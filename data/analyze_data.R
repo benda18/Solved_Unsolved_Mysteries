@@ -57,6 +57,55 @@ cases.df <- NULL
 
 cases.df <- read_csv("composite.data.csv")
 
+
+# assign further metadata to cases from episodes and other collected data----
+
+ls()
+
+cases.df
+
+episodes.df
+
+cw_ep.airdates
+cw_ep.id
+cw_s.ep.seg_name
+cw_seg.name.casetype
+
+lzero <- function(x, n.leading.zeroes){
+  if(is.na(x)){
+    out <- "NA"
+  }else{
+    out <- as.character(x)
+  }
+  
+  #if(!is.na(x)){
+  
+  if(nchar(out) < n.leading.zeroes){
+    out <- paste(c(rep("0", n.leading.zeroes - nchar(out)), 
+                   out), sep = "", collapse = "")
+  }
+  #}
+  
+  return(out)
+}
+
+join_cases_episodes <- cases.df %>% 
+  .[!colnames(.) %in% c("s_num", "ep_num", "tag")] %>%
+  .[!duplicated(.),] %>%
+  full_join(., 
+            cw_s.ep.seg_name[!duplicated(cw_s.ep.seg_name),], 
+            by = "seg_name") %>%
+  mutate(., 
+         uid_ep = paste("S", 
+                        unlist(lapply(s_num, lzero, 2)), 
+                        "E", 
+                        unlist(lapply(ep_num, lzero, 3)), 
+                        sep = "")) 
+
+write_csv(join_cases_episodes, 
+          file = "join_cases_episodes.csv")
+
+# post-processing
 cases.df$tag_type <- "other"
 cases.df[cases.df$tag %in% state.name,]$tag_type <- "state"
 cases.df[grepl("\\d{4,4}", cases.df$tag),]$tag_type <- "year"
