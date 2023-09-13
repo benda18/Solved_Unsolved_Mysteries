@@ -9,35 +9,73 @@ library(data.table)
 setwd("~/R/play/Solved_Unsolved_Mysteries/data")
 rm(list=ls());cat('\f');gc()
 
-# import data----
+# import crosswalks----
+for(i in list.files(pattern = "^cw\\.|^cw_")){
+  # assign varname 
+  temp.varname <- gsub("\\.csv$", "", i)
+  # read data to temp
+  temp.df      <- read_csv(i)
+  # assign df to var
+  assign(x = temp.varname, value = temp.df)
+}
+rm(i,temp.varname,temp.df)
 
-full.df <- NULL
+# print crosswalks
+lapply(ls(pattern = "^cw\\.|^cw_"), get)
+
+
+
+# import episode data----
+episodes.df <- read_csv("episode_info.csv") %>%
+  mutate(., date_fa = ymd(date_fa))
+
+# episodes.df %>%
+#   group_by(seg_name,ep_num,s_num) %>%
+#   summarise() %>%
+#   write_csv(., "cw_s.ep.seg_name.csv")
+
+# episodes.df %>%
+#   group_by(seg_name) %>%
+#   summarise(n_scsum = n_distinct(sc_summary), 
+#             n_ep = n_distinct(ep_num)) %>%
+#   .[order(.$n_scsum,decreasing = T),] %>%
+#   .[.$n_scsum > 1,]
+
+# episodes.df %>%
+#   group_by(seg_name, 
+#            s_num, ep_num,
+#            seg_casetype = sc_summary) %>%
+#   summarise() %>% write_csv(., "cw_seg.name.casetype.csv")
+
+# import case data----
+
+cases.df <- NULL
 # for(i in list.files(pattern = "^season\\d{1,}\\.csv$")){
-#   full.df <- rbind(full.df, 
+#   cases.df <- rbind(cases.df, 
 #                    read_csv(i))
 # }
 
-full.df <- read_csv("composite.data.csv")
+cases.df <- read_csv("composite.data.csv")
 
-full.df$tag_type <- "other"
-full.df[full.df$tag %in% state.name,]$tag_type <- "state"
-full.df[grepl("\\d{4,4}", full.df$tag),]$tag_type <- "year"
-full.df$tag_type[full.df$seg.outcome == tolower(full.df$tag)] <- "outcome"
+cases.df$tag_type <- "other"
+cases.df[cases.df$tag %in% state.name,]$tag_type <- "state"
+cases.df[grepl("\\d{4,4}", cases.df$tag),]$tag_type <- "year"
+cases.df$tag_type[cases.df$seg.outcome == tolower(cases.df$tag)] <- "outcome"
 
 
-full.df %>%
+cases.df %>%
   group_by(seg_name) %>%
   summarise(n_seasons = n_distinct(s_num), 
             n_episodes = n_distinct(ep_num)) 
 
-full.df %>%
+cases.df %>%
   group_by(master.outcome) %>%
   summarise(n_segments = n_distinct(seg_name)) %>%
   ungroup() %>%
   mutate(., 
          pct_segments = n_segments / sum(n_segments))
 
-       exp.states <- full.df %>%
+       exp.states <- cases.df %>%
   group_by(tag_type, tag, master.outcome) %>%
   summarise(n_segments=n_distinct(seg_name)) %>%
   as.data.table() %>%
@@ -77,7 +115,7 @@ ggplot(data = exp.states,
   scale_x_continuous(labels = scales::comma)+
   theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
 
-overall.success <- full.df %>%
+overall.success <- cases.df %>%
   group_by(master.outcome) %>%
   summarise(n_segs = n_distinct(seg_name))
 overall.successrate <- overall.success$n_segs[overall.success$master.outcome == "SOLVED"] / 
