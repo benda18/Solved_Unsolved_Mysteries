@@ -1,0 +1,1670 @@
+s_num,ep_num,nth_s_ep,seg_num,seg_name
+2,Episode_29,1,1,Charles Mule
+2,Episode_29,1,2,Lt. Karen Stephens
+2,Episode_29,1,3,Roswell Crash
+2,Episode_29,1,4,Tara Calico
+2,Episode_30,2,1,Jack Brown
+2,Episode_30,2,2,Blinking Crucifix
+2,Episode_30,2,3,Sheldon Weinberg
+2,Episode_30,2,4,Robert Dennie
+2,Episode_30,2,5,William Eugene Hilliard
+2,Episode_31,3,1,Kay Hall
+2,Episode_31,3,2,Lt. Karen Stephens
+2,Episode_31,3,3,New York Coin Scam
+2,Episode_31,3,4,Mabel Woods
+2,Episode_31,3,5,The Crew of the Sara Joe
+2,Episode_31,3,6,Avery James Norris
+2,Episode_32,4,1,Greg Webb
+2,Episode_32,4,2,Billie and Joey Rogers
+2,Episode_32,4,3,John Mooney
+2,Episode_32,4,4,Gary and Terry Magno
+2,Episode_32,4,5,Gene Kiley
+2,Episode_33,5,1,Dale Kerstetter
+2,Episode_33,5,2,The Brother of Sylvia Wemhoff
+2,Episode_33,5,3,Marfa Lights
+2,Episode_33,5,4,Jay Cook and Tanya Van Cuylenborg
+2,Episode_33,5,5,Bonnie Wilder
+2,Episode_34,6,1,Chevy Chase Bandit
+2,Episode_34,6,2,Louis Carlucci
+2,Episode_34,6,3,Rudolf Hess
+2,Episode_34,6,4,Patricia Meehan
+2,Episode_34,6,5,Tina Jefferson
+2,Episode_34,6,6,Gary and Terry Magno
+2,Episode_34,6,7,Billie and Joey Rogers
+2,Episode_35,7,1,Doyle Wheeler
+2,Episode_35,7,2,Salvatore Caruana
+2,Episode_35,7,3,Douglas Alan Costa
+2,Episode_35,7,4,Charles Wickman
+2,Episode_35,7,5,Rachael Runyan
+2,Episode_35,7,6,Gene Flannes
+2,Episode_36,8,1,Rhonda Hinson
+2,Episode_36,8,2,William Eugene Hilliard
+2,Episode_36,8,3,Ann Corricelli and Lena Marie Wilson
+2,Episode_36,8,4,Heirs of Howard Drummond
+2,Episode_36,8,5,Don Hamilton
+2,Episode_37,9,1,Sonny Liston
+2,Episode_37,9,2,Billie and Joey Rogers
+2,Episode_37,9,3,Bill and Cynthia Zelinski
+2,Episode_37,9,4,Elizabeth Campbell
+2,Episode_37,9,5,Crash and Dash Robberies
+2,Episode_38,10,1,Maria Armstrong
+2,Episode_38,10,2,Robert Dennie
+2,Episode_38,10,3,The Friend of Stephan Ross
+2,Episode_38,10,4,Ralph Sigler
+2,Episode_38,10,5,Charles Wilson Chester
+2,Episode_38,10,6,Tandem Bandits
+2,Episode_39,11,1,John Hawkins
+2,Episode_39,11,2,Woody Kelly
+2,Episode_39,11,3,David Fisher
+2,Episode_39,11,4,Carla Wright
+2,Episode_39,11,5,The Siblings of LeeAnn Robinson
+2,Episode_39,11,6,Leslie Isben Rogge
+2,Episode_40,12,1,Ed Barbara
+2,Episode_40,12,2,Avery Norris
+2,Episode_40,12,3,Rae Ann Mossor
+2,Episode_40,12,4,The Children of Georgia Tann
+2,Episode_40,12,5,Donald Eugene Webb
+2,Episode_41,13,1,Sharon Elliott
+2,Episode_41,13,2,John Branion
+2,Episode_41,13,3,The Daughter of Joseph Schambier
+2,Episode_42,14,1,Cynthia Anderson
+2,Episode_42,14,2,Ann Corricelli and Lena Marie Wilson
+2,Episode_42,14,3,West End Baptist Church
+2,Episode_42,14,4,Melvine Aprile
+2,Episode_42,14,5,The Signal Mountain Murders
+2,Episode_42,14,6,Wardell Ford
+2,Episode_43,15,1,George Conniff
+2,Episode_43,15,2,Liz Carmichael
+2,Episode_43,15,3,Jack Brown
+2,Episode_43,15,4,Blinking Crucifix
+2,Episode_43,15,5,William Eugene Hillard
+2,Episode_44,16,1,Brayman Road Attacker
+2,Episode_44,16,2,Ray Hickingbotham
+2,Episode_44,16,3,Ann Sigmin and Garey Goff
+2,Episode_44,16,4,Kevin Hughes
+2,Episode_44,16,5,Robert Miller
+2,Episode_45,17,1,Mark Groezinger
+2,Episode_45,17,2,Roswell Crash
+2,Episode_45,17,3,Tara Calico
+2,Episode_45,17,4,Leticia Hernandez
+2,Episode_46,18,1,United Kingdom Crop Circles
+2,Episode_46,18,2,Kenneth Dungee
+2,Episode_46,18,3,Bill and Cynthia Zelinski
+2,Episode_46,18,4,Keith Reinhard
+2,Episode_46,18,5,William Slagle
+2,Episode_47,19,1,Charles Morgan
+2,Episode_47,19,2,Ogopogo
+2,Episode_47,19,3,The Siblings of LeeAnn Robinson
+2,Episode_47,19,4,Marvin and Sandra Maple
+2,Episode_48,20,1,Robert Weeks
+2,Episode_48,20,2,Steven Cox
+2,Episode_48,20,3,John Mooney
+2,Episode_48,20,4,Victorio Peak Treasure
+2,Episode_48,20,5,John Burns
+2,Episode_48,20,6,David Davis
+2,Episode_48,20,7,Billie and Joey Rogers
+2,Episode_48,20,8,Lt. Karen Stephens
+2,Episode_48,20,9,The Family of Pat Mealbach
+2,Episode_48,20,10,Jenny Pratt
+2,Episode_49,21,1,Georgia Rudolph
+2,Episode_49,21,2,Steve Sandlin
+2,Episode_49,21,3,"John ""Thumper"" Brown"
+2,Episode_50,22,1,Joe Owens
+2,Episode_50,22,2,The Nanny of Jackie Cooper
+2,Episode_50,22,3,Alejandro Espinosa
+2,Episode_50,22,4,Dale Hyde
+2,Episode_50,22,5,Marvin and Sandra Maple
+2,Episode_51,23,1,Linda Sharp
+2,Episode_51,23,2,David Fisher
+2,Episode_51,23,3,Gertrude Pruett
+2,Episode_51,23,4,Dan Short
+2,Episode_51,23,5,William L. Toomey
+2,Episode_52,24,1,Laurence Harding Jr.
+2,Episode_52,24,2,Pedro Uribe
+2,Episode_52,24,3,Elmer Locker Jr.
+2,Episode_52,24,4,Sweetheart Swindler
+2,Episode_52,24,5,Gainesville Killers
+2,Episode_52,24,6,Fumbles
+2,Episode_53,25,1,"John ""Thumper"" Brown"
+2,Episode_53,25,2,Kristina Smith
+2,Episode_53,25,3,Kay Hall
+2,Episode_53,25,4,New York Coin Scam
+2,Episode_53,25,5,Mabel Woods
+2,Episode_54,26,1,Teresita Basa
+2,Episode_54,26,2,Linda Sharp
+2,Episode_54,26,3,Dewey Demetro
+2,Episode_54,26,4,Jean Anne Freeman
+2,Episode_54,26,5,Las Cruces Bowling Alley Massacre
+2,Episode_55,27,1,Mark S. Newman and Gerald I. Levy
+2,Episode_55,27,2,Elmer Locker Jr.
+2,Episode_55,27,3,Jesus Penalver
+2,Episode_55,27,4,Pedro Nyego
+2,Episode_55,27,5,Boston Rapist
+2,Episode_55,27,6,Bannack Treasure
+2,Episode_56,28,1,Robert Kennedy
+2,Episode_56,28,2,Jackie Harrington
+2,Episode_56,28,3,Elizabeth Campbell
+2,Episode_56,28,4,Avery Norris
+2,Episode_57,29,1,Ralph Probst
+2,Episode_57,29,2,Christina Smith
+2,Episode_57,29,3,Dale Hyde
+2,Episode_57,29,4,Fumbles
+2,Episode_57,29,5,Crash and Dash Robberies
+2,Episode_58,30,1,Marlena Childress
+2,Episode_58,30,2,Sonny Liston
+2,Episode_58,30,3,Gertrude Pruett
+2,Episode_58,30,4,Jean Anne Freeman
+2,Episode_59,31,1,Gretchen Burford
+2,Episode_59,31,2,United Kingdom Crop Circles
+2,Episode_59,31,3,Robert Miller
+2,Episode_59,31,4,Micki Jo West
+3,Episode_60,1,1,Kecksburg UFO
+3,Episode_60,1,2,The Daughter of Lavar Bates
+3,Episode_60,1,3,Stockton Arsonist
+3,Episode_60,1,4,Mike Cline
+3,Episode_61,2,1,Bermuda Triangle
+3,Episode_61,2,2,Clay Taylor
+3,Episode_61,2,3,Thomas Heck
+3,Episode_61,2,4,C.W. Roddy
+3,Episode_62,3,1,Gulf Breeze UFO
+3,Episode_62,3,2,Dr. Kenneth Frank
+3,Episode_62,3,3,Dan Wilson
+3,Episode_62,3,4,Minnesota Brinks Heist
+3,Episode_62,3,5,Stockton Arsonist
+3,Episode_63,4,1,Stanley Gryziec
+3,Episode_63,4,2,Ed Barbara
+3,Episode_63,4,3,Kevin Poulsen
+3,Episode_63,4,4,Sharita Harding
+3,Episode_63,4,5,KROQ Confession
+3,Episode_64,5,1,Lisa Bishop
+3,Episode_64,5,2,Maria Armstrong
+3,Episode_64,5,3,Adam Hecht
+3,Episode_64,5,4,Lunersee Lake Treasure
+3,Episode_64,5,5,Edgar Kerns
+3,Episode_64,5,6,Sharita Harding
+3,Episode_65,6,1,Pamela Mason
+3,Episode_65,6,2,The Children of Georgia Tann
+3,Episode_65,6,3,Robert Corrado
+3,Episode_65,6,4,Martha Hinkle
+3,Episode_65,6,5,Kenneth Stanton
+3,Episode_66,7,1,Pawley's Island
+3,Episode_66,7,2,David Stone
+3,Episode_66,7,3,Katie
+3,Episode_66,7,4,Georgia Rudolph
+3,Episode_66,7,5,Kenneth Stanton
+3,Episode_67,8,1,Kari Lynn Nixon
+3,Episode_67,8,2,Amelia Earhart
+3,Episode_67,8,3,Richard Church
+3,Episode_67,8,4,Dr. Iben Browning
+3,Episode_68,9,1,The Sons of Jim Fontes
+3,Episode_68,9,2,Stockton Arsonist
+3,Episode_68,9,3,O'Neal Moore
+3,Episode_68,9,4,Victoria Doroshenko
+3,Episode_68,9,5,Cowboy Bandit
+3,Episode_69,10,1,Norman Ladner
+3,Episode_69,10,2,Sharita Harding
+3,Episode_69,10,3,Dwayne McCorkendale
+3,Episode_69,10,4,Loretto Chapel
+3,Episode_69,10,5,Nyleen Marshall
+3,Episode_70,11,1,Melvine Aprile
+3,Episode_70,11,2,Coral Polge
+3,Episode_70,11,3,Johnny Lee Wilson
+3,Episode_70,11,4,Kenneth Engie
+3,Episode_71,12,1,Morris Davis
+3,Episode_71,12,2,Skeleton Canyon Treasure
+3,Episode_71,12,3,Debbie
+3,Episode_71,12,4,Heirs of Dorothea Allen
+3,Episode_72,13,1,Mark Dennis
+3,Episode_72,13,2,Kenneth Stanton
+3,Episode_72,13,3,Ricardo Caputo
+3,Episode_72,13,4,Vancouver Lights
+3,Episode_73,14,1,Debbie Wolfe
+3,Episode_73,14,2,Edgar Kerns
+3,Episode_73,14,3,Conradina Olson
+3,Episode_73,14,4,Geoffrey Sullivan
+3,Episode_74,15,1,Judy Hyams
+3,Episode_74,15,2,Ralph Probst
+3,Episode_74,15,3,Mark S. Newman and Gerald I. Levy
+3,Episode_74,15,4,Gretchen Burford
+3,Episode_75,16,1,Russell Evans
+3,Episode_75,16,2,The Sons of Jim Fontes
+3,Episode_75,16,3,Brad Bishop
+3,Episode_75,16,4,Adam's Treasure
+3,Episode_75,16,5,Thomas Hickey and William McCarthy
+3,Episode_76,17,1,Patrick Michael Mitchell
+3,Episode_76,17,2,Jockey Bandit
+3,Episode_76,17,3,The Family of Victor Simon
+3,Episode_76,17,4,Joe Smith
+3,Episode_76,17,5,Kelsey House
+3,Episode_77,18,1,Tracy Kirkpatrick
+3,Episode_77,18,2,Amelia Earhart
+3,Episode_77,18,3,Steve Wilson
+3,Episode_77,18,4,Frank Bloomer
+3,Episode_77,18,5,John Irwin
+3,Episode_78,19,1,Betty Cash and Vickie Landrum
+3,Episode_78,19,2,Monica Bonilla
+3,Episode_78,19,3,Obia-Man
+3,Episode_78,19,4,Vicki Acs
+3,Episode_79,20,1,Cindy James
+3,Episode_79,20,2,Paloma Gibson
+3,Episode_79,20,3,Butch Cassidy
+3,Episode_79,20,4,The Siblings of Aleatha Evertz
+3,Episode_80,21,1,Butcher Of Kingsbury Run
+3,Episode_80,21,2,Chuck Smith
+3,Episode_80,21,3,Michael Francke
+3,Episode_80,21,4,Thomas Hickey and William McCarthy
+3,Episode_80,21,5,Oded Gordon
+3,Episode_81,22,1,Edward Maynard
+3,Episode_81,22,2,Kecksburg UFO
+3,Episode_81,22,3,The Daugther of Lavar Bates
+3,Episode_82,23,1,Edgar Cayce
+3,Episode_82,23,2,Crystal Spencer
+3,Episode_82,23,3,John Irwin
+3,Episode_82,23,4,Joe Smith
+3,Episode_82,23,5,Judy Hyams
+3,Episode_82,23,6,Dennis DePue
+3,Episode_83,24,1,Dennis DePue
+3,Episode_83,24,2,Pat Fagan
+3,Episode_83,24,3,Dan Wilson
+3,Episode_83,24,4,Vancouver Lights
+3,Episode_83,24,5,Dr. Kenneth Frank
+3,Episode_84,25,1,Richard Bocklage
+3,Episode_84,25,2,Edward Maynard
+3,Episode_84,25,3,Lt. Paul Whipkey
+3,Episode_84,25,4,Gary Bickford
+3,Episode_84,25,5,Astarte Davis
+3,Episode_84,25,6,Pat Fagan
+3,Episode_85,26,1,Rafael Camarena
+3,Episode_85,26,2,Dennis DePue
+3,Episode_85,26,3,Duncan Gilmore
+3,Episode_85,26,4,Gregory Barker
+3,Episode_85,26,5,The Parents of Jeri Graves
+3,Episode_86,27,1,KROQ Confession
+3,Episode_86,27,2,Pizza Parlor Killer
+3,Episode_86,27,3,The Countess
+3,Episode_86,27,4,Bobbie Oberholtzer and Annette Schnee
+3,Episode_86,27,5,The Sisters of Jackie Dragon
+3,Episode_86,27,6,Gregory Barker
+3,Episode_87,28,1,Ryan Stallings
+3,Episode_87,28,2,Amelia Earhart
+3,Episode_87,28,3,Minnesota Brinks Heist
+3,Episode_88,29,1,Tony Alamo
+3,Episode_88,29,2,Lester Garnier
+3,Episode_88,29,3,Katie
+3,Episode_88,29,4,Richard Church
+3,Episode_89,30,1,James Donald King
+3,Episode_89,30,2,Norman Ladner
+3,Episode_89,30,3,Loretto Chapel
+3,Episode_89,30,4,Mark Groezinger
+3,Episode_90,31,1,Melvin and Daniel Nellis
+3,Episode_90,31,2,Michael Rosenblum
+3,Episode_90,31,3,New York Coin Scam
+3,Episode_90,31,4,The Signal Mountain Murders
+3,Episode_91,32,1,Lesa Lee
+3,Episode_91,32,2,Sweetheart Swindler
+3,Episode_91,32,3,The Countess
+3,Episode_91,32,4,Tony Alamo
+3,Episode_91,32,5,Rafael Camarena
+3,Episode_92,33,1,Bermuda Triangle
+3,Episode_92,33,2,Kevin Poulsen
+3,Episode_92,33,3,Ryan Stallings
+3,Episode_92,33,4,Pat Fagan
+4,Episode_93,1,1,Rendlesham Forest Incident
+4,Episode_93,1,2,Shane Stewart and Sally McNelly
+4,Episode_93,1,3,The Mother of Carla Downing
+4,Episode_94,2,1,John Wilkes Booth
+4,Episode_94,2,2,Paloma Gibson
+4,Episode_94,2,3,Art Silva
+4,Episode_94,2,4,Alex Cooper
+4,Episode_95,3,1,Tyler
+4,Episode_95,3,2,Joe Maloney
+4,Episode_95,3,3,The Shroud Of Turin
+4,Episode_95,3,4,Ethel Kidd
+4,Episode_95,3,5,Art Silva
+4,Episode_96,4,1,Connecticut River Valley Killer
+4,Episode_96,4,2,The Father of Jeannie Wagner
+4,Episode_96,4,3,Judge John Fairbanks
+4,Episode_96,4,4,Paul and Paula Scribner
+4,Episode_96,4,5,Tyler
+4,Episode_97,5,1,Baron 52
+4,Episode_97,5,2,David O'Neil
+4,Episode_97,5,3,Martha Hinkle
+4,Episode_97,5,4,Paul Stamper
+4,Episode_97,5,5,Josephine White
+4,Episode_98,6,1,Tommy Gibson
+4,Episode_98,6,2,Tyler
+4,Episode_98,6,3,Jim Burnside
+4,Episode_98,6,4,John Novotny
+4,Episode_98,6,5,Garry Gibson
+4,Episode_99,7,1,St. James Hotel
+4,Episode_99,7,2,Harden House
+4,Episode_99,7,3,Mary Ann Perez
+4,Episode_99,7,4,Dr. John Anderson
+4,Episode_100_.22The_Diabolical_Mind.22,8,1,Elliott Leyton
+4,Episode_100_.22The_Diabolical_Mind.22,8,2,Marie Hilley
+4,Episode_100_.22The_Diabolical_Mind.22,8,3,G. Daniel Walker
+4,Episode_100_.22The_Diabolical_Mind.22,8,4,"Joan, Michelle, and Christe Rogers"
+4,Episode_101,9,1,Sharon Johnson
+4,Episode_101,9,2,Roger Dean
+4,Episode_101,9,3,Joe Smith
+4,Episode_101,9,4,Liza Montgomery
+4,Episode_101,9,5,Deborah Poe
+4,Episode_101,9,6,Arthur Jones
+4,Episode_102,10,1,Sherry Eyerly
+4,Episode_102,10,2,Kathy Bonderson
+4,Episode_102,10,3,Butcher Of Kingsbury Run
+4,Episode_102,10,4,Sarah DiGennaro
+4,Episode_103,11,1,Televangelist Bomber
+4,Episode_103,11,2,Ryan Stallings
+4,Episode_103,11,3,Savior of Cathy Loving
+4,Episode_103,11,4,Beverly McGowan
+4,Episode_103,11,5,Robin Stevens and Sherry Seymour
+4,Episode_104,12,1,Belgium UFO
+4,Episode_104,12,2,The Mother of Carla Downing
+4,Episode_104,12,3,Ellie Taylor
+4,Episode_104,12,4,Robert Hamrick
+4,Episode_104,12,5,Philip Breen
+4,Episode_105,13,1,Bo Tanner
+4,Episode_105,13,2,The Mother of Barbara Smith and Barbara Ratner
+4,Episode_105,13,3,Jeffrey Digman
+4,Episode_105,13,4,Church Arsonist
+4,Episode_105,13,5,Paul Stamper
+4,Episode_105,13,6,Trabuca Treasure
+4,Episode_105,13,7,Teresita Basa
+4,Episode_106,14,1,Michael St. Clair and Dennis Reese
+4,Episode_106,14,2,Dan Tondevold
+4,Episode_106,14,3,Melvin and Daniel Nellis
+4,Episode_106,14,4,Annie Currie
+4,Episode_106,14,5,Joey Moss
+4,Episode_106,14,6,Robin Stevens and Sherry Seymour
+4,Episode_107,15,1,Chad Maurer
+4,Episode_107,15,2,John Novotny
+4,Episode_107,15,3,Lorene Roberts
+4,Episode_107,15,4,Emma Figueroa
+4,Episode_107,15,5,Luis Herrera
+4,Episode_107,15,6,Heath Brian Vess
+4,Episode_108,16,1,Larry Race
+4,Episode_108,16,2,Jim Burnside
+4,Episode_108,16,3,Warner Jane Doe
+4,Episode_108,16,4,Pat Farmer
+4,Episode_108,16,5,Helen Rose
+4,Episode_109,17,1,Philip Innes Fraser
+4,Episode_109,17,2,The Crew of the Casie Nicole
+4,Episode_109,17,3,The Child of Mac McDonald
+4,Episode_109,17,4,William John Wood
+4,Episode_110,18,1,Madeline and Ada Underwood
+4,Episode_110,18,2,Connecticut River Valley Killer
+4,Episode_110,18,3,Kathy Bonderson
+4,Episode_110,18,4,Adam's Treasure
+4,Episode_110,18,5,Todd Mueller
+4,Episode_110,18,6,Paul and Paula Scribner
+4,Episode_111,19,1,Medjugorje Miracles
+4,Episode_111,19,2,Levia Molinari
+4,Episode_111,19,3,Angela Hammond
+4,Episode_111,19,4,Lee Young
+4,Episode_112,20,1,Rose Marie Platt
+4,Episode_112,20,2,Robin Stevens and Sherry Seymour
+4,Episode_112,20,3,James White
+4,Episode_112,20,4,The Yeti aka Abominable Snowman
+4,Episode_112,20,5,Stanton Bones
+4,Episode_113,21,1,Wytheville UFO Sightings
+4,Episode_113,21,2,Joey Moss
+4,Episode_113,21,3,Charles Warren Boomer
+4,Episode_113,21,4,Ohio Prostitute Killer
+4,Episode_113,21,5,Gregory Barker
+4,Episode_113,21,6,Dale Hyde
+4,Episode_113,21,7,John Irwin
+4,Episode_113,21,8,Beaty Castle
+4,Episode_113,21,9,Robert Kennedy
+4,Episode_114,22,1,Valley Bank Robbery
+4,Episode_114,22,2,Angeline Dewey
+4,Episode_114,22,3,Heath Brian Vess
+4,Episode_114,22,4,Cheryl Holland
+4,Episode_115,23,1,Pizza Restaurant Robbers
+4,Episode_115,23,2,The Child of Mac McDonald
+4,Episode_115,23,3,James Russell
+4,Episode_115,23,4,Baron 52
+4,Episode_115,23,5,Paul Stamper
+4,Episode_115,23,6,Lesa Lee
+4,Episode_116,24,1,Richard Minns
+4,Episode_116,24,2,Heirs of Katherine Bennett
+4,Episode_116,24,3,Alex Cooper
+4,Episode_116,24,4,Sergio Farina
+4,Episode_117,25,1,Santos Family
+4,Episode_117,25,2,Tommy Gibson
+4,Episode_117,25,3,Tyler
+4,Episode_117,25,4,Jim Burnside
+4,Episode_117,25,5,John Novotny
+4,Episode_118,26,1,Marie Lilienberg and Maria Wahlén
+4,Episode_118,26,2,Amelia Earhart
+4,Episode_118,26,3,The Family of Joe Soll
+4,Episode_118,26,4,Tom Dixon
+4,Episode_118,26,5,The Sisters of Jackie Dragon
+4,Episode_118,26,6,Richard Condia
+4,Episode_119,27,1,Jeanne Tovrea
+4,Episode_119,27,2,Judge John Fairbanks
+4,Episode_119,27,3,Sherry Eyerly
+4,Episode_119,27,4,Sarah DiGennaro
+4,Episode_120,28,1,Vallejo Armored Car Murders
+4,Episode_120,28,2,Sharon Johnson
+4,Episode_120,28,3,Roger Dean
+4,Episode_120,28,4,Arthur Jones
+4,Episode_120,28,5,Liza Montgomery
+4,Episode_121,29,1,Noah's Ark
+4,Episode_121,29,2,Levia Molinari
+4,Episode_121,29,3,Tracy Wofford-Bunn
+4,Episode_121,29,4,Dolores Stradt
+4,Episode_121,29,5,Colleen Reed
+4,Episode_122,30,1,Doug Johnston
+4,Episode_122,30,2,James White
+4,Episode_122,30,3,Rochester Car Heist
+4,Episode_122,30,4,The Siblings of Martha Smith
+4,Episode_122,30,5,Chaim Weiss
+4,Episode_123,31,1,Betty Field
+4,Episode_123,31,2,Cheryl Holland
+4,Episode_123,31,3,Televangelist Bomber
+4,Episode_123,31,4,Savior of Cathy Loving
+4,Episode_123,31,5,Beverly McGowan
+4,Episode_124,32,1,Bill Henderson
+4,Episode_124,32,2,Wytheville UFO Sightings
+4,Episode_124,32,3,Charles Warren Boomer
+4,Episode_124,32,4,Ohio Prostitute Killer
+4,Episode_124,32,5,Beaty Castle
+4,Episode_124,32,6,Robert Kennedy
+4,Episode_125,33,1,Scott Johnson
+4,Episode_125,33,2,Madeline and Ada Underwood
+4,Episode_125,33,3,Belgium UFO
+4,Episode_125,33,4,Philip Breen
+4,Episode_126,34,1,Michelle Fazzani
+4,Episode_126,34,2,Tom Dixon
+4,Episode_126,34,3,Vallejo Armored Car Murders
+4,Episode_127,35,1,George Owens
+4,Episode_127,35,2,Bill Henderson
+4,Episode_127,35,3,Doug Johnston
+4,Episode_128,36,1,The Siblings of Jim Boumgarden
+4,Episode_128,36,2,Rose Marie Platt
+4,Episode_129,37,1,Sal Guardado
+4,Episode_129,37,2,Michelle Fazzani
+4,Episode_129,37,3,Dolores Stradt
+4,Episode_129,37,4,Noah's Ark
+4,Episode_129,37,5,Tracy Wofford-Bunn
+5,Episode_130,1,1,Tammy Lynn Leppert
+5,Episode_130,1,2,Hudson River UFO
+5,Episode_130,1,3,Paducah Plane Jumper
+5,Episode_131,2,1,Mahfuz Huq
+5,Episode_131,2,2,The Lake Champlain Monster
+5,Episode_131,2,3,Pierre April
+5,Episode_131,2,4,Lorene Roberts
+5,Episode_131,2,5,Joseph Krantz
+5,Episode_132,3,1,Seattle Arsonist
+5,Episode_132,3,2,Huey Long
+5,Episode_132,3,3,James Gilreath
+5,Episode_133,4,1,David Gordon Smith
+5,Episode_133,4,2,Clifford Sherwood
+5,Episode_133,4,3,Ed Baker
+5,Episode_133,4,4,Paul and Paula Scribner
+5,Episode_133,4,5,Phillip Anthony Moore
+5,Episode_134,5,1,Patricia Carlton
+5,Episode_134,5,2,Charles Warren Boomer
+5,Episode_134,5,3,Lucie Turmel
+5,Episode_134,5,4,The Family of Georgia Boyd
+5,Episode_134,5,5,Little Miss Panasoffkee
+5,Episode_134,5,6,James Gilreath
+5,Episode_135,6,1,Glen Loney
+5,Episode_135,6,2,New Orleans Serial Killer
+5,Episode_135,6,3,The Savior of James Vernon
+5,Episode_135,6,4,J. D. Method
+5,Episode_136,7,1,Moss Beach Distillery
+5,Episode_136,7,2,Drumm Barracks
+5,Episode_136,7,3,"Dylene Zolikoff, Scott Merz, and Dawnette Barker"
+5,Episode_136,7,4,Pierre April
+5,Episode_136,7,5,Sandra Evans
+5,Episode_137,8,1,Falcon Lake UFO
+5,Episode_137,8,2,Jesslyn Rich
+5,Episode_137,8,3,Savior of Cathy Loving
+5,Episode_137,8,4,A.J. Breaux
+5,Episode_138,9,1,Charles Shelton
+5,Episode_138,9,2,Pat Farmer
+5,Episode_138,9,3,Richard McNair
+5,Episode_138,9,4,Rebecca Young
+5,Episode_139,10,1,George Anderson
+5,Episode_139,10,2,James Gilreath
+5,Episode_139,10,3,Jaclyn Dowaliby
+5,Episode_140_.22Special_Live_Edition.22,11,1,Robert Watson
+5,Episode_140_.22Special_Live_Edition.22,11,2,Cathy Ferner
+5,Episode_140_.22Special_Live_Edition.22,11,3,William Korioth
+5,Episode_140_.22Special_Live_Edition.22,11,4,Becky Terry
+5,Episode_140_.22Special_Live_Edition.22,11,5,"Kimberly, Katie and Kelly Hurley"
+5,Episode_140_.22Special_Live_Edition.22,11,6,Connie Jo Hamilton
+5,Episode_140_.22Special_Live_Edition.22,11,7,John Harman
+5,Episode_140_.22Special_Live_Edition.22,11,8,Michael Hansen
+5,Episode_140_.22Special_Live_Edition.22,11,9,Susan Roberts
+5,Episode_140_.22Special_Live_Edition.22,11,10,Elizabeth Ortiz
+5,Episode_140_.22Special_Live_Edition.22,11,11,Joseph Arthur Rodia
+5,Episode_140_.22Special_Live_Edition.22,11,12,Kenneth E. Dickerson
+5,Episode_140_.22Special_Live_Edition.22,11,13,Michelle Fazzani
+5,Episode_140_.22Special_Live_Edition.22,11,14,Phillip Anthony Moore
+5,Episode_141,12,1,Eva Shoen
+5,Episode_141,12,2,Becky Terry
+5,Episode_141,12,3,Windy Korioth
+5,Episode_141,12,4,Kathleen Mary Young
+5,Episode_141,12,5,Edward Bell
+5,Episode_141,12,6,Pamela June Ray
+5,Episode_142,13,1,The Black Dahlia
+5,Episode_142,13,2,"Erick, Glynda, and Keath Nickerson"
+5,Episode_142,13,3,Hotel Bullock
+5,Episode_142,13,4,Alexander Olive
+5,Episode_143,14,1,Luis Diaz
+5,Episode_143,14,2,The Family of Charles Stubin
+5,Episode_143,14,3,Michael Anthony Starr
+5,Episode_144,15,1,Chucky McGivern
+5,Episode_144,15,2,The Search of Alexandra Stantzos
+5,Episode_144,15,3,James Russell
+5,Episode_144,15,4,Mickey Allen Samson
+5,Episode_144,15,5,Anthonette Cayedito
+5,Episode_144,15,6,The Friend of Russell and Jean Johnson
+5,Episode_145,16,1,Rick McCue
+5,Episode_145,16,2,The Lake Champlain Monster
+5,Episode_145,16,3,Mahfuz Huq
+5,Episode_146,17,1,Neal Jennings
+5,Episode_146,17,2,Charles Warren Boomer
+5,Episode_146,17,3,Sal Guardado
+5,Episode_146,17,4,Patricia Carlton
+5,Episode_146,17,5,Phillip Anthony Moore
+5,Episode_146,17,6,Little Miss Panasoffkee
+5,Episode_147,18,1,Yamashita's Treasure
+5,Episode_147,18,2,Kaitlyn Arquette
+5,Episode_147,18,3,Terry Smith
+5,Episode_148,19,1,Guardian UFO
+5,Episode_148,19,2,"Erick, Glynda, and Keath Nickerson"
+5,Episode_148,19,3,Lucy
+5,Episode_148,19,4,Larry George
+5,Episode_148,19,5,The Siblings of Eugene Price
+5,Episode_149,20,1,Rolando Cruz and Alejandro Hernandez
+5,Episode_149,20,2,Connie Jo Hamilton
+5,Episode_149,20,3,Maureen Keewatincappo
+5,Episode_149,20,4,The Siblings of Jim Boumgarden
+5,Episode_150,21,1,Don Decker
+5,Episode_150,21,2,Michael Hunter
+5,Episode_150,21,3,Tom Hughes
+5,Episode_150,21,4,Dolores Ford
+5,Episode_150,21,5,The Siblings of Eugene Price
+5,Episode_151,22,1,Bashir Kouchacji
+5,Episode_151,22,2,Sharon Rogers
+5,Episode_151,22,3,Savior of Phillip Macri
+5,Episode_151,22,4,Martha Doe Roberts
+5,Episode_151,22,5,"Dylene Zolikoff, Scott Merz, and Dawnette Barker"
+5,Episode_152,23,1,Chad Langford
+5,Episode_152,23,2,Tony Miller
+5,Episode_152,23,3,Scott Hill
+5,Episode_152,23,4,Gabby's Bones
+5,Episode_153,24,1,Danny Casolaro
+5,Episode_153,24,2,Margaret Wiesner
+5,Episode_153,24,3,Blind River Killer
+5,Episode_153,24,4,Susan and Shane Hamwi
+5,Episode_154,25,1,Mario Amado
+5,Episode_154,25,2,Falcon Lake UFO
+5,Episode_154,25,3,Savior of Cathy Loving
+5,Episode_154,25,4,A.J. Breaux
+5,Episode_155,26,1,Dr. Martin Luther King
+5,Episode_155,26,2,J. D. Method
+5,Episode_155,26,3,New Orleans Serial Killer
+5,Episode_156,27,1,Image of Guadalupe
+5,Episode_156,27,2,Stahl Painting Theft
+5,Episode_156,27,3,Bernie and Calvin Seaton
+5,Episode_156,27,4,Tom Roche
+5,Episode_156,27,5,David Hurley
+5,Episode_157,28,1,Julius Patterson and Paulette Hite
+5,Episode_157,28,2,Ramzi Ahmed Yousef
+5,Episode_157,28,3,Edward Bell
+5,Episode_157,28,4,Eva Shoen
+5,Episode_157,28,5,The Father of Jeannie Wagner
+5,Episode_158,29,1,Dede Rosenthal
+5,Episode_158,29,2,Greg Webb
+5,Episode_158,29,3,George Anderson
+5,Episode_158,29,4,Neal Jennings
+5,Episode_159,30,1,Gander Plane Crash
+5,Episode_159,30,2,Arthur Lloyd
+5,Episode_159,30,3,Nelson DeCloud
+5,Episode_159,30,4,Becky Terry
+5,Episode_160,31,1,Eileen Mangold
+5,Episode_160,31,2,David Gordon Smith
+5,Episode_160,31,3,"Erick, Glynda, and Keath Nickerson"
+5,Episode_160,31,4,Hotel Bullock
+5,Episode_160,31,5,Alexander Olive
+5,Episode_161,32,1,Tina Resch
+5,Episode_161,32,2,Milk Carton Bandit
+5,Episode_161,32,3,The Parents of Miriam
+5,Episode_161,32,4,The Crew of the L-8
+5,Episode_161,32,5,Reggie DePalma
+5,Episode_161,32,6,Rick McCue
+5,Episode_161,32,7,Michael Lloyd Self
+5,Episode_162,33,1,Lyle Moody
+5,Episode_162,33,2,Savior of Phillip Macri
+5,Episode_162,33,3,Yamashita's Treasure
+5,Episode_163,34,1,Brian Brophil
+5,Episode_163,34,2,Jaclyn Dowaliby
+5,Episode_164,35,1,Gordon Collins
+5,Episode_164,35,2,Kathleen Mary Young
+5,Episode_164,35,3,Edward Bell
+5,Episode_164,35,4,Pierre April
+6,Episode_165,1,1,Bruce Kelly
+6,Episode_165,1,2,Nelson DeCloud
+6,Episode_165,1,3,Cachimba
+6,Episode_165,1,4,Jacquelyn Tendall
+6,Episode_165,1,5,Joan Gay Croft
+6,Episode_166,2,1,Jose Gonzalez
+6,Episode_166,2,2,Frederick Valentich
+6,Episode_166,2,3,Scott Hill
+6,Episode_166,2,4,Danny Williams
+6,Episode_167,3,1,Anna Anderson
+6,Episode_167,3,2,Andolina Gonzalez
+6,Episode_167,3,3,Jerry Gervasoni
+6,Episode_168,4,1,Dr. Theodore Loseff
+6,Episode_168,4,2,Wally Spencer
+6,Episode_168,4,3,Lee Selwyn
+6,Episode_168,4,4,Christopher Kurowski
+6,Episode_169,5,1,Joseph Prushinowski
+6,Episode_169,5,2,"Wendy Camp, Cynthia Britto, and Lisa Kregear"
+6,Episode_169,5,3,Madeline Strauss
+6,Episode_169,5,4,Su-Ya Kim
+6,Episode_170,6,1,Jose Gonzalez
+6,Episode_170,6,2,Mann House
+6,Episode_170,6,3,Eve Meisel
+6,Episode_170,6,4,Lisa Ziegert
+6,Episode_170,6,5,Kathleen Mary Young
+6,Episode_170,6,6,Rohrey Wychgel
+6,Episode_171,7,1,Jerry Gervasoni
+6,Episode_171,7,2,The Fatima Miracle
+6,Episode_171,7,3,Wade Mitchell Parker
+6,Episode_171,7,4,Jim Burke
+6,Episode_171,7,5,David MacLeod
+6,Episode_171,7,6,Michael Benka
+6,Episode_172,8,1,John Grundhofer
+6,Episode_172,8,2,Jill and Julie Hansen
+6,Episode_172,8,3,Michael Seymour
+6,Episode_173,9,1,Travis Wade Duncan
+6,Episode_173,9,2,Julius Patterson and Paulette Hite
+6,Episode_173,9,3,The Mona Lisa
+6,Episode_173,9,4,Doreen Marfeo
+6,Episode_173,9,5,Raymond Young
+6,Episode_174,10,1,Robert Watson
+6,Episode_174,10,2,Danny Marino
+6,Episode_174,10,3,David Brian Williams
+6,Episode_174,10,4,Larry Costine
+6,Episode_174,10,5,Dorothy Johnson
+6,Episode_174,10,6,Corrine Gustavson
+6,Episode_175,11,1,Danny Marino
+6,Episode_175,11,2,Lissette Nukida
+6,Episode_175,11,3,Saviors of Colleen Frangione
+6,Episode_175,11,4,Gary Grant Jr.
+6,Episode_175,11,5,Sandy Breed and Bruce Clark
+6,Episode_175,11,6,Heirs of Donald Mullins
+6,Episode_176,12,1,Saviors of Colleen Frangione
+6,Episode_176,12,2,Pam Page
+6,Episode_176,12,3,Bruce Kelly
+6,Episode_176,12,4,Joan Gay Croft
+6,Episode_177,13,1,The Children of Hilda Craun
+6,Episode_177,13,2,Cachimba
+6,Episode_177,13,3,Jacquelyn Tendall
+6,Episode_177,13,4,Anna Anderson
+6,Episode_178,14,1,Shafaa Salem
+6,Episode_178,14,2,Jay Given
+6,Episode_178,14,3,The Friend of Tom Vaughn
+6,Episode_178,14,4,Eva Shoen
+6,Episode_178,14,5,Daly City Man
+6,Episode_179,15,1,Armando Garcia
+6,Episode_179,15,2,The Countess
+6,Episode_179,15,3,The Children of Faith Brown
+6,Episode_179,15,4,Danny Piñeda
+6,Episode_179,15,5,Dr. George Desmond Graham
+6,Episode_179,15,6,Charles Horvath
+6,Episode_180,16,1,The Children of Faith Brown
+6,Episode_180,16,2,Grocery Robbers
+6,Episode_180,16,3,Ramon Reyes and Louie Velarde
+6,Episode_180,16,4,Ted Loseff
+6,Episode_180,16,5,Lee Selwyn
+6,Episode_180,16,6,Christopher Kurowski
+6,Episode_181,17,1,Amy Billig
+6,Episode_181,17,2,Dorothy Johnson
+6,Episode_181,17,3,Heirs of Walter Rice
+6,Episode_181,17,4,Oliver Munson
+6,Episode_181,17,5,Rose Marie Luttmer
+6,Episode_182,18,1,San Pedro Mummy
+6,Episode_182,18,2,Andre Jones
+6,Episode_182,18,3,Jerry Gervasoni
+6,Episode_182,18,4,The Family of Terris Christie Derby
+6,Episode_182,18,5,Wadada
+6,Episode_183,19,1,Resurrection Mary
+6,Episode_183,19,2,Saviors of Colleen Frangione
+6,Episode_183,19,3,Selena Edon
+6,Episode_183,19,4,Victor Gerena
+6,Episode_183,19,5,Bruce Bradney
+6,Episode_183,19,6,Kimberly Karen
+6,Episode_184,20,1,Kimberly Karen
+6,Episode_184,20,2,Miracle of Lourdes
+6,Episode_184,20,3,Brian Brophil
+6,Episode_184,20,4,Dick Hansen
+6,Episode_184,20,5,Vernicy Bradford
+6,Episode_184,20,6,Joseph Collins
+6,Episode_185,21,1,Michael Carmichael and Billy Ray Hargrove
+6,Episode_185,21,2,Wally Spencer
+6,Episode_185,21,3,Eve Meisel
+6,Episode_185,21,4,David MacLeod
+6,Episode_185,21,5,Benny Franklin Miller
+6,Episode_186,22,1,Nova
+6,Episode_186,22,2,Interceptors
+6,Episode_186,22,3,Danny Marino
+6,Episode_186,22,4,Dave Bocks
+6,Episode_187,23,1,Tony Lombardi
+6,Episode_187,23,2,The Children of Faith Brown
+6,Episode_187,23,3,Travis Wade Duncan 
+6,Episode_187,23,4,The Siblings of Eugene Price
+6,Episode_188,24,1,Carolyn Hebert
+6,Episode_188,24,2,Anita Green
+6,Episode_188,24,3,Filemon Santiago and Gary Miller
+6,Episode_188,24,4,Jorge Taracena
+6,Episode_188,24,5,Heirs of Charles Lazarus
+6,Episode_188,24,6,Dr. Arvind Sinha
+6,Episode_189,25,1,Hugh Harlin
+6,Episode_189,25,2,Lissette Nukida
+6,Episode_189,25,3,Robert Watson
+6,Episode_189,25,4,Michael Seymour
+6,Episode_189,25,5,Joseph Prushinowski
+6,Episode_190,26,1,Michael Ziegler
+6,Episode_190,26,2,Pennsylvania Bank Robber
+6,Episode_190,26,3,"Deroy King, Jr"
+6,Episode_190,26,4,Jim Pearson
+6,Episode_190,26,5,David Viera
+6,Episode_191,27,1,David Viera
+6,Episode_191,27,2,John Cheek
+6,Episode_191,27,3,Kimberly Karen
+6,Episode_191,27,4,Jill and Julie Hansen
+6,Episode_191,27,5,Madeline Strauss
+6,Episode_192,28,1,Dutch Schultz Treasure
+6,Episode_192,28,2,Tom Johnson
+6,Episode_192,28,3,Lauren Jackson
+6,Episode_192,28,4,Roxann and Kristopher Jeeves
+6,Episode_193,29,1,John and Patti Eggleston
+6,Episode_193,29,2,The Friend of Tom Vaughn
+6,Episode_193,29,3,Kelly Finnegan
+6,Episode_193,29,4,The Father of Kathleen Belcher
+6,Episode_193,29,5,Interstate 70 Killer
+6,Episode_193,29,6,East Stockton John Doe
+6,Episode_194,30,1,Albert DeSalvo
+6,Episode_194,30,2,The Daughter of Oscar Norton
+6,Episode_194,30,3,Kevin Wheel
+6,Episode_195,31,1,Bigfoot
+6,Episode_195,31,2,Craig Williamson
+6,Episode_195,31,3,David Viera
+6,Episode_195,31,4,Bill and Dorothy Wacker
+6,Episode_195,31,5,Jordan Children
+6,Episode_195,31,6,Janie Halliday
+6,Episode_195,31,7,Marilyn Hahnlein
+6,Episode_195,31,8,Charlie Anderson
+6,Episode_195,31,9,The Parents of Brenda Abbey
+6,Episode_195,31,10,Joseph Gardner
+6,Episode_196,32,1,The Shroud Of Turin
+6,Episode_196,32,2,Yves-Emmanuel Pain and Laurent Hernas
+6,Episode_196,32,3,Janie Halliday
+6,Episode_196,32,4,The Parents of Brenda Abbey
+6,Episode_197_.22Mysteries_of_Alien_Beings.22,33,1,Hudson River UFO
+6,Episode_197_.22Mysteries_of_Alien_Beings.22,33,2,Roswell Crash
+6,Episode_197_.22Mysteries_of_Alien_Beings.22,33,3,The Allagash Abductions
+7,Episode_198,1,1,The Ice Man
+7,Episode_198,1,2,Frank Olson
+7,Episode_198,1,3,Larry George
+7,Episode_199,2,1,La Posada Hotel
+7,Episode_199,2,2,Jonathan Francia
+7,Episode_199,2,3,John Roubas
+7,Episode_199,2,4,Elysian Park Treasure
+7,Episode_200,3,1,Father Solanus Casey
+7,Episode_200,3,2,Alexander
+7,Episode_200,3,3,The Children of Hilda Craun
+7,Episode_200,3,4,John Wilkes Booth
+7,Episode_201,4,1,Betty Landers
+7,Episode_201,4,2,Adam Emery
+7,Episode_201,4,3,Phyllis Strub
+7,Episode_201,4,4,Travis Wade Duncan
+7,Episode_201,4,5,Alan Verl Sneed
+7,Episode_202_-_.22Mysteries_of_the_Afterlife.22,5,1,Dannion Brinkley
+7,Episode_202_-_.22Mysteries_of_the_Afterlife.22,5,2,Karen Walker
+7,Episode_202_-_.22Mysteries_of_the_Afterlife.22,5,3,Wyrick House
+7,Episode_203,6,1,Mexico City UFO
+7,Episode_203,6,2,Sammy Wheeler
+7,Episode_203,6,3,Gordon Page Jr.
+7,Episode_204,7,1,Circleville Writer
+7,Episode_204,7,2,Agatha Christie
+7,Episode_204,7,3,Jim Pearson
+7,Episode_204,7,4,Tommy Burkett
+7,Episode_204,7,5,Poverty Island Treasure
+7,Episode_204,7,6,Tim Barry
+7,Episode_205,8,1,Nancy Myer
+7,Episode_205,8,2,Mary Celeste
+7,Episode_205,8,3,The Parents of Brenda Abbey
+7,Episode_205,8,4,Saviors of Michelle West
+7,Episode_206,9,1,Neil and Terry Gott
+7,Episode_206,9,2,Margaret Wilson
+7,Episode_206,9,3,Robert Borton
+7,Episode_206,9,4,Roy Caffey
+7,Episode_207,10,1,Gurdon Light
+7,Episode_207,10,2,Stuart Heaton
+7,Episode_207,10,3,Jay Durham
+7,Episode_207,10,4,Marilyn Hahnlein
+7,Episode_208,11,1,Teryn Hedlund
+7,Episode_208,11,2,Philip Pelletier
+7,Episode_208,11,3,Father Solanus Casey
+7,Episode_209,12,1,Cyril Wecht
+7,Episode_209,12,2,Hank Jones
+7,Episode_209,12,3,Phillip Thomas
+7,Episode_209,12,4,Manwell Marino
+7,Episode_209,12,5,Elwyn Jones
+7,Episode_210,13,1,John and Linda Sohus
+7,Episode_210,13,2,Phantom Sub
+7,Episode_210,13,3,Mike O'Mara
+7,Episode_210,13,4,The Family of Terris Christie Derby
+7,Episode_210,13,5,Stallings Family
+7,Episode_210,13,6,Tyrom Theis
+7,Episode_211,14,1,Elwyn Jones
+7,Episode_211,14,2,Padre Pio
+7,Episode_211,14,3,Kimberly Pandelios
+7,Episode_211,14,4,1987 Jane Doe
+7,Episode_211,14,5,1990 Jane Doe
+7,Episode_211,14,6,Sumter County Does
+7,Episode_211,14,7,"Sylvan Lazarus, Carl Cobb and Bernard Brady"
+7,Episode_211,14,8,Stallings Family
+7,Episode_212_.22Mysteries_of_the_Psychic_Mind.22,15,1,Jeanine Price
+7,Episode_212_.22Mysteries_of_the_Psychic_Mind.22,15,2,Melanie Uribe
+7,Episode_212_.22Mysteries_of_the_Psychic_Mind.22,15,3,James Van Praagh
+7,Episode_213,16,1,Kansas City Arsonist
+7,Episode_213,16,2,Loretta Myers
+7,Episode_213,16,3,Wallace Thrasher
+7,Episode_213,16,4,Robert James Palmer
+7,Episode_214,17,1,Rita Faulkner
+7,Episode_214,17,2,The Search of Helen Elas
+7,Episode_214,17,3,Kristi Krebs
+7,Episode_214,17,4,Dub Wackerhagen
+7,Episode_215,18,1,Alamo Treasure
+7,Episode_215,18,2,Randall Utterback
+7,Episode_215,18,3,Eric and Pam Ellender
+7,Episode_215,18,4,Rose Marie Luttmer
+7,Episode_216,19,1,Alamo Treasure
+7,Episode_216,19,2,Jian Fang
+7,Episode_216,19,3,The Ice Man
+7,Episode_216,19,4,Frank Olson
+7,Episode_217_.22Great_Escapes.22,20,1,Randolph Dial
+7,Episode_217_.22Great_Escapes.22,20,2,Robert Watson
+7,Episode_217_.22Great_Escapes.22,20,3,David Fisher
+7,Episode_217_.22Great_Escapes.22,20,4,Jean Marie Gagnon
+7,Episode_217_.22Great_Escapes.22,20,5,Michael Mohan
+7,Episode_217_.22Great_Escapes.22,20,6,Edgar Kerns
+7,Episode_217_.22Great_Escapes.22,20,7,John Yount
+7,Episode_217_.22Great_Escapes.22,20,8,Travis Wade Duncan
+7,Episode_217_.22Great_Escapes.22,20,9,Frank Morris and the Anglin Brothers
+7,Episode_218,21,1,Luiz Gasparetto
+7,Episode_218,21,2,Tara Breckenridge
+7,Episode_218,21,3,The Friends of Fritz Vincken
+7,Episode_218,21,4,Wade Mitchell Parker
+7,Episode_218,21,5,Carlos Garcia
+7,Episode_219_.22Femme_Fatales.22,22,1,James and Lisa Albert
+7,Episode_219_.22Femme_Fatales.22,22,2,Elizabeth Ortiz
+7,Episode_219_.22Femme_Fatales.22,22,3,Andolina Gonzalez
+7,Episode_219_.22Femme_Fatales.22,22,4,Kelly Finnegan
+7,Episode_220,23,1,Arnold Archambeau and Ruby Bruguier
+7,Episode_220,23,2,1987 Jane Doe
+7,Episode_220,23,3,Mexico City UFO
+7,Episode_221,24,1,Noreen Renier
+7,Episode_221,24,2,Cecilia Newball and Rene Perez Jr.
+7,Episode_221,24,3,The Search of Bob Coleman
+7,Episode_221,24,4,Jim McMahon
+7,Episode_222,25,1,Kathleen Burghardt
+7,Episode_222,25,2,Lionel Luviano
+7,Episode_222,25,3,Cogni-tech
+7,Episode_222,25,4,Stallings Family
+7,Episode_222,25,5,Keyan and Logan Ivey
+7,Episode_222,25,6,Davey Estright
+7,Episode_223,26,1,Patience Worth
+7,Episode_223,26,2,John Vogel
+7,Episode_223,26,3,Justin Burgwinkel
+7,Episode_223,26,4,Paul Xavier Alexander
+7,Episode_223,26,5,Dorothy Donovan
+7,Episode_224,27,1,E.L.F.
+7,Episode_224,27,2,Saviors of Dover Family
+7,Episode_224,27,3,Robert Arcieri
+7,Episode_224,27,4,Breanna Smith and Ryan Heath
+7,Episode_225,28,1,Rose Turford and Carolyn Stevens
+7,Episode_226,29,1,Gigi
+7,Episode_227,30,1,Jean Moore
+7,Episode_227,30,2,Ray Olson
+7,Episode_227,30,3,Luiz Gasparetto
+8,Episode_228,1,1,Brandon Lee
+8,Episode_228,1,2,Ray Olson
+8,Episode_228,1,3,Gigi
+8,Episode_228,1,4,Emilie Hardy
+8,Episode_228,1,5,Red Dye Robber
+8,Episode_228,1,6,Dorothy Barnett
+8,Episode_228,1,7,Antonio Castro
+8,Episode_228,1,8,Joe O'Brien
+8,Episode_229,2,1,Brazos River Attackers
+8,Episode_229,2,2,Ronald Earl Cains
+8,Episode_229,2,3,Loretta Myers
+8,Episode_229,2,4,Matt Flores
+8,Episode_229,2,5,Kentucky Visions
+8,Episode_229,2,6,Richard Relf
+8,Episode_230,3,1,Michael Swango
+8,Episode_230,3,2,Brazos River Attackers
+8,Episode_230,3,3,Manny Moreno
+8,Episode_230,3,4,Renee Lamanna
+8,Episode_230,3,5,The Daughter of Gerda Burian
+8,Episode_230,3,6,Michael Eschweiler
+8,Episode_230,3,7,Logan Carroll
+8,Episode_230,3,8,Amadeo Marcelo
+8,Episode_231,4,1,Guy Cummings
+8,Episode_231,4,2,Amadeo Marcelo
+8,Episode_231,4,3,Keyan and Logan Ivey
+8,Episode_231,4,4,Leonard Trigg
+8,Episode_231,4,5,Seth Arathorne
+8,Episode_231,4,6,Charles Southern Jr.
+8,Episode_231,4,7,Alie Berrelez
+8,Episode_231,4,8,Antranik Geuvjehizian
+8,Episode_232,5,1,Taylor Kramer
+8,Episode_232,5,2,Craig Williamson
+8,Episode_232,5,3,Evonne
+8,Episode_232,5,4,Linda Tellington-Jones
+8,Episode_232,5,5,Marie LaVeau
+8,Episode_232,5,6,Tim Molnar
+8,Episode_233,6,1,Lonnie Zamora UFO Sighting
+8,Episode_233,6,2,Saviors of Dover Family
+8,Episode_233,6,3,Seth Arathorne
+8,Episode_233,6,4,Jessyca Mullenberg
+8,Episode_233,6,5,Ronald Bax
+8,Episode_233,6,6,Carl and Mary Dennie
+8,Episode_233,6,7,The Siblings of Debbie Hamilton
+8,Episode_233,6,8,David Merrifield
+8,Episode_234,7,1,Roberto Ramirez
+8,Episode_234,7,2,Linda Sobek
+8,Episode_234,7,3,The Siblings of Tina Shiets
+8,Episode_234,7,4,Miracle the White Buffalo
+8,Episode_234,7,5,David Gause
+8,Episode_234,7,6,George Reeves
+8,Episode_235,8,1,Caddy
+8,Episode_235,8,2,Sherry Hart
+8,Episode_235,8,3,Rose Turford and Carolyn Stevens
+8,Episode_235,8,4,The Siblings of Tina Shiets
+8,Episode_235,8,5,Rickey Bright
+8,Episode_235,8,6,Michael McGuffey
+8,Episode_235,8,7,Michael Hughes
+8,Episode_235,8,8,Epes Bandits
+8,Episode_235,8,9,The Family of Jeanne Martin
+8,Episode_236,9,1,Tom Kueter
+8,Episode_236,9,2,Ira Einhorn
+8,Episode_236,9,3,Jim Kimball
+8,Episode_236,9,4,Brian Foguth
+8,Episode_236,9,5,Nassau County Robber
+8,Episode_236,9,6,Covewood Lodge
+8,Episode_236,9,7,Richard Ford
+8,Episode_237,10,1,Leroy Drieth
+8,Episode_237,10,2,Johnny Lee Wilson
+8,Episode_237,10,3,Donna Kempton
+8,Episode_237,10,4,Bonnie Haim
+8,Episode_237,10,5,The Devil's Backbone
+8,Episode_238,11,1,Moses Lall and Lila Buerattan
+8,Episode_238,11,2,Taylor Kramer
+8,Episode_238,11,3,Craig Williamson
+8,Episode_238,11,4,Evonne
+8,Episode_238,11,5,Marie Laveau
+8,Episode_238,11,6,Tim Molnar
+8,Episode_239,12,1,Thomas David Dixon
+8,Episode_239,12,2,Nancy Manni
+8,Episode_239,12,3,The Daughter of Gerda Burian
+8,Episode_239,12,4,Patricia Bonner
+8,Episode_239,12,5,Mia Zapata
+8,Episode_239,12,6,Sandra Nevarez
+8,Episode_240,13,1,Jean Hilliard
+8,Episode_240,13,2,Su Taraskiewicz
+8,Episode_240,13,3,Kevin Dominic
+8,Episode_240,13,4,Albert Leon Fletcher
+8,Episode_240,13,5,Jessie Presley
+8,Episode_240,13,6,Richard Ford
+8,Episode_240,13,7,The Siblings of Jeff Linn
+8,Episode_240,13,8,Patrick Ackles
+8,Episode_241,14,1,Michelle O'Malley
+8,Episode_241,14,2,Green River Killer
+8,Episode_241,14,3,Roger Lindsley
+8,Episode_241,14,4,Martha Moxley
+8,Episode_242,15,1,Jodi Huisentruit
+8,Episode_242,15,2,Philip Pauli
+8,Episode_242,15,3,Lonnie Zamora UFO Sighting
+8,Episode_242,15,4,Carl and Mary Dennie
+8,Episode_242,15,5,David Merrifield
+8,Episode_243,16,1,The Comedy Store
+8,Episode_243,16,2,Savior of Wendy Radcliffe
+8,Episode_243,16,3,The Friends of Fritz Vincken
+8,Episode_243,16,4,Bike Path Rapist
+8,Episode_243,16,5,Keith Warren
+8,Episode_243,16,6,John Arbogast
+8,Episode_244,17,1,Richard Cepulonis
+8,Episode_244,17,2,Savior of Wendy Radcliffe
+8,Episode_244,17,3,John Anthony Diaz
+8,Episode_244,17,4,Gettysburg National Military Park
+8,Episode_244,17,5,Devin Williams
+8,Episode_244,17,6,Michael Johnston and Rochelle Robinson
+8,Episode_244,17,7,Michael Eschweiler
+8,Episode_245,18,1,Saviors of Duane Miller
+8,Episode_245,18,2,Patricia Bonner
+8,Episode_245,18,3,Sam Wodke
+8,Episode_245,18,4,Vince Foster
+8,Episode_245,18,5,Jean Ellroy
+8,Episode_246,19,1,David Cox
+8,Episode_246,19,2,Thomas David Dixon
+8,Episode_246,19,3,Antonio Moses
+8,Episode_246,19,4,Inner City Church Fire
+8,Episode_246,19,5,Mary Clamser
+8,Episode_246,19,6,The Family of LaDonna Alfano
+8,Episode_247,20,1,Joan Jefferies
+8,Episode_247,20,2,The Family of LaDonna Alfano
+8,Episode_247,20,3,Tanya Smith
+8,Episode_247,20,4,Tony Marabella
+8,Episode_247,20,5,Luis Ochoa
+8,Episode_247,20,6,The Wickenberg Massacre
+8,Episode_248,21,1,Gloria Schulze
+8,Episode_248,21,2,Nazca Lines
+8,Episode_248,21,3,Antonio Moses
+8,Episode_248,21,4,The Unabomber
+8,Episode_248,21,5,John Addis
+8,Episode_248,21,6,Charlotte Pollis
+8,Episode_248,21,7,Three Partners Ranch
+8,Episode_249,22,1,Doris Duke
+8,Episode_249,22,2,Rodger Lindsley
+8,Episode_249,22,3,John Anthony Diaz
+8,Episode_249,22,4,The Friends of Kim Schad
+8,Episode_249,22,5,Chupacabras
+8,Episode_249,22,6,Matt and Wendy Jameson
+8,Episode_250,23,1,Scott Enyart
+8,Episode_250,23,2,Robert Davidson
+8,Episode_250,23,3,Timothy Coombs
+8,Episode_250,23,4,Shelly Malone
+8,Episode_251,24,1,The Curse of King Tut
+8,Episode_251,24,2,Sam Wodke
+8,Episode_251,24,3,Harvey McCloud
+8,Episode_251,24,4,Sarah Powell
+8,Episode_251,24,5,Amtrak Derailment
+8,Episode_252,25,1,Joseph Cole
+8,Episode_252,25,2,The Family of LaDonna Alfano
+8,Episode_252,25,3,The Mother of Tim Harrell
+8,Episode_252,25,4,David Freeman
+8,Episode_252,25,5,Milly McGregor
+8,Episode_252,25,6,Candice and Sharina Berry
+8,Episode_252,25,7,Thomas David Dixon
+8,Episode_253,26,1,Jorge Mendez and Jose Rios
+8,Episode_253,26,2,David Cox
+8,Episode_253,26,3,Thomas David Dixon
+8,Episode_253,26,4,Inner City Church Fire
+8,Episode_254,27,1,Kelly Lee McGinnis
+8,Episode_254,27,2,Kristie Gunderson Lee
+8,Episode_254,27,3,The Daughter of Dave and Christie Carlsen
+8,Episode_254,27,4,The Curse of King Tut
+9,Episode_255,1,1,Zodiac Killer
+9,Episode_255,1,2,Carl And Mary Dennie
+9,Episode_255,1,3,April Gregory
+9,Episode_255,1,4,Trish Zemba
+9,Episode_255,1,5,William Jordan
+9,Episode_255,1,6,Andre Wilson
+9,Episode_256,2,1,Margaux Hemingway
+9,Episode_256,2,2,Johnathan Kern
+9,Episode_256,2,3,Albert Leon Fletcher
+9,Episode_256,2,4,Jose Blandon
+9,Episode_256,2,5,Grant Hendrickson and Michele Cartagena
+9,Episode_256,2,6,Kevin Reeder
+9,Episode_256,2,7,Raymond Routte
+9,Episode_256,2,8,The Daughter of Dave and Christie Carlsen
+9,Episode_257,3,1,Bobby Fuller
+9,Episode_257,3,2,David Freeman
+9,Episode_257,3,3,David Coleman
+9,Episode_257,3,4,Red Mercury
+9,Episode_257,3,5,Cawood Burglary
+9,Episode_257,3,6,Kelly Lee McGinnis
+9,Episode_257,3,7,Fertility Statues
+9,Episode_258,4,1,Laurie Cabot
+9,Episode_258,4,2,Agustin Mendoza
+9,Episode_258,4,3,Elena Souza
+9,Episode_258,4,4,The Mother of Tim Harrell
+9,Episode_258,4,5,Sam Zelikson
+9,Episode_258,4,6,Meriah and Sabria Widboom
+9,Episode_259,5,1,Life on Mars
+9,Episode_259,5,2,Tony DeCompo
+9,Episode_259,5,3,Kansas City Arsonist
+9,Episode_259,5,4,David Chase
+9,Episode_259,5,5,Candice and Sharina Berry
+9,Episode_259,5,6,The Siblings of Jeff Linn
+9,Episode_259,5,7,David Coleman
+9,Episode_259,5,8,Owen Walker
+9,Episode_259,5,9,Heirs of Temperee Hawkins
+9,Episode_260,6,1,Jarod Allgood
+9,Episode_260,6,2,Karen Pelletiere
+9,Episode_260,6,3,Lance Gueverra
+9,Episode_260,6,4,Jesus De La Cruz
+9,Episode_260,6,5,Susan Harrison
+9,Episode_260,6,6,The Sister of Lois Cappoziello
+9,Episode_261,7,1,Howard Storm
+9,Episode_261,7,2,Alicia Showalter Reynolds
+9,Episode_261,7,3,Richard Cepulonis
+9,Episode_261,7,4,Jimmy Ray LeGate
+9,Episode_261,7,5,Michael Wilburn
+9,Episode_261,7,6,Savior of Steve Newton
+9,Episode_261,7,7,Stephanie Booker
+9,Episode_262,8,1,O.J. Simpson
+9,Episode_262,8,2,Qi Gong
+9,Episode_262,8,3,Whitey Bulger
+9,Episode_262,8,4,Robert Trenholm
+9,Episode_262,8,5,Samuel Glover and Marshall Kirkpatrick
+9,Episode_262,8,6,Le-Zhan Williams
+9,Episode_263,9,1,Michael Short
+9,Episode_263,9,2,The Daughter of Dave and Christie Carlsen
+9,Episode_263,9,3,Regina Davis
+9,Episode_263,9,4,Lynn Amos
+9,Episode_263,9,5,The Parents of Gale Samuels
+9,Episode_263,9,6,Cokeville Elementary School Explosion
+9,Episode_264,10,1,Boo
+9,Episode_264,10,2,Connie Jean Helton
+9,Episode_264,10,3,Zip Gun Bomber
+9,Episode_264,10,4,Sandra Orellana
+9,Episode_264,10,5,Kelli Ann Ayres
+9,Episode_264,10,6,Elena Souza
+9,Episode_264,10,7,Andy Cook
+9,Episode_264,10,8,Jimmie Wayne Pierce
+9,Episode_265,11,1,Bee Sting Healing
+9,Episode_265,11,2,Sagebrush Rebellion
+9,Episode_265,11,3,Christopher Kurowski
+9,Episode_265,11,4,Alex Kelly
+9,Episode_265,11,5,Jamie Santos
+9,Episode_265,11,6,Gary Wilson
+9,Episode_266,12,1,Oliver
+9,Episode_266,12,2,Dennis Keith Smith
+9,Episode_266,12,3,The Savior of Renee Wilson
+9,Episode_266,12,4,Susan Walsh
+9,Episode_266,12,5,Jon-Benet Ramsey
+9,Episode_267,13,1,Cancer Dogs
+9,Episode_267,13,2,Tommy Zeigler
+9,Episode_267,13,3,Kurt Cobain
+9,Episode_267,13,4,Amal and Wafa Abdallah
+9,Episode_268,14,1,Dr. Cynthia Watson
+9,Episode_268,14,2,Ennis Cosby
+9,Episode_268,14,3,TWA Flight 800
+9,Episode_268,14,4,Sandra Orellana
+9,Episode_268,14,5,Robert Dirscherl
+9,Episode_268,14,6,Andy Cook
+9,Episode_268,14,7,David Alex Alvarez
+9,Episode_268,14,8,Comet/Earth Collision
+9,Episode_269,15,1,Olesen Family
+9,Episode_269,15,2,Patrick Kelly
+9,Episode_269,15,3,Highway 50 Phantom
+9,Episode_269,15,4,Ceara O'Connell
+9,Episode_269,15,5,Edwin Rodriguez
+9,Episode_269,15,6,Billy Ray Sisson
+9,Episode_269,15,7,Kelli Ann Ayres
+9,Episode_270,16,1,Tupac Shakur
+9,Episode_270,16,2,Therese Rose Walsh
+9,Episode_270,16,3,Gary and Ted Noble
+9,Episode_271,17,1,David Morehouse
+9,Episode_271,17,2,Maria Hernandez
+9,Episode_271,17,3,Melvin Luther Wilson
+9,Episode_271,17,4,Raymond Routte
+9,Episode_271,17,5,Andre Wilson
+9,Episode_271,17,6,Mark Gagliardo
+9,Episode_271,17,7,Dolly the Sheep
+9,Episode_272,18,1,Maria Socorro De Rodriguez LaPine
+9,Episode_272,18,2,Mark Gagliardo
+9,Episode_272,18,3,TWA Flight 800
+9,Episode_272,18,4,Samuel Glover and Marshall Kirkpatrick
+9,Episode_272,18,5,Candy and Roxy
+9,Episode_272,18,6,Smith Home
+9,Episode_273,19,1,Jeanette Federico
+9,Episode_273,19,2,Susan Harrison
+9,Episode_273,19,3,Karen Pelletiere
+9,Episode_274,20,1,Rosemary Altea
+9,Episode_274,20,2,Blair Adams
+9,Episode_274,20,3,The Son of Bobbi Page Myler
+9,Episode_274,20,4,Men In Black
+9,Episode_274,20,5,Dennis Kevin Smith
+9,Episode_274,20,6,Candice and Sharina Berry
+9,Episode_274,20,7,The Siblings of Jeff Linn
+9,Episode_275,21,1,Don Davis Jr.
+9,Episode_275,21,2,Trent Fouts
+9,Episode_275,21,3,Kristie Gunderson Lee
+9,Episode_275,21,4,Lynne Plaskett
+9,Episode_275,21,5,Carolyn Reynolds
+9,Episode_275,21,6,Susan King
+9,Episode_276,22,1,Savior of Samantha Roberts
+9,Episode_276,22,2,Aimee Willard
+9,Episode_276,22,3,David Thompson
+9,Episode_276,22,4,Chase Bowman
+9,Episode_276,22,5,Cynthia Armistead
+9,Episode_276,22,6,The Daughter of Dave and Christie Carlsen
+9,Episode_277,23,1,Amazon Women
+9,Episode_277,23,2,The Oakville Blobs
+9,Episode_277,23,3,David Shublak
+9,Episode_277,23,4,Dimitric Moore
+9,Episode_278,24,1,Salvatore Spinnato
+9,Episode_278,24,2,Reverend Ralph DiOrio
+9,Episode_278,24,3,Dana Satterfield
+9,Episode_278,24,4,The Friend of Moises Treves
+9,Episode_278,24,5,Atlanta/Spokane Bomber
+9,Episode_278,24,6,David Gause
+9,Episode_279,25,1,Jimmie Wayne Pierce
+9,Episode_279,25,2,Stephanie Booker
+9,Episode_280,26,1,Therese Rose Walsh
+9,Episode_280,26,2,Maria Hernandez
+9,Episode_280,26,3,Melvin Wilson
+10,Episode_281,1,1,Elvis Presley
+10,Episode_281,1,2,Joe McCarthy
+10,Episode_281,1,3,Monika Rizzo
+10,Episode_281,1,4,Candy Belt and Gloria Ross
+10,Episode_282,2,1,Joffre Ramos
+10,Episode_282,2,2,Michelle Abraham
+10,Episode_282,2,3,Mary Agnes Gross
+10,Episode_282,2,4,Kathy Page
+10,Episode_282,2,5,Michael Drosnin
+10,Episode_283,3,1,Michael Wayne Brown
+10,Episode_283,3,2,Ngoc Van Tran
+10,Episode_283,3,3,Marvin Gabrion
+10,Episode_283,3,4,Pat Brown
+10,Episode_283,3,5,Nanteos Cup
+10,Episode_284,4,1,Wendy Von Huben
+10,Episode_284,4,2,Woods Home
+10,Episode_284,4,3,Jose Blandon
+10,Episode_284,4,4,Marshall Lee Brown
+10,Episode_285,5,1,Chair of Death
+10,Episode_285,5,2,Savior of Wilma Drew
+10,Episode_285,5,3,Katherine Korzilius
+10,Episode_285,5,4,Paul Ragusa
+10,Episode_285,5,5,Francis C. Buhay
+10,Episode_285,5,6,Trent Fouts
+10,Episode_286,6,1,Phoenix Lights
+10,Episode_286,6,2,The Children of Doreen Espinosa
+10,Episode_286,6,3,Sharon Kinne
+10,Episode_286,6,4,Gary and Ted Noble
+11,Episode_287,1,1,Brook Baker
+11,Episode_287,1,2,Bugsy Siegel
+11,Episode_287,1,3,Sabrina Aisenberg
+11,Episode_287,1,4,Audrey Santo
+11,Episode_287,1,5,Henry Weingarten
+11,Episode_288,2,1,Jason McVean and Alan Pilon
+11,Episode_288,2,2,The Skunk Ape
+11,Episode_288,2,3,Delta Queen Riverboat
+11,Episode_288,2,4,Michelle Witherell
+11,Episode_288,2,5,Nicolai Levashov
+11,Episode_289,3,1,Jayson Artis
+11,Episode_289,3,2,Amy Wroe Bechtel
+11,Episode_289,3,3,Chansami and Abby Thammavong
+11,Episode_289,3,4,Loews Cottage
+11,Episode_289,3,5,John Holland
+11,Episode_290,4,1,Alan Golder
+11,Episode_290,4,2,Ted Binion
+11,Episode_290,4,3,Nostradamus
+11,Episode_290,4,4,Amy Bradley
+11,Episode_290,4,5,Saviors of Doris Smith
+11,Episode_291,5,1,Walk-Ins
+11,Episode_291,5,2,Jessica Keen
+11,Episode_292,6,1,Cam Lyman
+11,Episode_292,6,2,Ok-Cha Wortman
+11,Episode_292,6,3,Charlene Richard
+11,Episode_292,6,4,HOPE
+11,Episode_292,6,5,Jim Wood
+12,Episode_293,1,1,Linda Sherman
+12,Episode_294,2,1,Lauria Bible and Ashley Freeman
+12,Episode_295,3,1,Bryan Nisenfeld
+12,Episode_296,4,1,Traci Kenley and Bill Rundle
+12,Episode_297,5,1,The Family of Dolores Camarena
+12,Episode_297,5,2,Amy Wroe Bechtel
+12,Episode_298,6,1,James Sullivan
+12,Episode_298,6,2,Amy Bradley
+12,Episode_299,7,1,Eagle
+12,Episode_300,8,1,Trisha Autry
+12,Episode_301,9,1,Dee Klepper
+12,Episode_302,10,1,Craig Pritchert and Nova Guthrie
+12,Episode_303,11,1,Landon and Logan Walker
+12,Episode_303,11,2,Alan Golder
+12,Episode_304,12,1,Jerry Lee Bowen
+12,Episode_305,13,1,Kristen Modafferi
+12,Episode_306,14,1,Lizzie Borden House
+12,Episode_307,15,1,Sonya Fitzpatrick
+12,Episode_308,16,1,Jones House
+12,Episode_309,17,1,Yefim Shubentsov
+12,Episode_310,18,1,John Addis
+12,Episode_311,19,1,Myrtles Plantation
+12,Episode_311,19,2,Judith Smith
+12,Episode_312,20,1,Jesse James Hollywood
+12,Episode_312,20,2,Jessica Keen
+12,Episode_313,21,1,Desiree Lingo-Perkins
+12,Episode_313,21,2,Carl McWilliams
+12,Episode_313,21,3,Jayson Artis
+12,Episode_314,22,1,Wil Hendrick
+12,Episode_314,22,2,Richard Aderson
+12,Episode_314,22,3,Nazca Lines
+12,Episode_314,22,4,Logan Carroll
+12,Episode_315,23,1,Debra and Diana Cordova
+12,Episode_316,24,1,Gordon Weaver
+12,Episode_316,24,2,James Bulger
+12,Episode_317,25,1,Leah Roberts
+12,Episode_318,26,1,Arthur Lopez Jr.
+12,Episode_319,27,1,Natasha Jennings
+12,Episode_320,28,1,Clayton Waagner
+12,Episode_321,29,1,Jodie Bordeaux
+12,Episode_322,30,1,Dr. Emily Craig
+12,Episode_323,31,1,Malaika Griffin
+12,Episode_324,32,1,Karen and Kathy Mills
+12,Episode_324,32,2,Shannon Kinne
+12,Episode_324,32,3,Carolyn Hebert
+12,Episode_324,32,4,Joe Cole
+12,Episode_325,33,1,Darlie Routier
+12,Episode_326,34,1,David Shipenburg
+12,Episode_326,34,2,Jason McVean and Alan Pilon
+12,Episode_327,35,1,Morgan Nick
+12,Episode_327,35,2,Jacqueline Castaneda
+12,Episode_328,36,1,Warren Fulton and Rachael Raver
+12,Episode_328,36,2,Susan King
+12,Episode_328,36,3,Candy and Roxy
+12,Episode_328,36,4,Martha Moxley
+12,Episode_329,37,1,Claudia Kirschhoch
+12,Episode_329,37,2,Fertility Statues
+12,Episode_329,37,3,Raymond Young
+12,Episode_329,37,4,Patricia Stallings
+12,Episode_330,38,1,Margie Jelovcic
+12,Episode_331,39,1,Carlos Berdeja
+12,Episode_331,39,2,Michael Wayne Brown
+12,Episode_331,39,3,Lonnie Zamora UFO Sighting
+12,Episode_331,39,4,William Jordan
+12,Episode_332,40,1,Michael Owen
+12,Episode_332,40,2,Gordon Page Jr.
+12,Episode_332,40,3,Ok-Cha Wortman
+13,Episode_348,1,1,Chandra Levy and Joyce Chiang
+13,Episode_348,1,2,Christine Mirzayan
+13,Episode_349,2,1,Dr. Sneha Philip
+13,Episode_350,3,1,Eric Rudolph
+13,Episode_350,3,2,Bruce Kelly
+13,Episode_350,3,3,Chad Maurer
+13,Episode_351,4,1,Amber Swartz
+13,Episode_351,4,2,Wyrick House
+13,Episode_351,4,3,Gus Hoffman
+13,Episode_352,5,1,Frank Montenegro
+13,Episode_352,5,2,Mickey and Trudy Thompson
+13,Episode_353,6,1,Mary Morris and Mary Morris
+13,Episode_354,7,1,Robert Fisher
+13,Episode_355,8,1,Stephen Anderson
+13,Episode_356,9,1,Anthrax Killer
+13,Episode_357,10,1,The Family of Monica Libao
+13,Episode_358,11,1,Ann Kibalo
+13,Episode_359,12,1,Holly Krewson
+13,Episode_360,13,1,Jessica Constant
+13,Episode_361,14,1,Kristine Westin and Kevin Woo
+13,Episode_362,15,1,Albert DeSalvo
+13,Episode_363,16,1,Frederick Russell
+13,Episode_363,16,2,Savior of Steve Newton
+13,Episode_363,16,3,Rafael Camarena
+13,Episode_364,17,1,David Kemp
+13,Episode_364,17,2,Chaim Weiss
+13,Episode_364,17,3,Mahfuz Huq
+13,Episode_364,17,4,Tony Marabella
+13,Episode_365,18,1,Omar Arroyo
+13,Episode_366,19,1,Stryder Styarfyr
+13,Episode_366,19,2,Hazel Head
+13,Episode_367,20,1,James Kilgore
+13,Episode_368,21,1,Mia
+13,Episode_369,22,1,Black Hope
+13,Episode_370,23,1,Gazebo Baby
+13,Episode_370,23,2,The Parents of Kimberly Smith
+13,Episode_370,23,3,Richard Cepulonis
+13,Episode_370,23,4,Chupacabras
+13,Episode_370,23,5,Tom Johnson
+13,Episode_371,24,1,Original Night Stalker
+13,Episode_371,24,2,Robert Hamrick
+13,Episode_371,24,3,E.L.F.
+13,Episode_372,25,1,Eric Tamiyasu
+13,Episode_373,26,1,Mothman
+13,Episode_374,27,1,Canada Crop Circles
+13,Episode_375,28,1,Jon and Molly Maggio
+13,Episode_376,29,1,Colleen Wood
+13,Episode_376,29,2,Sam Zelikson
+13,Episode_376,29,3,Jamie Santos
+13,Episode_376,29,4,Greg Webb
+13,Episode_377,30,1,Opal Zacharias
+13,Episode_377,30,2,Rachel Cooke
+13,Episode_377,30,3,Sharon Rogers Car Bomber
+13,Episode_377,30,4,Bobby Fuller
+13,Episode_377,30,5,Luiz Gasparetto
+13,Episode_378,31,1,William Fischer
+13,Episode_379,32,1,Frank Isley
+13,Episode_380,33,1,Lyle Moody
+13,Episode_380,33,2,"Donna Baldeo, Jailall Lewis, and Bunnie Terry"
+13,Episode_381,34,1,Janice and Alyssa Owen
+13,Episode_382,35,1,Erica Richardson
+13,Episode_383,36,1,Wendi Long
+13,Episode_383,36,2,Carson Prince
+13,Episode_383,36,3,Le-Zhan Williams
+13,Episode_383,36,4,Stuart Heaton
+13,Episode_384,37,1,Margo Freshwater
+13,Episode_385,38,1,Joe Morrow
+13,Episode_385,38,2,Linda Tellington-Jones
+13,Episode_385,38,3,Brad Bishop
+13,Episode_385,38,4,David Viera
+13,Episode_386,39,1,Rufino Castaneda
+13,Episode_386,39,2,Rick McCue
+13,Episode_386,39,3,The Friends of Fritz Vincken
+13,Episode_387,40,1,Diane Shawcroft and Jennifer Lueth
+14,Episode_S002,2,1,Kurt Cobain
+14,Episode_S002,2,2,Candy Belt and Gloria Ross
+14,Episode_S002,2,3,Andy Cook
+14,Episode_S002,2,4,Jesse James Hollywood
+14,Episode_S002,2,5,HOPE
+14,Episode_S002,2,6,Devon Williams
+14,Episode_S003,3,1,Elvis Presley
+14,Episode_S003,3,2,Kecksburg UFO
+14,Episode_S003,3,3,Ted Binion
+14,Episode_S003,3,4,Joseph Cole
+14,Episode_S003,3,5,Greg Webb
+14,Episode_S004,4,1,Sam Wheeler
+14,Episode_S004,4,2,Richard Bare
+14,Episode_S004,4,3,Ira Einhorn
+14,Episode_S004,4,4,Greg Webb
+14,Episode_S004,4,5,Gettysburg National Military Park
+14,Episode_S004,4,6,Randall Utterback
+14,Episode_S005,5,1,Stephen Anderson
+14,Episode_S005,5,2,Don Davis Jr.
+14,Episode_S005,5,3,Jean Hilliard
+14,Episode_S005,5,4,Minnesota Brinks Heist
+14,Episode_S005,5,5,Robert Arcieri
+14,Episode_S005,5,6,Jodie Bordeaux
+14,Episode_S006,6,1,Albert Leon Fletcher
+14,Episode_S006,6,2,Craig Pritchert and Nova Guthrie
+14,Episode_S006,6,3,Howard Storm
+14,Episode_S006,6,4,Heather Tallchief and Roberto Solis
+14,Episode_S006,6,5,Patrick Kelly
+14,Episode_S006,6,6,Yogi the Bloodhound
+14,Episode_S007,7,1,Justin Burwinkle
+14,Episode_S007,7,2,San Mateo Fires
+14,Episode_S007,7,3,Phoenix Lights
+14,Episode_S007,7,4,Brandon Lee
+14,Episode_S007,7,5,Frank Morris and the Anglin Brothers
+14,Episode_S008,8,1,Jason McVean and Alan Pilon
+14,Episode_S008,8,2,Jonathan Kern
+14,Episode_S008,8,3,Larry George
+14,Episode_S008,8,4,Dannion Brinkley
+14,Episode_S008,8,5,Mickey and Trudy Thompson
+14,Episode_S008,8,6,Gordon Collins
+14,Episode_S009,9,1,Tupac Shakur
+14,Episode_S009,9,2,Bigfoot
+14,Episode_S009,9,3,Gary and Ted Noble
+14,Episode_S009,9,4,Frederick Russell
+14,Episode_S009,9,5,Jack Davis Jr.
+14,Episode_S009,9,6,Yves-Emmanuel Pain and Laurent Hernas
+14,Episode_S010,10,1,Wallace Thrasher
+14,Episode_S010,10,2,Clayton Waagner
+14,Episode_S010,10,3,San Pedro Mummy
+14,Episode_S010,10,4,Timothy Combs
+14,Episode_S010,10,5,Bugsy Siegel
+14,Episode_S010,10,6,Martha Moxley
+14,Episode_S011,11,1,Edward Bell
+14,Episode_S011,11,2,Monika Rizzo
+14,Episode_S011,11,3,Pierre April
+14,Episode_S011,11,4,Wendi Long
+14,Episode_S011,11,5,Lee Young
+14,Episode_S011,11,6,Canada Crop Circles
+14,Episode_S012,12,1,Randolph Dial
+14,Episode_S012,12,2,Lonnie Zamora UFO Sighting
+14,Episode_S012,12,3,Dr. Martin Luther King
+14,Episode_S012,12,4,Jack Purvis
+14,Episode_S013,13,1,Thomas Burkett
+14,Episode_S013,13,2,Boo
+14,Episode_S013,13,3,David Gordon Smith
+14,Episode_S013,13,4,Rick Vallee
+14,Episode_S013,13,5,Darlie Routier
+14,Episode_S014,14,1,Blair Adams
+14,Episode_S014,14,2,Thomas David Dixon
+14,Episode_S014,14,3,Stephanie Booker
+14,Episode_S014,14,4,Yamashita's Treasure
+14,Episode_S014,14,5,The Friend of Stephan Ross
+14,Episode_S015,15,1,Dan Montecalvo
+14,Episode_S015,15,2,Caddie
+14,Episode_S015,15,3,David Stone
+14,Episode_S015,15,4,Arthur Frankfort
+14,Episode_S015,15,5,"John ""Thumper"" Brown"
+14,Episode_S016,16,1,Roswell Crash
+14,Episode_S016,16,2,Dottie Caylor
+14,Episode_S016,16,3,Jeffrey Digman
+14,Episode_S016,16,4,Steven Cox
+14,Episode_S016,16,5,Inner City Church Fire
+14,Episode_S017,17,1,Vallejo Armored Car Murders
+14,Episode_S017,17,2,Fumbles
+14,Episode_S017,17,3,The Black Dahlia
+14,Episode_S017,17,4,Raphael Camarena
+14,Episode_S017,17,5,Black Hope
+14,Episode_S018,18,1,Gainesville Killers
+14,Episode_S018,18,2,Tyler
+14,Episode_S018,18,3,Jesslyn Rich
+14,Episode_S018,18,4,Michael Swango
+14,Episode_S018,18,5,Three Partners Ranch
+14,Episode_S018,18,6,A.J. Breaux
+14,Episode_S019,19,1,Obia-Man
+14,Episode_S019,19,2,Danny and Kathy Freeman
+14,Episode_S019,19,3,Todd Mueller
+14,Episode_S019,19,4,John Mooney
+14,Episode_S019,19,5,Joe O'Brien
+14,Episode_S019,19,6,Pat Brown
+14,Episode_S020,20,1,Eric Tamiyasu
+14,Episode_S020,20,2,Dark Dante
+14,Episode_S020,20,3,Skeleton Canyon Treasure
+14,Episode_S020,20,4,Terry Lee Conner and Joseph Daugherty
+14,Episode_S020,20,5,Joe Smith
+14,Episode_S020,20,6,Richard Cepulonis
+14,Episode_S021,21,1,Boston Strangler
+14,Episode_S021,21,2,Wendy Von Hubben
+14,Episode_S021,21,3,Interceptors
+14,Episode_S021,21,4,Dolores Stradt
+14,Episode_S022,22,1,Randy Yager
+14,Episode_S022,22,2,Kansas City Arsonist
+14,Episode_S022,22,3,The Allagash Abductions
+14,Episode_S022,22,4,Amy Wroe Bechtel
+14,Episode_S023,23,1,Paul Stamper
+14,Episode_S023,23,2,Susan Walsh
+14,Episode_S023,23,3,Trabuco Treasure
+14,Episode_S023,23,4,Su Taraskiewicz
+14,Episode_S023,23,5,Lee Selwyn
+14,Episode_S023,23,6,Tom Hughes
+14,Episode_S024,24,1,D.B. Cooper
+14,Episode_S024,24,2,Raymond and Ruth Ann Ritter
+14,Episode_S024,24,3,Wade Mitchell Parker
+14,Episode_S024,24,4,Chair of Death
+14,Episode_S024,24,5,Colleen Wood
+14,Episode_S025,25,1,Jayson Artis
+14,Episode_S025,25,2,Jarod Allgood
+14,Episode_S025,25,3,Ray Hickenbotham
+14,Episode_S025,25,4,Smith Home
+14,Episode_S025,25,5,Dennis Keith Smith
+14,Episode_S026,26,1,David Cox
+14,Episode_S026,26,2,Yeti
+14,Episode_S026,26,3,Sarah Powell
+14,Episode_S026,26,4,Tom Roche
+14,Episode_S026,26,5,Jerry Gervasoni
+14,Episode_S026,26,6,Victor Gerena
+14,Episode_S027,27,1,Ted Binion
+14,Episode_S027,27,2,Kansas City Arsonist
+14,Episode_S027,27,3,Richard Aderson
+14,Episode_S027,27,4,Frederick Valentich
+14,Episode_S027,27,5,John and Linda Sohus
+14,Episode_S027,27,6,David Morehouse
+14,Episode_S028,28,1,Sonny Liston
+14,Episode_S028,28,2,David Davis
+14,Episode_S028,28,3,Belgium UFO
+14,Episode_S028,28,4,Mickey and Trudy Thompson
+14,Episode_S028,28,5,Rohrey Wychgel
+14,Episode_S029,29,1,Roger Dean
+14,Episode_S029,29,2,Jean Moore
+14,Episode_S029,29,3,John Holland
+14,Episode_S029,29,4,Larry George
+14,Episode_S029,29,5,Robert Watson
+14,Episode_S029,29,6,Bannack Treasure
+14,Episode_S030,30,1,Michael Francke
+14,Episode_S030,30,2,Pierre April
+14,Episode_S030,30,3,Albert Leon Fletcher
+14,Episode_S030,30,4,Butcher Of Kingsbury Run
+14,Episode_S030,30,5,Charles Horvath
+14,Episode_S030,30,6,Mystery Rock
+14,Episode_S031,31,1,Shane Stewart and Sally McNelty
+14,Episode_S031,31,2,John Roubas
+14,Episode_S031,31,3,Sara DeGenerio
+14,Episode_S031,31,4,Philip Breen
+14,Episode_S031,31,5,Charles Warren Boomer
+14,Episode_S031,31,6,Donna Baldeo
+14,Episode_S032,32,1,Amy Bradley
+14,Episode_S032,32,2,Thomas David Dixon
+14,Episode_S032,32,3,Agustin Mendoza
+14,Episode_S032,32,4,Hotel Bullock
+14,Episode_S032,32,5,Kay Fletcher
+14,Episode_S032,32,6,Danny Williams
+14,Episode_S033,33,1,Linda Sherman
+14,Episode_S033,33,2,Cokeville Elementary School Explosion
+14,Episode_S033,33,3,Michael Swango
+14,Episode_S033,33,4,Brian Broughfield
+14,Episode_S033,33,5,Rochester Car Heist
+14,Episode_S033,33,6,Star Palumbo
+14,Episode_S034,34,1,Bruce Kelly
+14,Episode_S034,34,2,Gordon Weaver
+14,Episode_S034,34,3,Joe Smith
+14,Episode_S034,34,4,Oliver
+14,Episode_S034,34,5,Salvatore Caruana
+14,Episode_S035,35,1,Melissa Jo Sermons
+14,Episode_S035,35,2,Mexico City UFO
+14,Episode_S035,35,3,William Eugene Hillard
+14,Episode_S035,35,4,Louis Carlucci
+14,Episode_S035,35,5,Nanci Manni
+14,Episode_S035,35,6,Edmonton Rapist
+14,Episode_S036,36,1,Green River Killer
+14,Episode_S036,36,2,Elizabeth Ortiz
+14,Episode_S036,36,3,Delta Queen Riverboat
+14,Episode_S036,36,4,Mike O'Mara
+14,Episode_S036,36,5,Lenny Dirickson
+14,Episode_S036,36,6,John Hawkins
+14,Episode_S037,37,1,Patsy Wright
+14,Episode_S037,37,2,John Grundhofer
+14,Episode_S037,37,3,Martha Moxley
+14,Episode_S037,37,4,Swoop And Squat1
+14,Episode_S037,37,5,Craig Williamson
+14,Episode_S037,37,6,David Shublak
+14,Episode_S038,38,1,Doug Johnston
+14,Episode_S038,38,2,Claudia Kirschhoch
+14,Episode_S038,38,3,Dutch Schultz Treasure
+14,Episode_S038,38,4,Harold Bennett
+14,Episode_S038,38,5,Paul Stamper
+14,Episode_S038,38,6,Neal Jennings
+14,Episode_S039,39,1,Jim Burnside
+14,Episode_S039,39,2,The Shroud Of Turin
+14,Episode_S039,39,3,Robert Borton
+14,Episode_S039,39,4,Megan Curl
+14,Episode_S039,39,5,Duncan Gilmore
+14,Episode_S040,40,1,Arnold Archambeau and Ruby Bruguier
+14,Episode_S040,40,2,Resurrection Cemetery
+14,Episode_S040,40,3,TWA Flight 800
+14,Episode_S040,40,4,Gary and Ted Noble
+14,Episode_S040,40,5,Ethel Kidd
+14,Episode_S040,40,6,Heirs of Dan Willains
