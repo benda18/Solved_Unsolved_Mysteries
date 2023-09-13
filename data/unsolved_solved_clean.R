@@ -4112,6 +4112,15 @@ Update: Wanted: Joseph Hutchinson
 Legend: Victorio Peak Treasure (repeat from May 10, 1989)
 Lost: The Families of the S.S. Muskogee Crew (repeat from April 26, 1989)")
 
+# backup s.infos
+
+s.info.bu <- NULL
+for(i in ls(pattern = "^s\\d{1,2}\\.info$")){
+  s.info.bu <- rbind(s.info.bu, 
+                     get(i))
+}
+
+
 # tidy first aired----
 fa.remove <- "^.*aired: | \\(.*$"
 # set date
@@ -4306,21 +4315,24 @@ cw_ep.airdates <- master.out %>%
   group_by(s_num, ep_num, date_fa) %>%
   summarise()
 
+write_csv(cw_ep.airdates, "cw_ep.airdates.csv")
+
 cw_ep.id <- master.out %>%
   group_by(s_num, ep_num) %>%
   summarise() %>%
   ungroup() %>%
   mutate(., 
-         eid = paste("s", 
+         eid = paste("S", 
                      unlist(lapply(s_num, FUN = lzero, 
                                    n.leading.zeroes = 2)), 
-                     "ep", 
+                     "E", 
                      unlist(lapply(ep_num, FUN = lzero, 
                                    n.leading.zeroes = 3)), 
                      sep = ""))
 
+write_csv(cw_ep.id, "cw_ep.id.csv")
 
-master.out
+write_csv(master.out, "episode_info.csv")
 
 # people and names----
 library(lexicon)

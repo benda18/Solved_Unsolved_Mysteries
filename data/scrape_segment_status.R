@@ -13,13 +13,23 @@ rm(list=ls());cat('\f');gc()
 
 
 lzero <- function(x, n.leading.zeroes){
-  out <- as.character(x)
-  if(nchar(out) < n.leading.zeroes){
-    out <- paste(c(rep("0", n.leading.zeroes - nchar(out)), 
-                   out), sep = "", collapse = "")
+  if(is.na(x)){
+    out <- "NA"
+  }else{
+    out <- as.character(x)
   }
+  
+  #if(!is.na(x)){
+    
+    if(nchar(out) < n.leading.zeroes){
+      out <- paste(c(rep("0", n.leading.zeroes - nchar(out)), 
+                     out), sep = "", collapse = "")
+    }
+  #}
+  
   return(out)
 }
+
 
 
 url1 <- "https://unsolvedmysteries.fandom.com/wiki/Bruno_and_Bobo"
@@ -1265,6 +1275,19 @@ print(i)
 
 #season_A <- rbind(season_A, season_b)
 
+season_A$uid_ep <- paste("S", 
+                         unlist(lapply(season_A$s_num, lzero, 2)), 
+                         "E", 
+                         unlist(lapply(season_A$ep_num, lzero, 3)), 
+                         sep = "")
+
+season_A$uid_seg <- sha512(x = season_A$seg_name) %>%
+  as.character() %>%
+  substr(., 0, 12)
+
+season_A
+
+
 # write_data----
 
 readr::write_csv(season1, "season1.csv")
@@ -1272,7 +1295,7 @@ readr::write_csv(season2, "season2.csv")
 readr::write_csv(season_A, "composite.data.csv")
 
 
-
+#season_A <- read_csv("composite.data.csv")
 
 
 season_A %>%
@@ -1283,3 +1306,13 @@ season_A %>%
             avg_times_shown = mean(n_ep)) 
 
 
+# combine composite.data.csv with other data that's already been captured----
+season_A <- read_csv("composite.data.csv")
+season1  <- read_csv("season1.csv")
+season2  <- read_csv("season2.csv")
+
+
+rbind(season1,season2) %>%
+  group_by(uid_seg) %>%
+  summarise(n_epid = n_distinct(uid_ep)) %>%
+  .[order(.$n_epid,decreasing = T),]
