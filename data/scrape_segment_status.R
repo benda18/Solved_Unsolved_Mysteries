@@ -10,6 +10,8 @@ library(ggplot2)
 setwd("~/R/play/Solved_Unsolved_Mysteries/data")
 rm(list=ls());cat('\f');gc()
 
+
+
 lzero <- function(x, n.leading.zeroes){
   out <- as.character(x)
   if(nchar(out) < n.leading.zeroes){
@@ -747,14 +749,473 @@ season2$uid_seg <- sha512(x = season2$seg_name) %>%
   as.character() %>%
   substr(., 0, 12)
 
+
+# letter A----
+ltr.a <- read_lines("Michelle Abraham
+               John Addis
+               Tony Alamo
+               James and Lisa Albert
+               DeFallah Al-Salem
+               Donald Alexander
+               Paul Xavier Alexander
+               Michael Alfonso
+               Richard Joseph Alvarado
+               Jose Alvarez and Juan Cristo
+               David Alex Alvarez
+               Adolph Altuve
+               Dr. John Anderson
+               Stephen Anderson
+               Frank_Morris_and_the_Anglin_Brothers
+               Anthrax Killer
+               Melvine Aprile
+               Luis and Ivan Arango
+               Garth Arathorne
+               Erik Arceneaux
+               Robert Arcieri
+               Maria Armstrong
+               Omar Arroyo
+               Atlanta/Spokane Bomber") %>% 
+  trimws 
+
+ltr.b <- read_lines("Hugo Balbin
+    The Bald Mountain Shooters
+    Ed Barbara
+    Richard Bare
+    Jerome Alan Bargo
+    Swoop And Squat2
+    Gregory Barker
+    Dorothy Barnett
+    Tim Barry
+    Ronald Bax
+    Lance Bedgood
+    Edward Bell
+    Michael Benka
+    Carlos Berdeja
+    Bicycle Bandit
+    Bike Path Rapist
+    The Bird Road Rapist
+    Brad Bishop
+    Reuben Blackwell Sr.
+    The Black Widow
+    Jose Blandon
+    Daniel Blaszczuk
+    John Blauvelt
+    Blind River Killer
+    Richard Bocklage
+    Charles Warren Boomer
+    Boston Rapist
+    Florian Bourch
+    Jerry Lee Bowen
+    Boynton Beach Robber
+    Brayman Road Attacker
+    Brazos River Attackers
+    Philip Breen
+    Rickey Bright
+    Brian Brophil
+    John \"Thumper\" Brown
+    Marshall Lee Brown
+    Michael Wayne Brown
+    Chuck Bucrzinski
+    Francis C. Buhay
+    Whitey Bulger
+    John Burns
+    Jim Burnside
+    Burrowing Burglars") %>% 
+  trimws 
+
+ltr.c <- read_lines("Ronald Cains
+    Raphael Camarena
+    Blas Canedo
+    Gregory Caplinger
+    Ricardo Caputo
+    Ricardo Villanueva Cordova
+    James and Dorothy Carlson
+    Louis Carlucci
+    Liz Carmichael
+    Salvatore Caruana
+    Antonio Castro
+    Richard Cepulonis
+    Antonio Chavez
+    Charles Wilson Chester
+    Chevy Chase Bandit
+    Foong Chin
+    Larry Chism
+    Church Arsonist
+    Richard Church
+    Leo Cisneros
+    Circleville Writer
+    Mike Cline
+    David Coleman
+    Joseph Collins
+    Timothy Combs
+    Richard Condia
+    Connecticut River Killer
+    Terry Lee Conner and Joseph Daugherty
+    Andy Cook
+    D.B. Cooper
+    William Cooper
+    Felipe de Jesus Corona-Verbera
+    Robert Corrado
+    Ann Corricelli and Lena Marie Wilson
+    Jorge Cortez
+    The Countess
+    Cowboy Bandit
+    Steven Cox
+    Crash and Dash Robberies
+    Crazy Glue Bandit
+    Matthew Crome
+    Julio Marco Cruz") %>% trimws
+
+ltr.dg <- read_lines("Dark Dante
+    Astarte Davis
+    David Davis
+    Don Davis Jr.
+    Tracy Davis
+    Nelson DeCloud
+    Tony DeCompo
+    Regina and Margaret Defrancisco
+    Juan_Gil_Ferrufino,_Mario_Portillo_and_German_DeLeon
+    Dewey Demetro
+    Robert Dennie
+    Carl And Mary Denny
+    Ronald Denslow
+    Reggie DePalma
+    Dennis DePue
+    Randolph Dial
+    John Anthony Diaz
+    Ken Dickerson
+    Rolex Robbers
+    Thomas David Dixon
+    Tom Dixon
+    Kevin Dominic
+    Bob Dozier and John Russell
+    Travis Wade Duncan
+    Catherine and James Durkin
+    Original Night Stalker
+    Carl Alfred Eder
+    Edmonton Rapist
+    John Addis
+    Ira Einhorn
+    Sami Eisbart
+    Adam Emery
+    Epes Bandits
+    Eduwigis Escalante
+    Michael Eschweiler
+    David Estright
+    Pat Fagan
+    Judge John Fairbanks
+    Sergio Farina
+    Pat Farmer
+    John William Farr
+    Rita Faulkner
+    Jeanette Federico
+    John Feiga
+    Betty Field
+    Emma Figueroa
+    Kelly Finnegan
+    David Fisher
+    Robert Fisher
+    William Fischer
+    Robert Fisher
+    Gene Flannes
+    Albert Leon Fletcher
+    Francisco Flores
+    Lavada Floyd
+    Richard Ford
+    Wardell Ford
+    Trent Fouts
+    Dr. Kenneth Frank
+    Arthur Frankford
+    Margo Freshwater
+    David Freeman
+    Robert Fritch
+    Elizabeth_Ortiz
+    Marvin Gabrion
+    Mark Gagliardo
+    Jean Marie Gagnon
+    Gainesville Killers
+    Sweetheart_Swindler
+    Garbage Bag Bandit
+    Armando Garcia
+    Carlos Garcia
+    Joseph Gardner
+    David Gause
+    Thomas Geers
+    Larry George
+    Jerry Gervasoni
+    Victor Gerena
+    Christian Karl Gerhartsreiter
+    Samuel Glover and Marshall Kirkpatrick
+    Hari Gobin
+    Ann Sigmin
+    Alan Golder
+    Andolina Gonzalez
+    Jose Gonzalez
+    Neil and Terry Gott
+    Grandpa Bandit
+    Richard Green
+    Green River Killer
+    Catherine Greig
+    Christopher Griffin
+    Malaika Griffith
+    Grocery Robbers
+    Sal Guardado
+    Nova Guthrie") %>% trimws
+
+ltr.hm <- read_lines("Steve Hadley
+    Michael Hansen
+    Rejean Hardy
+    Hugh Harlin
+    John Hawkins
+    Hazel Head
+    Connie Jean Helton
+    Maria Hernandez
+    Luis Herrera
+    Thomas_Hickey_and_William_McCarthy
+    William Eugene Hillard
+    Julius_Patterson_and_Paulette_Hite
+    Cheryl Holland
+    Jesse James Hollywood
+    Mahfuz Huq
+    Joseph Hutchinson
+    Dale Hyde
+    Inner City Church Fire
+    Interstate 70 Killer
+    John Irwin
+    David Ivey
+    Juan Jackson
+    Jockey Bandit
+    John Grundhofer
+    Tom Johnson
+    Elvin Jones
+    William Jordan
+    Kachimba
+    The Unabomber
+    Ahmed Kandil
+    Kansas City Arsonist
+    John and Cecilia Kealing
+    Woody Kelly
+    David Kemp
+    Jonathan Kern
+    Edgar Kerns
+    Eric Kessler
+    Rabia Khalid
+    Ann Kibalo
+    James Kilgore
+    James Donald King
+    Deroy King, Jr
+    Shannon Kinne
+    Butch Knight
+    William Korioth
+    Leo Koury
+    Joseph Krantz
+    Jorge Landeros
+    Maria Socorro De Rodriguez LaPine
+    Michael Lassen
+    Laura Law
+    Lesa Lee
+    Robert Leeds
+    Jimmy Ray LeGate
+    Desiree Lingo-Perkins
+    Robert Litchfield
+    Elmer Locker Jr.
+    Arthur Lopez Jr.
+    Mario Lozano
+    John Lutter
+    Lionel Luviano
+    David MacLeod
+    Jon and Molly Maggio
+    Gary Magno
+    Joe Maloney
+    Brooker Maltais
+    Joseph Mancini
+    Marvin and Sandra Maple
+    Manwell Marino
+    Melody Martin
+    Regina Martinez
+    Jason_McVean_and_Alan_Pilon
+    Edgar Maynard
+    Melvin Edward Mays
+    Thomas_Hickey_and_William_McCarthy
+    Kenneth McDuff
+    William McGeehee
+    Kelly Lee McGinnis
+    Michael McGuffey
+    Raymond McLeod
+    Richard McNair
+    Carl McWilliams
+    Medusa Bandit
+    Jorge_Mendez_and_Jose_Rios
+    Augustin Mendoza
+    J. D. Method
+    Miami Robber
+    Milk Carton Bandit
+    Benny Franklin Miller
+    Swoop And Squat1
+    Larry Dennis Miller
+    Richard Mimms
+    Minnesota Brinks Heist
+    Mishawaka Rapist
+    Mark Mitchell
+    Patrick Michael Mitchell
+    Michael Mohan
+    Levia Molinari
+    Frank Montenegro
+    Liza Montgomery
+    Manny Moreno
+    Joe Morrow
+    Jerry Moss
+    Lyle Moody
+    John Mooney
+    Phillip Anthony Moore
+    Miguel Morales
+    Frank Morris and the Anglin Brothers
+    Todd Mueller
+    Charles Mulet
+    Larry Munroe") %>% trimws
+
+ltr.ns <- read_lines("Nashville-Cincinnati Serial Killer
+    Nassau County Robber
+    Mr. Nasty
+    Al_Tom_and_Ricky_Nelson
+    Gary and Ted Noble
+    Thomas Noss Jr.
+    Lissette Nukida
+    Pedro Nyego
+    Stanley Obas
+    Luis Ochoa
+    Ohio Prostitute Killer
+    Oklahoma City Convenience Store Robbers
+    Steven Oliver
+    Ray Olsen
+    David O'Neil
+    Original Night Stalker
+    Elizabeth Ortiz
+    Joe Owens
+    Nasario Palacios
+    Eugene Palmer
+    Wade Mitchell Parker
+    John Paul
+    Karen Pelletiere
+    Jesus Penalver
+    Pennsylvania Bank Robber
+    Juan Carlos Pereira
+    Jimmie Wayne Pierce
+    Danny Piñeda
+    Ramon_Reyes_and_Louie_Velarde
+    Derek Leonard Reynolds
+    Pizza Restaurant Robbers
+    Pizza Parlor Killer
+    Mary Poppins Bandit
+    Kathy Power
+    Ora Prince
+    Joseph Prushinowski
+    Desiree Perkins
+    Gertrude Pruitt
+    Pedro Pumajero
+    Luie Quezada
+    Jack Quinn
+    Paul Ragusa
+    Roberto Ramirez
+    Red Dye Robber
+    Michael_St._Clair_and_Dennis_Reese
+    Karl Rehberg
+    Richard Relf
+    David Rhodes
+    Mike Riemer
+    Filiberto Ojeda Rios
+    Bill Roberts
+    Susan Roberts
+    Rochester Car Heist
+    Joseph Rodia
+    David Rodriguez
+    Edwin Rodriguez
+    Pablo Rodriguez
+    Rafael Rodriguez
+    Leslie Ibsen Rogge
+    John Roubas
+    Route 22 Killer
+    Route 29 Stalker
+    Jose Rubio
+    Eric Rudolph
+    Frederick Russell
+    Ron Rushton
+    Sagebrush Rebellion
+    Gloria Schulze
+    Raymond Scoville
+    Seattle Arsonist
+    Melissa Jo Sermons
+    Sharon Rogers Car Bomber
+    Joe Shepard
+    Shopping Bag Bandit
+    Shotgun Bandit
+    Michael Short
+    Shorts Robber
+    The_Signal_Mountain_Murders
+    Art Silva
+    Dr. Arvind Sinha
+    Billy Ray Sisson
+    Robin_Stevens_and_Sherry_Seymour
+    William Slagle
+    Ernest Small
+    Chuck Smith
+    David Gordon Smith
+    Dennis Keith Smith
+    Joe Smith
+    Lena Regina Smith
+    Leticia Smith
+    Shannon Smith
+    Alan Verl Sneed
+    Roberto Solis
+    Amtrak Derailment
+    Southern California Robber
+    Elena Souza
+    Salvatore Spinnato
+    Stahl Paintings
+    Paul Stamper
+    Kenneth Stanton
+    Michael Anthony Starr
+    Rose_Turford_and_Carolyn_Stevens
+    Nicholas Louis Stevens
+    Jerry Strickland
+    Strip Mall Rapist
+    Phyllis Strub
+    Stryder Styarfyr
+    James Sullivan
+    Michael Swango
+    Sweetheart Swindler") %>% 
+  trimws
+
+
+season_A <- NULL
+for(i in c(ltr.a, ltr.b, ltr.c, 
+           ltr.dg, 
+           ltr.hm, ltr.ns)){
+  temp <- s2(i) %>% 
+    left_join(., cw.outcome_solved)
+  
+  season_A <- rbind(season_A, 
+                   temp)
+  rm(temp)
+}
+print(i)
+
+
 # write_data----
 
 readr::write_csv(season1, "season1.csv")
 readr::write_csv(season2, "season2.csv")
+readr::write_csv(season_A, "composite.data.csv")
 
-season1 %>%
+season_A <- read_csv("composite.data.csv")
+
+
+
+season_A %>%
   group_by(seg_name, outcome = master.outcome) %>%
   summarise(n_ep = n_distinct(uid_ep)) %>%
   group_by(outcome) %>%
   summarise(n_segments = n_distinct(seg_name), 
             avg_times_shown = mean(n_ep)) 
+
+

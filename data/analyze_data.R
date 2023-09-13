@@ -12,10 +12,12 @@ rm(list=ls());cat('\f');gc()
 # import data----
 
 full.df <- NULL
-for(i in list.files(pattern = "^season\\d{1,}\\.csv$")){
-  full.df <- rbind(full.df, 
-                   read_csv(i))
-}
+# for(i in list.files(pattern = "^season\\d{1,}\\.csv$")){
+#   full.df <- rbind(full.df, 
+#                    read_csv(i))
+# }
+
+full.df <- read_csv("composite.data.csv")
 
 full.df$tag_type <- "other"
 full.df[full.df$tag %in% state.name,]$tag_type <- "state"
@@ -26,7 +28,7 @@ full.df$tag_type[full.df$seg.outcome == tolower(full.df$tag)] <- "outcome"
 full.df %>%
   group_by(seg_name) %>%
   summarise(n_seasons = n_distinct(s_num), 
-            n_episodes = n_distinct(uid_ep)) 
+            n_episodes = n_distinct(ep_num)) 
 
 full.df %>%
   group_by(master.outcome) %>%
@@ -35,7 +37,7 @@ full.df %>%
   mutate(., 
          pct_segments = n_segments / sum(n_segments))
 
-exp.states <- full.df %>%
+       exp.states <- full.df %>%
   group_by(tag_type, tag, master.outcome) %>%
   summarise(n_segments=n_distinct(seg_name)) %>%
   as.data.table() %>%
