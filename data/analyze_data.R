@@ -95,10 +95,10 @@ for(i in list.files(pattern = "^cw\\.|^cw_")){
 }
 rm(i,temp.varname,temp.df)
 
-# cw_tags <- read_csv("https://raw.githubusercontent.com/benda18/Solved_Unsolved_Mysteries/main/composite.data.csv")
-# cw_tags <- summarise(group_by(cw_tags, seg_name, tag)) %>%
-#   .[complete.cases(.),] %>%
-#   .[!duplicated(.),]
+cw_tags <- read_csv("https://raw.githubusercontent.com/benda18/Solved_Unsolved_Mysteries/main/data/cw_tags.csv")
+cw_tags <- cw_tags %>%
+  .[complete.cases(.),] %>%
+  .[!duplicated(.),]
 
 # import data----
 
@@ -111,6 +111,12 @@ full.df <- read_csv("mysteries.csv") %>%
   .[!is.na(.$master.outcome),] %>%
   .[complete.cases(.),] %>%
   .[!duplicated(.),]
+
+# join tags----
+
+full.df <- left_join(full.df, 
+          cw_tags, relationship = "many-to-many") 
+
 
 # # get tags----
 # 
@@ -160,4 +166,4 @@ ggplot() +
   geom_point(data = full.df, 
              aes(x = uid_seg, y = s_num))
 
-
+write_csv(full.df, "mysteries2.csv")
