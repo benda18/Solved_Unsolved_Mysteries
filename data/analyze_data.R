@@ -11,6 +11,61 @@ setwd("~/R/play/Solved_Unsolved_Mysteries/data")
 rm(list=ls());cat('\f');gc()
 
 # functions-----
+segoc3 <- function(url){
+  # get season outcome from url
+  # ex url: "https://unsolvedmysteries.fandom.com/wiki/Heirs_of_George_Marsh"
+  require(glue)
+  require(rvest)
+  require(dplyr)
+  # if there are any spaces in segname, replace with underscore to match naming
+  # convetion of website
+  
+  #segname <- gsub(" ", "_", segname)
+  #url1 <- glue("https://unsolvedmysteries.fandom.com/wiki/{segname}")
+  url1 <- url
+  
+  htext <- rvest::read_html(url1) %>%
+    html_text() %>%
+    strsplit(., "\t{0,}\n{1,}\t{0,}") %>%
+    unlist() %>%
+    .[. != ""] %>%
+    trimws()
+  
+  which(grepl("Episode", htext))
+  grep("episode", htext, ignore.case = T, value = T)
+  htext
+  
+  
+  seg.title <- htext[1] %>% strsplit(., "\\|") %>% unlist() %>% first %>% trimws()
+  seg.results <- grep("Results {0,}:", htext, value = T) %>%
+    gsub("^.*Results: {0,}", "", .) %>%
+    strsplit(x = ., 
+             split = "\\W") %>% 
+    unlist() %>%
+    .[. != ""] %>%
+    first() %>%
+    tolower()
+  
+  # seg.meta <- htext %>% grep("Real Name.*\\d{4,4}", ., value = T) %>%
+  #   .[nchar(.) == min(nchar(.))]
+  
+  seg.categories <- htext %>% 
+    grep("wgCategories", ., value = T) %>% 
+    gsub("\"", "", .) %>%
+    strsplit(x = ., split = "],") %>%
+    unlist() %>%
+    grep("wgCategories", ., value = T) %>%
+    gsub("wgCategories:\\S{1,1}", "", .) %>%
+    strsplit(., ",") %>% unlist()
+  
+  out.df <- data.frame(seg_url = url, 
+                       tag = seg.categories)
+  return(out.df)
+  #Sys.sleep(1)
+}
+
+#segoc3("https://unsolvedmysteries.fandom.com/wiki/Heirs_of_George_Marsh")
+
 lzero <- function(x, n.leading.zeroes){
   if(is.na(x)){
     out <- "NA"
@@ -40,6 +95,11 @@ for(i in list.files(pattern = "^cw\\.|^cw_")){
 }
 rm(i,temp.varname,temp.df)
 
+# cw_tags <- read_csv("https://raw.githubusercontent.com/benda18/Solved_Unsolved_Mysteries/main/composite.data.csv")
+# cw_tags <- summarise(group_by(cw_tags, seg_name, tag)) %>%
+#   .[complete.cases(.),] %>%
+#   .[!duplicated(.),]
+
 # import data----
 
 full.df <- read_csv("mysteries.csv") %>%
@@ -48,7 +108,36 @@ full.df <- read_csv("mysteries.csv") %>%
   full_join(., read_csv("master.meta.csv")) %>%
   left_join(., 
             cw.outcome_solved) %>%
-  .[!is.na(.$master.outcome),]
+  .[!is.na(.$master.outcome),] %>%
+  .[complete.cases(.),] %>%
+  .[!duplicated(.),]
+
+# # get tags----
+# 
+# out.tags <- NULL
+# for(i in unique(full.df$seg_url)){
+#   Sys.sleep(1)
+#   print(i)
+#   temp.tags <- try(segoc3(i))
+#   if(class(temp.tags) != "try-error"){
+#     out.tags <- rbind(out.tags, 
+#                       temp.tags)
+#   }
+#   rm(temp.tags)
+# }
+# 
+# write_csv(out.tags,"cw_tags.csv")
+
+full.df$seg_name2 <- gsub(pattern = "^.*/", 
+                          replacement = "", 
+                          full.df$seg_url) %>%
+  gsub("%27", "'", .) %>%
+  gsub("_", " ", .)
+
+# full.df <- left_join(full.df, 
+#           cw_tags, 
+#           relationship = "many-to-many", 
+#           by = c("seg_name2" = "seg_name")) 
 
 
 
@@ -66,8 +155,9 @@ full.df$uid_snen <-  paste("S",
 full.df$uid_snen_f <- factor(full.df$uid_snen)
 
 
+
 ggplot() + 
   geom_point(data = full.df, 
              aes(x = uid_seg, y = s_num))
 
-54000/(1440*12)
+

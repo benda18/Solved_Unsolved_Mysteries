@@ -8,6 +8,11 @@ s_num <- 3
 ep_num <- 1
 var.segnum <- 4
 
+get_cw.tags <- function(){
+  
+}
+
+
 get_episode_metadata <- function(s_num, 
                                  ep_num){
   # vars----
