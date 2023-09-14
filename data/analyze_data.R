@@ -86,7 +86,7 @@ lzero <- function(x, n.leading.zeroes){
 
 # import crosswalks----
 for(i in list.files(pattern = "^cw\\.|^cw_")){
-  # assign varname 
+  # assign varname
   temp.varname <- gsub("\\.csv$", "", i)
   # read data to temp
   temp.df      <- read_csv(i)
@@ -94,76 +94,108 @@ for(i in list.files(pattern = "^cw\\.|^cw_")){
   assign(x = temp.varname, value = temp.df)
 }
 rm(i,temp.varname,temp.df)
-
-cw_tags <- read_csv("https://raw.githubusercontent.com/benda18/Solved_Unsolved_Mysteries/main/data/cw_tags.csv")
-cw_tags <- cw_tags %>%
-  .[complete.cases(.),] %>%
-  .[!duplicated(.),]
+ 
+# cw_tags <- read_csv("https://raw.githubusercontent.com/benda18/Solved_Unsolved_Mysteries/main/data/cw_tags.csv")
+# cw_tags <- cw_tags %>%
+#   .[complete.cases(.),] %>%
+#   .[!duplicated(.),]
 
 # import data----
 
-full.df <- read_csv("mysteries.csv") %>%
-  .[complete.cases(.),] %>%
-  .[!duplicated(.),] %>%
-  full_join(., read_csv("master.meta.csv")) %>%
-  left_join(., 
-            cw.outcome_solved) %>%
-  .[!is.na(.$master.outcome),] %>%
-  .[complete.cases(.),] %>%
-  .[!duplicated(.),]
+full.df <- read_csv("https://raw.githubusercontent.com/benda18/Solved_Unsolved_Mysteries/main/data/mysteries2.csv")
 
-# join tags----
+full.df$tag == "\"accident\""
 
-full.df <- left_join(full.df, 
-          cw_tags, relationship = "many-to-many") 
+# tag analysis----
 
+cw.tags <- data.frame(tag = unique(full.df$tag), 
+                      tag_type = NA)
 
-# # get tags----
-# 
-# out.tags <- NULL
-# for(i in unique(full.df$seg_url)){
-#   Sys.sleep(1)
-#   print(i)
-#   temp.tags <- try(segoc3(i))
-#   if(class(temp.tags) != "try-error"){
-#     out.tags <- rbind(out.tags, 
-#                       temp.tags)
-#   }
-#   rm(temp.tags)
-# }
-# 
-# write_csv(out.tags,"cw_tags.csv")
+# search tags
+cw.tags$tag %>%
+  grep("-Related Cases$", ., ignore.case = F, value = T)
 
-full.df$seg_name2 <- gsub(pattern = "^.*/", 
-                          replacement = "", 
-                          full.df$seg_url) %>%
-  gsub("%27", "'", .) %>%
-  gsub("_", " ", .)
+# na tags
+cw.tags$tag[is.na(cw.tags$tag_type)]  %>% sort()
 
-# full.df <- left_join(full.df, 
-#           cw_tags, 
-#           relationship = "many-to-many", 
-#           by = c("seg_name2" = "seg_name")) 
+# institution
+
+# profession
+
+# affliction
+
+# crime
+cw.tags[cw.tags$tag %in% 
+          c("accident",
+            "Arson", "Child Abuse", "Fraud", 
+            "Murder", 
+            "Theft", "Abduction", "Attempted Murder", 
+            "Child Molestation", "Extortion", "Piracy", 
+            "Rape", "Smuggling", "Bribery", "Embezzlement", 
+            "Manslaughter", "Armed Robbery", 
+            "Bigamy", "Burglary", "Counterfeiting", 
+            "Forgery", "Harassment", "Possession", "Robbery", 
+            "Terrorism"),] <- "crime_type"
 
 
+# criminal / victim
 
-full.df$uid_seg <- sha512(x = full.df$seg_url) %>% 
-  as.character() %>%
-  substr(., 0, 10)
-
-
-full.df$uid_snen <-  paste("S", 
-                       unlist(lapply(full.df$s_num, lzero, 2)), 
-                       "E", 
-                       unlist(lapply(full.df$nth_s_ep, lzero, 3)),
-                       sep = "")
-
-full.df$uid_snen_f <- factor(full.df$uid_snen)
+# Uplifting / Victimless
 
 
+# vehicle type
+cw.tags[grepl("^Horse-|^Ford-|^Dodge-|^Semi-|^Train-|^SUV-|^Van-|^Motorcycle|^Volkswagon|^Toyota|^Honda|^Jeep|^ATV-|^Bicycle", 
+              cw.tags$tag),]$tag_type <- "vehicle_type"
 
-ggplot() + 
-  geom_point(data = full.df, 
-             aes(x = uid_seg, y = s_num))
 
-write_csv(full.df, "mysteries2.csv")
+# outcomes----
+cw.tags[cw.tags$tag %in% 
+          c("Solved", 
+            "Unsolved", 
+            "Unresolved", 
+            "Captured",
+            "Viewer Solves"),] <- "outcomes"
+
+# building / land-use type
+cw.tags[cw.tags$tag %in% 
+          c("ATM-Related Cases", 
+            "Restaurant-Related Cases", "School-Related Cases",
+            "Church-Related Cases", "Hotel-Related Cases" , 
+            "Lake-Related Cases", "Railroad-Related Cases", 
+            "River-Related Cases", "Sea-Related Cases", 
+            "Woodland-Related Cases","Air-Related Cases",
+            "Road-Related Cases"),]$tag_type <- "building_type.land_use"
+
+# not needed
+cw.tags[cw.tags$tag %in%
+          c("Special Bulletin Cases", 
+            "Unknown Airdate" ,
+            "Unsolved History Cases",
+            #"Court TV Cases", 
+            "YouTube Album",
+            #"AMW Cases",
+            "Investigators","Special Alert Cases"   ) |
+  grepl("needing|pages|0026E Cases|Netflix|spike tv cases|cbs cases|lifetime cases", cw.tags$tag, ignore.case = T),] <- "not_needed"
+
+# years
+cw.tags[grepl(pattern = "\\d{4,4}s{0,1}$|year", x = cw.tags$tag, ignore.case = T),]$tag_type <- "year"
+
+# states
+cw.tags[cw.tags$tag %in% 
+          c(state.name, 
+            "Washington D.C.", "Puerto Rico", 
+            "Philippines", "Canada", "Russia", 
+            "Newfoundland", "Africa", "Brazil", 
+            "Iraq", "Indonesia", "Korea", "Japan", "Jordan", 
+            "United Kingdom", "Peru", "Antarctica", 
+            "Australia", "Portugal", "Yukon Territory", 
+            "Egypt", "Guam", "Bosnia", "Ontario", 
+            "Italy", "Belgium", "Colombia", "Unknown State", 
+            "Haiti", "Mexico", "Finland", "Spain", 
+            "Bolivia", "China", "Turkey", "Caribbean", 
+            "The Netherlands", "Sweden", "Manitoba", 
+            "Tibet", "Quebec", "Greece", "Switzerland", 
+            "Scotland", "Ireland", "Yugoslavia", "Alberta", 
+            "British Columbia", "France", "Austria", "Pacific Ocean", 
+            "England", "Vietnam", "Germany", "Atlantic Ocean", 
+            "Hungary", "Cuba"),]$tag_type <- "state_country"
