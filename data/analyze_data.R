@@ -104,7 +104,9 @@ rm(i,temp.varname,temp.df)
 
 full.df <- read_csv("https://raw.githubusercontent.com/benda18/Solved_Unsolved_Mysteries/main/data/mysteries2.csv")
 
-full.df$tag == "\"accident\""
+full.df$tag[grepl("accident", full.df$tag)] <- "accident"
+
+#write_csv(full.df,"mysteries2.csv")
 
 # tag analysis----
 
