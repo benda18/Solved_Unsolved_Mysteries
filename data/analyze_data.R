@@ -6,6 +6,7 @@ library(tidycensus)
 library(tigris)
 library(data.table)
 library(openssl)
+library(BAMMtools)
 
 setwd("~/R/play/Solved_Unsolved_Mysteries/data")
 rm(list=ls());cat('\f');gc()
@@ -279,3 +280,24 @@ summary.tags.tagtypes %>%
   ungroup() %>%
   mutate(., 
          pct_t = t_val / n)
+
+# naural breaks - tags
+
+df.jenks <- full.df %>%
+  group_by(tag) %>%
+  summarise(n_seg = n_distinct(seg_name)) %>%
+  .[order(.$n_seg,decreasing = T),]
+
+df.jenks$tag_f <- factor(df.jenks$tag, 
+                         levels = unique(df.jenks$tag[order(df.jenks$n_seg,decreasing = T)])) 
+
+
+n.breaks <- 3
+
+
+ggplot() + 
+  geom_col(data = df.jenks[df.jenks$n_seg >=BAMMtools::getJenksBreaks(df.jenks$n_seg, n.breaks)[2],], 
+           aes(y = tag_f,x = n_seg)) +
+  geom_vline(data = data.frame(x.br =BAMMtools::getJenksBreaks(df.jenks$n_seg, 
+                                   n.breaks)), 
+                               aes(xintercept = x.br))
