@@ -11,19 +11,64 @@ library(data.table)
 setwd("~/R/play/Solved_Unsolved_Mysteries/data")
 rm(list=ls());cat('\f');gc()
 
+# funs----
+lzero <- function(x, n.leading.zeroes){
+  if(is.na(x)){
+    out <- "NA"
+  }else{
+    out <- as.character(x)
+  }
+  
+  #if(!is.na(x)){
+  
+  if(nchar(out) < n.leading.zeroes){
+    out <- paste(c(rep("0", n.leading.zeroes - nchar(out)), 
+                   out), sep = "", collapse = "")
+  }
+  #}
+  
+  return(out)
+}
+
 # import data----
 
-full.df <- NULL
-for(i in list.files(pattern = "^season\\d{1,}\\.csv$")){
-  full.df <- rbind(full.df, 
-                   read_csv(i))
-}
+mysteries <- read_csv("mysteries.csv") %>%
+  .[complete.cases(.),] %>%
+  .[!duplicated(.),]
+
+master.meta <- read_csv("master.meta.csv") %>%
+  .[!duplicated(.),]
+
+full.df <- full_join(mysteries, master.meta)
+
+full.df$uid_ep <- paste("S", 
+                        unlist(lapply(full.df$s_num,lzero,2)), 
+                        "E", 
+                        unlist(lapply(full.df$nth_s_ep,lzero,3)), sep = "")
+
+cw.outcome_solved <- rbind(data.frame(master.outcome = "SOLVED", 
+                                      seg.outcome    = c("captured", 
+                                                         "solved")), 
+                           data.frame(master.outcome = "UNSOLVED", 
+                                      seg.outcome    = c("wanted", 
+                                                         "wantedlinks",
+                                                         "unresolved", 
+                                                         "unsolved",
+                                                         "unsolvedlinks")))
+full.df <- left_join(full.df, 
+          cw.outcome_solved)
 
 # TIDY----
 
 
+
+
 # QUESTIONS----
 # How many cases were solved? 
+full.df[is.na(full.df$master.outcome),]$seg_name %>% unique()
+full.df %>%
+  group_by(master.outcome) %>%
+  summarise(n = n())
 
 # How frequently were cases re-aired?  
 

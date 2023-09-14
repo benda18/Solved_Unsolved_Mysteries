@@ -142,7 +142,7 @@ segoc <- function(url1, season = NA, episode = NA){
 # pull down urls----
 
 cw.outcome_solved <- rbind(data.frame(master.outcome = "SOLVED", 
-                                      seg.outcome    = c("captured", 
+                                      seg.outcome    = c("captured", "captu",
                                                          "solved")), 
                            data.frame(master.outcome = "UNSOLVED", 
                                       seg.outcome    = c("wanted", 
@@ -150,6 +150,8 @@ cw.outcome_solved <- rbind(data.frame(master.outcome = "SOLVED",
                                                          "unresolved", 
                                                          "unsolved",
                                                          "unsolvedlinks")))
+
+#write_csv(cw.outcome_solved, "cw.outcome_solved.csv")
 
 s1ep1 <- rbind(segoc("https://unsolvedmysteries.fandom.com/wiki/Gulf_Breeze_UFO", 1, 1), 
                segoc("https://unsolvedmysteries.fandom.com/wiki/Louis_Carlucci", 1, 1), 

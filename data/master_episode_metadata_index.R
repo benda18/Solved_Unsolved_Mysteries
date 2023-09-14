@@ -92,7 +92,7 @@ get_episode_metadata <- function(s_num,
   #rm(the.html.ep_num)
 }
 
-get_episode_metadata(3,1)
+get_episode_metadata(1,1)
 
 # read_html("https://unsolvedmysteries.fandom.com/wiki/Season_3") %>%
 #   html_element(x = ., 
@@ -111,8 +111,8 @@ get_episode_metadata(3,1)
 #   unlist %>%
 #   .[!grepl("\\=|<|>", .)]
 
-the.seasons <- 7#2:14
-the.episodes <- 1:5#:40
+the.seasons <- 6:12
+the.episodes <- 1:40#:40
 
 
 master.meta <- NULL
@@ -133,3 +133,4 @@ master.meta
 
 write_csv(master.meta, "master.meta.csv")
 
+mm <- read_csv("master.meta.csv")
