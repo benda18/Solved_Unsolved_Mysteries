@@ -104,18 +104,60 @@ rm(i,temp.varname,temp.df)
 
 full.df <- read_csv("https://raw.githubusercontent.com/benda18/Solved_Unsolved_Mysteries/main/data/mysteries2.csv")
 
-full.df$tag[grepl("accident", full.df$tag)] <- "accident"
+# # tag analysis----
+# tag_freq <- full.df$tag %>% 
+#   table() %>%
+#   as.data.frame() %>% 
+#   as_tibble()
+# colnames(tag_freq) <- c("tag", "Freq")
+# 
+# tag_freq <- tag_freq %>% 
+#   .[!grepl("\\d{4,4}s{0,1}$|year", .$tag),] %>%
+#   .[!.$tag %in% 
+#       c(state.name, 
+#         "Washington D.C.", "Puerto Rico", "Philippines", 
+#         "Canada", "Russia", "Newfoundland", "Africa", "Brazil", 
+#         "Iraq", "Indonesia", "Korea", "Japan", "Jordan", 
+#         "United Kingdom", "Peru", "Antarctica", 
+#         "Australia", "Portugal", "Yukon Territory", 
+#         "Egypt", "Guam", "Bosnia", "Ontario", 
+#         "Italy", "Belgium", "Colombia", "Unknown State", 
+#         "Haiti", "Mexico", "Finland", "Spain", 
+#         "Bolivia", "China", "Turkey", "Caribbean", 
+#         "The Netherlands", "Sweden", "Manitoba", 
+#         "Tibet", "Quebec", "Greece", "Switzerland", 
+#         "Scotland", "Ireland", "Yugoslavia", "Alberta", 
+#         "British Columbia", "France", "Austria", "Pacific Ocean", 
+#         "England", "Vietnam", "Germany", "Atlantic Ocean", 
+#         "Hungary", "Cuba"),] %>%
+#   .[!grepl("^Horse-|^Ford-|^Dodge-|^Semi-|^Train-|^SUV-|^Van-|^Motorcycle|^Volkswagon|^Toyota|^Honda|^Jeep|^ATV-|^Bicycle", 
+#                 .$tag),] %>%
+#   .[order(.$Freq,decreasing = T),] %>%
+#   ungroup() %>%
+#   slice_head(., prop = 0.5)
+# 
+# tag_freq$tag_f <- factor(tag_freq$tag, 
+#                          levels = unique(tag_freq$tag[order(tag_freq$Freq)])) 
+# 
+# ggplot() + 
+#   geom_col(data = tag_freq, 
+#              aes(x = Freq, y = tag_f))
 
-#write_csv(full.df,"mysteries2.csv")
 
-# tag analysis----
-
+# again
 cw.tags <- data.frame(tag = unique(full.df$tag), 
                       tag_type = NA)
 
+cw.case_types <- data.frame(case_type = c("wanted", 
+                                          "lost", 
+                                          "murders", 
+                                          "mysteries", 
+                                          "legends", 
+                                          "missing"))
+
 # search tags
 cw.tags$tag %>%
-  grep("-Related Cases$", ., ignore.case = F, value = T)
+  grep(" Cases$", ., ignore.case = F, value = T)
 
 # na tags
 cw.tags$tag[is.na(cw.tags$tag_type)]  %>% sort()
@@ -124,7 +166,12 @@ cw.tags$tag[is.na(cw.tags$tag_type)]  %>% sort()
 
 # profession
 
-# affliction
+
+
+# cross-series-coverage
+cw.tags$tag_type[cw.tags$tag %in%
+                   c("AMW Cases", 
+                     "Court TV Cases")] <- "tv_crossover"
 
 # crime
 cw.tags[cw.tags$tag %in% 
@@ -137,7 +184,10 @@ cw.tags[cw.tags$tag %in%
             "Manslaughter", "Armed Robbery", 
             "Bigamy", "Burglary", "Counterfeiting", 
             "Forgery", "Harassment", "Possession", "Robbery", 
-            "Terrorism"),] <- "crime_type"
+            "Terrorism", 
+            "Animal Cruelty Cases", 
+            "Conspiracy Cases", "Fire-Related Cases", 
+            "Mafia-Related Cases","Vehicular Manslaughter"),]$tag_type <- "crime_type"
 
 
 # criminal / victim
@@ -156,7 +206,7 @@ cw.tags[cw.tags$tag %in%
             "Unsolved", 
             "Unresolved", 
             "Captured",
-            "Viewer Solves"),] <- "outcomes"
+            "Viewer Solves"),]$tag_type <- "outcomes"
 
 # building / land-use type
 cw.tags[cw.tags$tag %in% 
@@ -177,10 +227,12 @@ cw.tags[cw.tags$tag %in%
             "YouTube Album",
             #"AMW Cases",
             "Investigators","Special Alert Cases"   ) |
-  grepl("needing|pages|0026E Cases|Netflix|spike tv cases|cbs cases|lifetime cases", cw.tags$tag, ignore.case = T),] <- "not_needed"
+          grepl("needing|pages|0026E Cases|Netflix|spike tv cases|cbs cases|lifetime cases", 
+                cw.tags$tag, ignore.case = T),]$tag_type <- "not_needed"
 
 # years
-cw.tags[grepl(pattern = "\\d{4,4}s{0,1}$|year", x = cw.tags$tag, ignore.case = T),]$tag_type <- "year"
+cw.tags[grepl(pattern = "\\d{4,4}s{0,1}$|year", 
+              x = cw.tags$tag, ignore.case = T),]$tag_type <- "year"
 
 # states
 cw.tags[cw.tags$tag %in% 
@@ -201,3 +253,29 @@ cw.tags[cw.tags$tag %in%
             "British Columbia", "France", "Austria", "Pacific Ocean", 
             "England", "Vietnam", "Germany", "Atlantic Ocean", 
             "Hungary", "Cuba"),]$tag_type <- "state_country"
+
+
+summary.tags.tagtypes <- left_join(full.df, 
+          cw.tags) %>%
+  group_by(seg_name, seg.outcome, tag_type) %>%
+  summarise(n_tags = n_distinct(tag, na.rm = T)) %>%
+  as.data.table() %>%
+  dcast(., 
+        seg_name + seg.outcome ~ tag_type, 
+        fun.aggregate = sum, value.var = "n_tags", 
+        fill = 0) %>%
+  as.data.frame() %>%
+  as_tibble()
+
+summary.tags.tagtypes %>%
+  as.data.table() %>%
+  melt(., 
+       id.vars = c("seg_name", "seg.outcome")) %>%
+  as.data.frame() %>%
+  as_tibble() %>%
+  group_by(variable) %>%
+  summarise(n = n(), 
+            t_val = sum(value)) %>%
+  ungroup() %>%
+  mutate(., 
+         pct_t = t_val / n)
