@@ -10,8 +10,9 @@ library(ggplot2)
 setwd("~/R/play/Solved_Unsolved_Mysteries/data")
 rm(list=ls());cat('\f');gc()
 
+# case themes: https://unsolvedmysteries.fandom.com/wiki/Category:Case_Themes
 
-
+# categories: https://unsolvedmysteries.fandom.com/wiki/Special:Categories?offset=&limit=500
 lzero <- function(x, n.leading.zeroes){
   if(is.na(x)){
     out <- "NA"

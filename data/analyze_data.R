@@ -11,7 +11,13 @@ library(BAMMtools)
 setwd("~/R/play/Solved_Unsolved_Mysteries/data")
 rm(list=ls());cat('\f');gc()
 
+hundo.pct.tag.cats <- c("year", "geo")
+
 # functions-----
+
+
+
+
 segoc3 <- function(url){
   # get season outcome from url
   # ex url: "https://unsolvedmysteries.fandom.com/wiki/Heirs_of_George_Marsh"
@@ -207,7 +213,8 @@ cw.tags[cw.tags$tag %in%
             "Unsolved", 
             "Unresolved", 
             "Captured",
-            "Viewer Solves"),]$tag_type <- "outcomes"
+            "Viewer Solves", 
+            "Wanted"),]$tag_type <- "outcomes"
 
 # building / land-use type
 cw.tags[cw.tags$tag %in% 
@@ -237,7 +244,7 @@ cw.tags[grepl(pattern = "\\d{4,4}s{0,1}$|year",
 
 # states
 cw.tags[cw.tags$tag %in% 
-          c(state.name, 
+          c(state.name, "Mars",
             "Washington D.C.", "Puerto Rico", 
             "Philippines", "Canada", "Russia", 
             "Newfoundland", "Africa", "Brazil", 
@@ -256,6 +263,47 @@ cw.tags[cw.tags$tag %in%
             "Hungary", "Cuba"),]$tag_type <- "state_country"
 
 
+
+# find ones that add up to 100
+cw.tags$tag_type %>% unique()
+
+
+some.segs <- left_join(full.df, cw.tags) %>%
+  group_by(seg_name, 
+           #tag_type,
+           tag_type_geo = tag_type == "building_type.land_use") %>%
+  summarise(n = n()) %>%
+  ungroup() %>%
+  mutate(., 
+         tag_type_geo = ifelse(is.na(tag_type_geo), 
+                               F, tag_type_geo)) %>%
+  group_by(seg_name, tag_type_geo) %>%
+  summarise(n = sum(n)) %>%
+  ungroup() %>%
+  mutate(., 
+         tag_type_type = ifelse(tag_type_geo, "with_tag", "without_tag")) %>%
+  as.data.table() %>%
+  dcast(., 
+        seg_name ~ tag_type_type, 
+        fun.aggregate = sum, 
+        value.var = "n") %>%
+  as.data.frame() %>%
+  as_tibble() %>%
+  .[.$with_tag < 1,] %>%
+  .$seg_name
+
+
+left_join(full.df, 
+          cw.tags) %>%
+  .[.$seg_name %in% some.segs,] %>%
+  .$tag %>% unique() %>% sort()
+
+cw.tags %>%
+  group_by(tag,
+           any_geo = any(tag_type == "state_country")) %>% 
+  summarise()
+
+# summary
 summary.tags.tagtypes <- left_join(full.df, 
           cw.tags) %>%
   group_by(seg_name, seg.outcome, tag_type) %>%
@@ -301,3 +349,37 @@ ggplot() +
   geom_vline(data = data.frame(x.br =BAMMtools::getJenksBreaks(df.jenks$n_seg, 
                                    n.breaks)), 
                                aes(xintercept = x.br))
+
+
+
+tag1 <- "1810s"
+tag1 <- "1925"
+
+get_decade <- function(tag1){
+  # already a decade? 
+  if(grepl("s$", tag1, ignore.case=T)){
+    out <- substr(tag1,0,4) %>% as.numeric()
+  }else{
+    # convert to decade
+    out <- tag1 %>% 
+      as.numeric()
+    out <- out - (out %% 10)
+  }
+  return(out)
+}
+
+full.df$decade <- full.df$tag %>% 
+  #unique() %>% sort() %>%
+  #grep("\\d{4,4}", ., value = T) %>%
+  #.[nchar(.) <= 6] %>%
+  lapply(., FUN = get_decade) %>% unlist()
+
+full.df %>%
+  group_by(seg_name) %>%
+  summarise(n_decade = n_distinct(decade, na.rm = T), 
+            min_decade = min(decade,na.rm = T), 
+            max_decade = max(decade,na.rm = T)) %>%
+  .[order(.$n_decade,decreasing = T),] %>%
+  ungroup() %>%
+  mutate(., 
+         diff_decade = max_decade - min_decade)

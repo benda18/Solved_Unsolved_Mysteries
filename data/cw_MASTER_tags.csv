@@ -1,0 +1,353 @@
+cat,type
+year,1519
+year,1531
+year,1578
+year,1666
+year,1669
+year,1704
+year,1789
+year,1796
+year,1800s
+year,1818
+year,1821
+year,1836
+year,1846
+year,1848
+year,1858
+year,1860s
+year,1863
+year,1864
+year,1865
+year,1872
+year,1876
+year,1878
+year,1880
+year,1881
+year,1882
+year,1883
+year,1887
+year,1892
+year,1895
+year,1899
+year,1903
+year,1906
+year,1908
+year,1910
+year,1914
+year,1915
+year,1916
+year,1917
+year,1918
+year,1920
+year,1921
+year,1922
+year,1923
+year,1924
+year,1925
+year,1926
+year,1927
+year,1928
+year,1929
+year,1931
+year,1932
+year,1933
+year,1934
+year,1935
+year,1936
+year,1937
+year,1938
+year,1939
+year,1940
+year,1940s
+year,1941
+year,1942
+year,1943
+year,1944
+year,1945
+year,1946
+year,1947
+year,1948
+year,1949
+year,1950
+year,1951
+year,1952
+year,1953
+year,1954
+year,1955
+year,1956
+year,1957
+year,1958
+year,1959
+year,1960
+year,1960s
+year,1961
+year,1962
+year,1963
+year,1964
+year,1965
+year,1966
+year,1967
+year,1968
+year,1969
+year,1970
+year,1970s
+year,1971
+year,1972
+year,1973
+year,1974
+year,1975
+year,1976
+year,1977
+year,1978
+year,1979
+year,1980
+year,1981
+year,1982
+year,1983
+year,1984
+year,1985
+year,1986
+year,1987
+year,1988
+year,1989
+year,1990
+year,1991
+year,1992
+year,1993
+year,1994
+year,1995
+year,1996
+year,1997
+year,1998
+year,1999
+year,2000
+year,2001
+year,Unknown Year
+crime,accident
+crime,Abduction
+crime,Armed Robbery
+crime,Arson
+crime,Attempted Murder
+crime,Manslaughter
+crime,Murder
+crime,Bigamy
+crime,Bribery
+crime,Burglary
+crime,Child Abuse
+crime,Child Molestation
+crime,Counterfeiting
+crime,Drug-Related Cases
+crime,Embezzlement
+crime,Escape
+crime,Extortion
+crime,Forgery
+crime,Fraud
+crime,Harassment
+crime,Neglect
+crime,Piracy
+crime,Posession
+crime,Possession
+crime,Rape
+crime,Robbery
+crime,Serial Killer
+crime,Smuggling
+crime,Terrorism
+crime,Theft
+crime,Unknown Crime
+crime,Vehicular Manslaughter
+case_themes,A\u0026E Cases
+case_themes,Actor-Involved Cases
+case_themes,Adoption Cases
+case_themes,Air-Related Cases
+case_themes,Amnesia
+case_themes,AMW Cases
+case_themes,Animal Cruelty Cases
+case_themes,ATM-Related Cases
+case_themes,ATV-Related Cases
+case_themes,Baseball-Related Cases
+case_themes,Bicycle-Related Cases
+case_themes,Blood Print-Related Cases
+case_themes,Boys
+case_themes,CBS Cases
+case_themes,Church-Related Cases
+case_themes,Conspiracy Cases
+case_themes,Court TV Cases
+case_themes,Cryptozoology
+case_themes,Cult-Related Cases
+case_themes,Disappearances
+case_themes,Doctors
+case_themes,Dodge-Related Cases
+case_themes,Drug-Related Cases
+case_themes,ESP Cases
+case_themes,Fire-Related Cases
+case_themes,Ford-Related Cases
+case_themes,Gang-Related Cases
+case_themes,Ghosts
+case_themes,Honda-Related Cases
+case_themes,Horse-Related Cases
+case_themes,Hotel-Related Cases
+case_themes,Inheritance
+case_themes,Internet-Related Cases
+case_themes,Investigators
+case_themes,Jeep-Related Cases
+case_themes,Lake-Related Cases
+case_themes,Legends
+case_themes,Lifetime Cases
+case_themes,Lost Identity Cases
+case_themes,Lost Loves
+case_themes,Mafia-Related Cases
+case_themes,Medical-Related Cases
+case_themes,Military-Related Cases
+case_themes,Miracles
+case_themes,Missing Spouse Cases
+case_themes,Motorcycle-Related Cases
+case_themes,Music-Related Cases
+case_themes,Mysterious Creatures
+case_themes,Netflix
+case_themes,Officer-Involved Cases
+case_themes,Pages Needing Pevising
+case_themes,Pages Needing Revisions
+case_themes,Pages Needing Rewrites
+case_themes,Party-Related Cases
+case_themes,Police-Involved Cases
+case_themes,Radio-Related Cases
+case_themes,Railroad-Related Cases
+case_themes,Reincarnation
+case_themes,Restaurant-Related Cases
+case_themes,River-Related Cases
+case_themes,Road-Related Cases
+case_themes,School-Related Cases
+case_themes,Sea-Related Cases
+case_themes,Semi-Related Cases
+case_themes,Special Alert Cases
+case_themes,Special Bulletin Cases
+case_themes,Spike TV Cases
+case_themes,Suspicious Deaths
+case_themes,SUV-Related Cases
+case_themes,Toyota-Related Cases
+case_themes,Train-Related Cases
+case_themes,Treasure
+case_themes,UFOs
+case_themes,Unexplained Deaths
+case_themes,Unexplained Phenomenon
+case_themes,Unknown Airdate
+case_themes,Unsolved History Cases
+case_themes,Unusual Phenomenon Cases
+case_themes,Van-Related Cases
+case_themes,Viewer Solves
+case_themes,Volkswagon-Related Cases
+case_themes,Woodland-Related Cases
+case_themes,Wrongly-Accused Cases
+case_themes,YouTube Album
+case_status,Captured
+case_status,Unresolved
+case_status,Unsolved
+case_status,Solved
+case_status,Wanted
+location,Africa
+location,Alabama
+location,Alaska
+location,Alberta
+location,Antarctica
+location,Arizona
+location,Arkansas
+location,Atlantic Ocean
+location,Australia
+location,Austria
+location,Belgium
+location,Bolivia
+location,Bosnia
+location,Brazil
+location,British Columbia
+location,California
+location,Canada
+location,Caribbean
+location,China
+location,Colombia
+location,Colorado
+location,Connecticut
+location,Cuba
+location,Delaware
+location,Egypt
+location,England
+location,Finland
+location,Florida
+location,France
+location,Georgia
+location,Germany
+location,Greece
+location,Guam
+location,Haiti
+location,Hawaii
+location,Hungary
+location,Idaho
+location,Illinois
+location,Indiana
+location,Indonesia
+location,Iowa
+location,Iraq
+location,Ireland
+location,Italy
+location,Japan
+location,Jordan
+location,Kansas
+location,Kentucky
+location,Korea
+location,Louisiana
+location,Maine
+location,Manitoba
+location,Mars
+location,Maryland
+location,Massachusetts
+location,Mexico
+location,Michigan
+location,Minnesota
+location,Mississippi
+location,Missouri
+location,Montana
+location,Nebraska
+location,Nevada
+location,New Hampshire
+location,New Jersey
+location,New Mexico
+location,New York
+location,Newfoundland
+location,North Carolina
+location,North Dakota
+location,Ohio
+location,Oklahoma
+location,Ontario
+location,Oregon
+location,Pacific Ocean
+location,Pennsylvania
+location,Peru
+location,Philippines
+location,Portugal
+location,Puerto Rico
+location,Quebec
+location,Rhode Island
+location,Russia
+location,Scotland
+location,South Carolina
+location,South Dakota
+location,Spain
+location,Sweden
+location,Switzerland
+location,Tennessee
+location,Texas
+location,The Netherlands
+location,Tibet
+location,Turkey
+location,United Kingdom
+location,Unknown State
+location,Utah
+location,Vermont
+location,Vietnam
+location,Virginia
+location,Washington
+location,Washington D.C.
+location,West Virginia
+location,Wisconsin
+location,Wyoming
+location,Yugoslavia
+location,Yukon Territory

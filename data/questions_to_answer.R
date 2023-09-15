@@ -64,6 +64,14 @@ full.df <- left_join(full.df,
 
 
 # QUESTIONS----
+
+# what were the hardest types of cases to solve? 
+
+# can we show how cases were related? 
+# * unabomber
+# * golden state killer / original night stalker / east area rapist
+# * others???
+
 # How many cases were solved? 
 full.df[is.na(full.df$master.outcome),]$seg_name %>% unique()
 full.df %>%
