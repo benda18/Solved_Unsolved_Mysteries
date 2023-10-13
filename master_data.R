@@ -3,7 +3,8 @@ setwd("~/R/play/Solved_Unsolved_Mysteries")
 library(dplyr)
 rm(list=ls());cat('\f');gc()
 
-wd <- list(home = "C:/Users/bende/Documents/R/play/Solved_Unsolved_Mysteries", 
+wd <- list(R = "C:/Users/bende/Documents/R/play/Solved_Unsolved_Mysteries/R",
+           home = "C:/Users/bende/Documents/R/play/Solved_Unsolved_Mysteries", 
            data = "C:/Users/bende/Documents/R/play/Solved_Unsolved_Mysteries/data", 
            shiny = "C:/Users/bende/Documents/R/play/Solved_Unsolved_Mysteries/shiny/unsolved_shiny")
 
