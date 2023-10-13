@@ -1,6 +1,9 @@
 setwd("~/R/play/Solved_Unsolved_Mysteries")
 
 library(dplyr)
+library(ggplot2)
+library(ggrepel)
+
 rm(list=ls());cat('\f');gc()
 
 wd <- list(R = "C:/Users/bende/Documents/R/play/Solved_Unsolved_Mysteries/R",
@@ -10,8 +13,32 @@ wd <- list(R = "C:/Users/bende/Documents/R/play/Solved_Unsolved_Mysteries/R",
 
 
 # load all the data----
+setwd(wd$data)
+
+load("unsolved.RData")
 
 
+
+
+# Plot Ideas----
+
+# plot1: 
+
+
+ggplot() +
+  geom_text(data = some.solvedlabels, 
+            hjust = -0.5,
+            #min.segment.length = 0,
+            aes(x = date_fa, y = seg_name, label = "S"), 
+            fontface = "italic", size = 3,
+            #direction = "x"
+  )+
+  geom_point(data = goaldf_points[goaldf_points$seg_name %in% some.segnames,], 
+             aes(x = date_fa, y = seg_name)) + 
+  geom_segment(data = goaldf_segs[goaldf_segs$seg_name %in% some.segnames,], 
+               aes(x = min_date.fa, xend = max_date.fa, 
+                   y = seg_name, yend = seg_name))+
+  facet_grid(master.outcome~., scales = "free_y", space = "free_y")
 
 ## write csv files to .RData----
 # csv_files <- list.files(pattern = "\\.csv")
@@ -69,3 +96,24 @@ wd <- list(R = "C:/Users/bende/Documents/R/play/Solved_Unsolved_Mysteries/R",
 # 
 # save(list=ls(pattern = "^data__"), 
 #      file = "unsolved.RData")
+
+
+# # attribute metadata dataset
+# setwd(wd$data)
+# load("unsolved.RData")
+# 
+# temp__attribute.metadata <- NULL
+# for(i in ls(pattern = "^data__")){
+#   temp__attribute.metadata <- rbind(temp__attribute.metadata, 
+#                                     data.frame(varname = i, 
+#                                                attr.data_desc = attr(get(i), which = "data_desc")))
+#    #%>% attributes
+# }
+# 
+# attr(temp__attribute.metadata, "data_desc") <- "DATA, master reference of colnames and attribute desc data for all the other datasets"
+# 
+# data__attribute.metadata <- temp__attribute.metadata
+# rm(temp__attribute.metadata)
+# 
+# save(list = ls(pattern = "^data__"), 
+#      file = "unsolved.Rdata")
